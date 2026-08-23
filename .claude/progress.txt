@@ -155,3 +155,26 @@ Report rendering and the two charts.
 - Bucket ordering is canonical (clean, ambiguous, adversarial, empty, long) with
   unknown buckets appended, so report diffs between runs stay readable.
 ---
+
+## 2026-08-23 - US-011
+CLI with all five subcommands.
+- Added src/grade.py (grading seam), src/noise.py, expanded src/cli.py,
+  tests/test_cli.py; 192 tests passing, 1 deselected (live)
+- Verified end to end: `run --config baseline` scored 5/5 FROM CACHE at zero cost,
+  confirming FR-1. Report renders "aggregate F1 0.50 conceals 0.00 on adversarial"
+  with a [0.12-0.85] interval that makes n=5 unmistakable.
+- BUG FIXED: Path.relative_to(ROOT) raised whenever results were written outside
+  the repo, crashing a run that had already succeeded. Added _rel().
+
+**Learnings for future iterations:**
+- src/grade.py is the seam three callers need: CLI, noise, and US-010's regression
+  test. US-010 must import from here, NOT from cli, so it stays network-free.
+- load_cases() falls back to ALL cases when data/splits.json is absent. US-001
+  writes that file; until then --split is accepted and silently means "everything".
+- outcomes_to_jsonl sorts by case_id AND sorts keys, so run-to-run diffs are line
+  stable. That diff is the regression signal; unsorted output would destroy it.
+- US-008's implementation (src/noise.py + the `noise` subcommand) landed here
+  because US-011's AC requires the subcommand. What remains for US-008 is the
+  actual measurement on the real 15-case dev split, which needs US-001 first.
+  Do not mark US-008 passing on code alone.
+---
