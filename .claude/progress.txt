@@ -49,3 +49,25 @@ Config loader and the four YAML configs.
 - Pyright flags src.* imports in tests/ as unresolved; extraPaths is set in
   pyproject and pytest resolves them fine. Lint-only noise, do not chase it.
 ---
+
+## 2026-08-22 - US-004 (+ competitor drift tooling)
+Set grader tests, and a real normalization bug they caught.
+- Added tests/test_set_grader.py; 72 tests total passing
+- Added scripts/competitor_drift.py -- diffs a company's named competitors across
+  successive 10-K filings. Real SEC filings only, nothing generated.
+- BUG FOUND AND FIXED in normalize_name: parenthetical glosses and slash pairs
+  defeated it. "International Business Machines Corporation (IBM)" vs "IBM" and
+  "Broadcom/VMware" vs "Broadcom" each read as a drop plus an add. HPE drift churn
+  was inflated 50%->43% and 30%->24% by this alone.
+
+**Learnings for future iterations:**
+- The drift tool is a grader test in disguise: running the same grader over three
+  years of one company surfaces normalization failures that fixed test fixtures
+  do not. Consider it before trusting any set-grader number.
+- Third instance of the same lesson: the harness manufactures its own findings.
+  Pagination artifacts cost 14 points of verbatim accuracy; parenthetical
+  renderings cost 7 points of churn. Check the grader before blaming the model.
+- Juniper Networks legitimately left HPE's competitor list because HPE acquired
+  it. Ground truth moves for reasons no prompt can fix -- this is the concrete
+  example for the golden-set-maintenance section of the writeup.
+---

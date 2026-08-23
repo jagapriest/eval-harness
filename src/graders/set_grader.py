@@ -37,6 +37,12 @@ def normalize_name(raw: str) -> str:
     text = unicodedata.normalize("NFKD", raw)
     text = "".join(c for c in text if not unicodedata.combining(c))
     text = text.casefold()
+    # Models render the same entity several ways. Strip parenthetical glosses
+    # ("International Business Machines Corporation (IBM)") and keep only the first
+    # arm of a slash pair ("Broadcom/VMware"). Both forms were observed in real
+    # output and both otherwise read as a different company than the plain name.
+    text = re.sub(r"\s*\([^)]*\)", " ", text)
+    text = re.sub(r"\s*/\s*\S.*$", " ", text)
     text = re.sub(r"[^\w\s]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     # Strip suffixes repeatedly: "Dell Technologies Inc." -> "dell"
