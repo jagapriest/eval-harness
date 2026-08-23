@@ -1,0 +1,13 @@
+# Cheaper: the structured prompt on a smaller model. 5x cheaper input, 5x cheaper
+# output than Opus. The interesting question is whether it holds up on the
+# adversarial and empty buckets or only on the clean ones.
+id: cheaper
+model: claude-haiku-4-5
+prompt_file: prompts/structured.md
+effort: medium
+structured_output: true
+thinking: false
+max_tokens: 8000
+pricing:
+  input_per_mtok: 1.00
+  output_per_mtok: 5.00

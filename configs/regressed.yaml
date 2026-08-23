@@ -1,0 +1,15 @@
+# Regressed: the structured prompt with the exclusion criteria and the empty-array
+# example deleted -- a plausible "let's shorten this prompt" edit, not sabotage.
+#
+# This exists solely so the harness can prove it detects a regression (US-010).
+# It is never reported as a candidate configuration.
+id: regressed
+model: claude-opus-5
+prompt_file: prompts/regressed.md
+effort: medium
+structured_output: true
+thinking: false
+max_tokens: 8000
+pricing:
+  input_per_mtok: 5.00
+  output_per_mtok: 25.00

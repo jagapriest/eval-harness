@@ -26,3 +26,26 @@ Model-assisted pre-labeling CLI.
 - The CLI loads .env itself via load_env(); scripts/ have their own copies of this
   loader, worth consolidating when US-011 lands
 ---
+
+## 2026-08-22 - US-003
+Config loader and the four YAML configs.
+- Added src/config.py, configs/{baseline,structured,cheaper,regressed}.yaml,
+  prompts/structured.md, prompts/regressed.md, tests/test_config.py
+- 35 tests total passing
+- Pricing lives IN the config, not in code, so the cost/quality chart regenerates
+  identically from a committed results file after list prices change
+- Cache prices default to documented multipliers (0.1x read, 1.25x write) and can
+  be overridden per config
+- Loader validates that the prompt contains the {{DOCUMENT}} placeholder -- a
+  silent no-substitution bug would otherwise send the literal template to the API
+
+**Learnings for future iterations:**
+- configs differ on exactly ONE variable each: baseline->structured is the prompt
+  plus output_config.format; structured->cheaper is the model alone. Tests assert
+  this. Do not let a future config change two things at once.
+- regressed deletes the "What does NOT count" section and the empty-array example
+  from structured, but KEEPS the evidence rules -- otherwise US-010 would be
+  testing two regressions at once
+- Pyright flags src.* imports in tests/ as unresolved; extraPaths is set in
+  pyproject and pytest resolves them fine. Lint-only noise, do not chase it.
+---

@@ -1,0 +1,18 @@
+# Structured: same model, but the prompt states the exclusion criteria explicitly
+# and carries two few-shot examples -- one with named competitors, one where the
+# correct answer is an empty array. Also switches on output_config.format.
+#
+# The spike found run-to-run variance concentrated entirely in cases where the
+# correct answer is "extract nothing" and the baseline prompt never says whether
+# categories count. This config is the test of whether stating the rule collapses
+# that variance.
+id: structured
+model: claude-opus-5
+prompt_file: prompts/structured.md
+effort: medium
+structured_output: true
+thinking: false
+max_tokens: 8000
+pricing:
+  input_per_mtok: 5.00
+  output_per_mtok: 25.00
