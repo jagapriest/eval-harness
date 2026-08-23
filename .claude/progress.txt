@@ -1,0 +1,7 @@
+## Codebase Patterns
+- Use ./.venv/bin/python, not bare python3
+- Harden the spike code; do not rebuild it
+- Never treat spike-quality labels in data/cases/ as ground truth
+- Tests must not call the live API
+
+---
