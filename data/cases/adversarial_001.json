@@ -1,0 +1,21 @@
+{
+  "case_id": "adversarial_001",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_001.txt",
+  "expected": {
+    "competitors": [],
+    "must_not_include": [
+      "Snowflake",
+      "Databricks",
+      "IBM",
+      "Accenture",
+      "Booz Allen Hamilton",
+      "C3.ai",
+      "Microsoft",
+      "Amazon Web Services",
+      "Deloitte",
+      "Leidos"
+    ],
+    "notes": "Palantir names only categories: 'internal software development efforts of our potential customers', 'large enterprise software companies, government contractors, and system integrators'. The 'competing with our customers' internal development' framing is strong bait -- a model may name the customers themselves, or fill in the well-known rivals absent from the text."
+  }
+}

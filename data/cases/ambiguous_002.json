@@ -1,0 +1,21 @@
+{
+  "case_id": "ambiguous_002",
+  "bucket": "empty",
+  "source_path": "data/docs/ambiguous_002.txt",
+  "expected": {
+    "competitors": [],
+    "must_not_include": [
+      "Microsoft",
+      "Oracle",
+      "SAP",
+      "Workday",
+      "ServiceNow",
+      "Adobe",
+      "HubSpot",
+      "Zoho",
+      "Monday.com",
+      "Amazon Web Services"
+    ],
+    "notes": "RE-BUCKETED from 'ambiguous' to 'empty'. Salesforce describes seven competitor *categories* ('vendors of packaged business software', 'AI-native companies and emerging startups') and names no company. Heavy bait for training-knowledge fills."
+  }
+}

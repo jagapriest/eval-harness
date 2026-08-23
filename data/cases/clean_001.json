@@ -1,0 +1,21 @@
+{
+  "case_id": "clean_001",
+  "bucket": "empty",
+  "source_path": "data/docs/clean_001.txt",
+  "expected": {
+    "competitors": [],
+    "must_not_include": [
+      "Hewlett Packard Enterprise",
+      "Lenovo",
+      "Cisco Systems",
+      "IBM",
+      "Super Micro Computer",
+      "Nutanix",
+      "Pure Storage",
+      "NetApp",
+      "Apple",
+      "Amazon Web Services"
+    ],
+    "notes": "RE-BUCKETED from 'clean' to 'empty' during labeling. Dell's 10-K competition section is entirely categorical -- 'branded and generic competitors', 'non-traditional IT companies, including large Infrastructure-as-a-Service providers', 'original design manufacturers'. No commercial entity is named anywhere in the section. Any named competitor here is training-knowledge leakage, not extraction."
+  }
+}

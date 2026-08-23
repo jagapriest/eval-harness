@@ -1,0 +1,19 @@
+{
+  "Hewlett Packard Enterprise": ["HPE", "Hewlett-Packard Enterprise", "Hewlett Packard Enterprise Company"],
+  "Amazon Web Services": ["AWS", "Amazon", "Amazon.com", "Amazon Web Services (AWS)"],
+  "Microsoft": ["Microsoft Azure", "Azure", "Microsoft Corporation", "Microsoft Azure (Azure)"],
+  "Google": ["Google Cloud", "Google Cloud Platform", "GCP", "Alphabet", "Google Cloud Platform (GCP)"],
+  "Dell Technologies": ["Dell", "Dell Inc", "Dell EMC"],
+  "International Business Machines": ["IBM"],
+  "Lenovo": ["Lenovo Group"],
+  "Cisco Systems": ["Cisco"],
+  "Super Micro Computer": ["Supermicro", "Super Micro"],
+  "Databricks": [],
+  "Oracle": ["Oracle Corporation"],
+  "Salesforce": ["Salesforce.com", "salesforce.com"],
+  "Snowflake": ["Snowflake Inc"],
+  "SAP": ["SAP SE"],
+  "Workday": [],
+  "ServiceNow": [],
+  "Adobe": ["Adobe Inc"]
+}
