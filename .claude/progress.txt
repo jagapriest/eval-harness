@@ -134,3 +134,24 @@ Metrics, bucket breakout, bootstrap CIs.
   2.5% quantile lands on the same discrete value. Seed sensitivity is not a
   required property; determinism is. Replaced with a stability test.
 ---
+
+## 2026-08-23 - US-009
+Report rendering and the two charts.
+- Added src/report.py, tests/test_report.py; 164 tests passing
+- render_markdown emits an explicit "aggregate F1 X conceals Y on bucket Z" line
+  whenever the worst bucket underperforms the aggregate. The breakout is not
+  something a reader has to go looking for.
+- Exactly two charts, asserted by a test that counts *.png in the output dir
+- dropped_coverage renders a "Coverage dropped" section; silent truncation reads
+  as complete coverage when it is not
+- A "JSON recovery" table reports direct/fence/regex/failed counts so an
+  intermittently load-bearing fallback shows up in the report, not just the logs
+
+**Learnings for future iterations:**
+- matplotlib is imported INSIDE the chart functions with matplotlib.use("Agg")
+  set first. Importing at module scope pulls a GUI backend into every test run
+  and slows the suite; Agg keeps it headless.
+- Charts must tolerate a config that lacks a bucket another config has. Tested.
+- Bucket ordering is canonical (clean, ambiguous, adversarial, empty, long) with
+  unknown buckets appended, so report diffs between runs stay readable.
+---
