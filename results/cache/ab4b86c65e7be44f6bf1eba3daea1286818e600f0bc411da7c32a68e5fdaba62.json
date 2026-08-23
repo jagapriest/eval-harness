@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Intel Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Nvidia Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Altera\", \"role\": \"competitor\"},\n    {\"name\": \"Arm\", \"role\": \"competitor\"},\n    {\"name\": \"Lattice Semiconductor Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Microsemi Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Broadcom Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Marvell Technology Group, Ltd.\", \"role\": \"competitor\"},\n    {\"name\": \"Analog Devices\", \"role\": \"competitor\"},\n    {\"name\": \"Texas Instruments Incorporated\", \"role\": \"competitor\"},\n    {\"name\": \"NXP Semiconductors N.V.\", \"role\": \"competitor\"},\n    {\"name\": \"Qualcomm Incorporated\", \"role\": \"competitor\"},\n    {\"name\": \"Taiwan Semiconductor Manufacturing Company Limited\", \"role\": \"supplier\"},\n    {\"name\": \"GLOBALFOUNDRIES Inc.\", \"role\": \"supplier\"},\n    {\"name\": \"United Microelectronics Corporation\", \"role\": \"supplier\"},\n    {\"name\": \"Samsung Electronics Co., Ltd.\", \"role\": \"supplier\"},\n    {\"name\": \"Tongfu Microelectronics Co., Ltd.\", \"role\": \"supplier\"},\n    {\"name\": \"Siliconware Precision Industries Ltd.\", \"role\": \"supplier\"},\n    {\"name\": \"King Yuan Electronics Company\", \"role\": \"supplier\"}\n  ],\n  \"summary\": \"This document names semiconductor competitors, wafer foundry and manufacturing suppliers, and joint venture partners in AMD's business operations.\"\n}\n```",
+  "input_tokens": 4285,
+  "output_tokens": 401,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.289,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

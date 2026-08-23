@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Amazon Web Services LLC\", \"role\": \"competitor\"},\n    {\"name\": \"Arista Networks, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Broadcom Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Ciena Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"CrowdStrike Holdings, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Datadog Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Dell Technologies Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Dynatrace Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Fortinet, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Hewlett-Packard Enterprise Company\", \"role\": \"competitor\"},\n    {\"name\": \"Huawei Technologies Co., Ltd.\", \"role\": \"competitor\"},\n    {\"name\": \"Microsoft Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"New Relic, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Nokia Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Nvidia Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Palo Alto Networks, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"RingCentral, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Zoom Video Communications, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Zscaler, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"International Organization for Standardization\", \"role\": \"other\"},\n    {\"name\": \"Fortune\", \"role\": \"analyst\"},\n    {\"name\": \"Great Place to Work\", \"role\": \"analyst\"},\n    {\"name\": \"Cisco\", \"role\": \"self\"},\n    {\"name\": \"Splunk\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names Cisco as the filer, lists numerous networking and technology competitors, identifies analyst firms recognizing Cisco as an employer, and references a company acquired during fiscal 2024.\"\n}\n```",
+  "input_tokens": 4149,
+  "output_tokens": 492,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.534,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

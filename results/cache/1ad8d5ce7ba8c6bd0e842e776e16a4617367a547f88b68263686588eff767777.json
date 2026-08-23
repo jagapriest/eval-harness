@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"Alphabet Inc.\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Google\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"YouTube\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Google Play\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Google Cloud Platform\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Google Workspace\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Google Cloud\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Vertex AI\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Gemini\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"X\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Waymo\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"NFL\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"SEC\",\n      \"role\": \"other\"\n    }\n  ],\n  \"summary\": \"This document names Alphabet Inc. and its various business divisions, subsidiaries, and products (Google, YouTube, Google Cloud, Waymo, X), along with the NFL and SEC as external entities, but does not identify specific named competitors, customers, suppliers, or partners.\"\n}\n```",
+  "input_tokens": 4123,
+  "output_tokens": 383,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.793,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

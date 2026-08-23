@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Microsoft\", \"role\": \"competitor\"},\n    {\"name\": \"Oracle\", \"role\": \"competitor\"},\n    {\"name\": \"SAP\", \"role\": \"competitor\"},\n    {\"name\": \"Salesforce\", \"role\": \"competitor\"},\n    {\"name\": \"Workday\", \"role\": \"competitor\"},\n    {\"name\": \"SEC\", \"role\": \"other\"},\n    {\"name\": \"ServiceNow\", \"role\": \"self\"}\n  ],\n  \"summary\": \"This document names the filing company ServiceNow, its direct enterprise software competitors, and the regulatory body that oversees its securities filings.\"\n}\n```",
+  "input_tokens": 4089,
+  "output_tokens": 159,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 1.607,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

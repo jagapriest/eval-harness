@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"CrowdStrike\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"AWS\",\n      \"role\": \"partner\"\n    },\n    {\n      \"name\": \"Google Marketplace\",\n      \"role\": \"partner\"\n    },\n    {\n      \"name\": \"Microsoft Marketplace\",\n      \"role\": \"partner\"\n    },\n    {\n      \"name\": \"CrowdStrike Store\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"CrowdStrike Foundation\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"McAfee, Inc.\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Foundstone, Inc.\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Hewlett Packard Enterprise\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"OpenDNS, Inc.\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Cisco\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Net Optics, Inc.\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Ixia\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"McAfee Corp.\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Forbes Technology Counsel\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Seton Hall University\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"McGill University\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Edith Cowan University\",\n      \"role\": \"other\"\n    }\n  ],\n  \"summary\": \"This document names CrowdStrike as the filer, marketplace and cloud partners (AWS, Google, Microsoft), acquired companies and former employers of executives, educational institutions, and nonprofit organizations affiliated with company leadership.\"\n}\n```",
+  "input_tokens": 4213,
+  "output_tokens": 529,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 5.026,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

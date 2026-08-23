@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[{\"name\":\"Dell EMC\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"},{\"name\":\"NetApp\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"},{\"name\":\"Hitachi Vantara\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"},{\"name\":\"HP Enterprise\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"},{\"name\":\"IBM\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"},{\"name\":\"Huawei\",\"evidence\":\"intense competition from a number of established companies that sell competing storage products, including Dell EMC, HP Enterprise, Huawei, Hitachi Vantara, IBM, and NetApp\",\"confidence\":\"high\"}],\"summary\":\"The filing describes an intensely competitive data storage market where the company competes primarily with legacy enterprise storage vendors: Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, IBM and Huawei. It also references unnamed categories such as cloud providers, hyperconverged vendors, and startups, which are not extractable. Companies like VMware, Microsoft, AWS, Google, Commvault, Rubrik, Veeam, Cisco and NVIDIA appear only as technology/alliance partners and are excluded.\"}",
+  "input_tokens": 18670,
+  "output_tokens": 660,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 7.559,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

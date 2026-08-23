@@ -1,0 +1,141 @@
+{
+  "case_id": "clean_009",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_009.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Arista Networks",
+    "cik": "0001596532",
+    "filing_date": "2026-02-17",
+    "words": 3000,
+    "org_mentions": 2,
+    "proposed": [
+      "Cisco",
+      "Dell/EMC",
+      "Extreme Networks",
+      "Hewlett Packard Enterprise",
+      "Huawei",
+      "Juniper Networks",
+      "Nvidia",
+      "Darktrace",
+      "ExtraHop",
+      "Gigamon",
+      "Keysight",
+      "Netscout"
+    ],
+    "proposed_must_not_include": [
+      "Jabil Inc.",
+      "Sanmina Corporation",
+      "Foxconn Hon Hai",
+      "Broadcom",
+      "VMware",
+      "Forbes",
+      "Time Magazine",
+      "Comparably",
+      "Most Loved Workplace",
+      "Securities and Exchange Commission"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Arista",
+        "role": "self"
+      },
+      {
+        "name": "Jabil Inc.",
+        "role": "supplier"
+      },
+      {
+        "name": "Sanmina Corporation",
+        "role": "supplier"
+      },
+      {
+        "name": "Foxconn Hon Hai",
+        "role": "supplier"
+      },
+      {
+        "name": "Broadcom",
+        "role": "supplier"
+      },
+      {
+        "name": "Cisco",
+        "role": "competitor"
+      },
+      {
+        "name": "Dell/EMC",
+        "role": "competitor"
+      },
+      {
+        "name": "Extreme Networks",
+        "role": "competitor"
+      },
+      {
+        "name": "Hewlett Packard Enterprise",
+        "role": "competitor"
+      },
+      {
+        "name": "Huawei",
+        "role": "competitor"
+      },
+      {
+        "name": "Juniper Networks",
+        "role": "competitor"
+      },
+      {
+        "name": "Nvidia",
+        "role": "competitor"
+      },
+      {
+        "name": "VMware",
+        "role": "other"
+      },
+      {
+        "name": "Darktrace",
+        "role": "competitor"
+      },
+      {
+        "name": "ExtraHop",
+        "role": "competitor"
+      },
+      {
+        "name": "Gigamon",
+        "role": "competitor"
+      },
+      {
+        "name": "Keysight",
+        "role": "competitor"
+      },
+      {
+        "name": "Netscout",
+        "role": "competitor"
+      },
+      {
+        "name": "Forbes",
+        "role": "analyst"
+      },
+      {
+        "name": "Time Magazine",
+        "role": "analyst"
+      },
+      {
+        "name": "Comparably",
+        "role": "analyst"
+      },
+      {
+        "name": "Most Loved Workplace",
+        "role": "analyst"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_009` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

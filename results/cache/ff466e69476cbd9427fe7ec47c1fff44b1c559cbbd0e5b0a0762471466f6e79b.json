@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[{\"name\":\"IBM\",\"evidence\":\"We primarily compete with established legacy database software providers such as IBM, Microsoft, Oracle and other similar companies.\",\"confidence\":\"high\"},{\"name\":\"Microsoft\",\"evidence\":\"We primarily compete with established legacy database software providers such as IBM, Microsoft, Oracle and other similar companies.\",\"confidence\":\"high\"},{\"name\":\"Oracle\",\"evidence\":\"We primarily compete with established legacy database software providers such as IBM, Microsoft, Oracle and other similar companies.\",\"confidence\":\"high\"},{\"name\":\"AWS\",\"evidence\":\"We also compete with public cloud providers that offer database functionality, such as AWS, GCP and Microsoft Azure\",\"confidence\":\"high\"},{\"name\":\"GCP (Google Cloud Platform)\",\"evidence\":\"We also compete with public cloud providers that offer database functionality, such as AWS, GCP and Microsoft Azure\",\"confidence\":\"high\"},{\"name\":\"Microsoft Azure\",\"evidence\":\"We also compete with public cloud providers that offer database functionality, such as AWS, GCP and Microsoft Azure\",\"confidence\":\"high\"}],\"summary\":\"MongoDB describes the worldwide database software market as rapidly evolving and highly competitive, naming legacy database vendors IBM, Microsoft and Oracle as primary competitors. It also competes with public cloud providers offering database functionality \u2014 AWS, GCP and Microsoft Azure \u2014 which have greater resources and can bundle offerings. Other references, such as strategic partners and unnamed 'other database software providers,' are excluded.\"}",
+  "input_tokens": 7078,
+  "output_tokens": 538,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 5.878,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

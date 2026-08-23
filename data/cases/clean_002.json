@@ -2,46 +2,185 @@
   "case_id": "clean_002",
   "bucket": "clean",
   "source_path": "data/docs/clean_002.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Marvell Technology",
+    "cik": "0001835632",
+    "filing_date": "2026-03-11",
+    "words": 3000,
+    "org_mentions": 13,
+    "proposed": [
+      "Advanced Micro Devices, Inc.",
+      "Alchip Technologies",
+      "Astera Labs, Inc.",
+      "Ayar Labs, Inc.",
+      "Broadcom Inc.",
+      "Cisco Systems, Inc.",
+      "Credo Technology Group Holding Ltd",
+      "Intel Corporation",
+      "Global Unichip Corporation",
+      "Lightmatter, Inc.",
+      "MACOM Technology Solutions Holdings, Inc.",
+      "MediaTek Inc.",
+      "Microchip Technology Inc.",
+      "Montage Technology",
+      "Nvidia Corporation",
+      "NXP Semiconductors N.V.",
+      "Phison Electronics Corporation",
+      "Qualcomm Incorporated",
+      "Rambus, Inc.",
+      "Ranovus Inc.",
+      "Realtek Semiconductor Corporation",
+      "Semtech Corporation",
+      "Silicon Motion Technology Corporation",
+      "Socionext Inc."
+    ],
+    "proposed_must_not_include": [],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Advanced Micro Devices, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "AMD",
+        "role": "competitor"
+      },
+      {
+        "name": "Alchip Technologies",
+        "role": "competitor"
+      },
+      {
+        "name": "Alchip",
+        "role": "competitor"
+      },
+      {
+        "name": "Astera Labs, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Ayar Labs, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Ayar Labs",
+        "role": "competitor"
+      },
+      {
+        "name": "Broadcom Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Broadcom",
+        "role": "competitor"
+      },
+      {
+        "name": "Cisco Systems, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Cisco",
+        "role": "competitor"
+      },
+      {
+        "name": "Credo Technology Group Holding Ltd",
+        "role": "competitor"
+      },
+      {
+        "name": "Intel Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Global Unichip Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "GUC",
+        "role": "competitor"
+      },
+      {
+        "name": "Lightmatter, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Lightmatter",
+        "role": "competitor"
+      },
+      {
+        "name": "MACOM Technology Solutions Holdings, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "MediaTek Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Microchip Technology Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Montage Technology",
+        "role": "competitor"
+      },
+      {
+        "name": "Nvidia Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "NXP Semiconductors N.V.",
+        "role": "competitor"
+      },
+      {
+        "name": "Phison Electronics Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Qualcomm Incorporated",
+        "role": "competitor"
+      },
+      {
+        "name": "Qualcomm",
+        "role": "competitor"
+      },
+      {
+        "name": "Rambus, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Ranovus Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Ranovus",
+        "role": "competitor"
+      },
+      {
+        "name": "Realtek Semiconductor Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Semtech Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Silicon Motion Technology Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Socionext Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Marvell",
+        "role": "self"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_002` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
   "expected": {
-    "competitors": [
-      "Dell Technologies",
-      "Super Micro Computer",
-      "Cisco Systems",
-      "Lenovo Group",
-      "Fujitsu Network Communications",
-      "Atos Information Technology",
-      "Broadcom",
-      "IBM",
-      "NetApp",
-      "Nutanix",
-      "Pure Storage",
-      "Amazon Web Services",
-      "Google Cloud",
-      "Microsoft Azure",
-      "Arista Networks",
-      "Nokia",
-      "Huawei Technologies",
-      "Ciena",
-      "NVIDIA",
-      "Extreme Networks",
-      "Palo Alto Networks",
-      "Fortinet",
-      "Zscaler",
-      "Netskope",
-      "Ruckus Networks",
-      "Ubiquiti",
-      "Nile",
-      "Meter"
-    ],
-    "must_not_include": [
-      "VMware",
-      "Oracle",
-      "Hitachi Vantara",
-      "Quantum Corporation",
-      "Seagate Technology",
-      "Western Digital",
-      "Juniper Networks"
-    ],
-    "notes": "JUDGMENT CALL: the ITAD names (ERI, Ingram Micro, Sage Sustainable Electronics, Sims Recycling Solutions) compete with HPE Financial Services, an adjacency -- not the document's primary enterprise IT infrastructure market. PRD S3 says 'competing in the document's primary market', which would exclude them. Included here because the document explicitly labels them 'our primary ITAD competitors'; the definition is genuinely ambiguous for multi-segment filers and needs an owner ruling. VMware is in must_not_include because the document names Broadcom (its acquirer) -- a model substituting the better-known brand is a precision failure worth catching. LABEL CORRECTION (post-spike): first-pass labeling missed 5 named competitors -- Nile and Meter (networking-as-a-service) and IBM Global Financing, Dell Financial Services, Cisco Capital (HPE Financial Services). All five were surfaced by the model and verified in the source text. The financing trio compounds the multi-segment ambiguity noted above. OWNER RULING (2026-08-22): PRIMARY MARKET ONLY. The 7 HPE Financial Services names -- ERI, Ingram Micro, Sage Sustainable Electronics, Sims Recycling Solutions, IBM Global Financing, Dell Financial Services, Cisco Capital -- compete in ITAD and captive financing, not in the document's primary enterprise IT infrastructure market, and are EXCLUDED from expected. They are real named competitors, so they are recorded here for provenance but deliberately NOT added to must_not_include: extracting one is an out-of-scope error, not a fabrication, and the two should stay distinguishable when reviewing failures."
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
   }
 }

@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"IBM\", \"role\": \"competitor\"},\n    {\"name\": \"Microsoft\", \"role\": \"competitor\"},\n    {\"name\": \"Oracle\", \"role\": \"competitor\"},\n    {\"name\": \"AWS\", \"role\": \"competitor\"},\n    {\"name\": \"GCP\", \"role\": \"competitor\"},\n    {\"name\": \"Microsoft Azure\", \"role\": \"competitor\"},\n    {\"name\": \"MongoDB, Inc.\", \"role\": \"self\"},\n    {\"name\": \"Nasdaq\", \"role\": \"other\"},\n    {\"name\": \"U.S. Securities and Exchange Commission\", \"role\": \"regulator\"},\n    {\"name\": \"SEC\", \"role\": \"regulator\"}\n  ],\n  \"summary\": \"This document names MongoDB (the filer), its major database software competitors (IBM, Microsoft, Oracle, AWS, GCP, Azure), and regulatory bodies (SEC, Nasdaq) that oversee its operations.\"\n}\n```",
+  "input_tokens": 4005,
+  "output_tokens": 223,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.184,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

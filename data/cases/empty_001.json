@@ -1,0 +1,29 @@
+{
+  "case_id": "empty_001",
+  "bucket": "empty",
+  "source_path": "data/docs/empty_001.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Adobe",
+    "cik": "0000796343",
+    "filing_date": "2026-01-15",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Adobe",
+        "role": "self"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case empty_001` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

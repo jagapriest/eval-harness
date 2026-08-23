@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"International Business Machines Corporation\", \"role\": \"self\"},\n    {\"name\": \"IBM\", \"role\": \"self\"},\n    {\"name\": \"Computing-Tabulating-Recording Co.\", \"role\": \"self\"},\n    {\"name\": \"C-T-R\", \"role\": \"self\"},\n    {\"name\": \"Computing Scale Co. of America\", \"role\": \"self\"},\n    {\"name\": \"Tabulating Machine Co.\", \"role\": \"self\"},\n    {\"name\": \"The International Time Recording Co. of New York\", \"role\": \"self\"},\n    {\"name\": \"Adobe\", \"role\": \"partner\"},\n    {\"name\": \"Amazon Web Services\", \"role\": \"partner\"},\n    {\"name\": \"AWS\", \"role\": \"partner\"},\n    {\"name\": \"Microsoft\", \"role\": \"partner\"},\n    {\"name\": \"Oracle\", \"role\": \"partner\"},\n    {\"name\": \"Palo Alto Networks\", \"role\": \"partner\"},\n    {\"name\": \"Salesforce\", \"role\": \"partner\"},\n    {\"name\": \"Samsung Electronics\", \"role\": \"partner\"},\n    {\"name\": \"SAP\", \"role\": \"partner\"},\n    {\"name\": \"Alphabet\", \"role\": \"competitor\"},\n    {\"name\": \"Google\", \"role\": \"competitor\"},\n    {\"name\": \"Amazon\", \"role\": \"competitor\"},\n    {\"name\": \"BMC\", \"role\": \"competitor\"},\n    {\"name\": \"Broadcom\", \"role\": \"competitor\"},\n    {\"name\": \"Splunk\", \"role\": \"competitor\"},\n    {\"name\": \"CISCO Company\", \"role\": \"competitor\"},\n    {\"name\": \"Accenture\", \"role\": \"competitor\"},\n    {\"name\": \"Capgemini\", \"role\": \"competitor\"},\n    {\"name\": \"Dell Technologies\", \"role\": \"competitor\"},\n    {\"name\": \"Hewlett-Packard Enterprise\", \"role\": \"competitor\"},\n    {\"name\": \"HPE\", \"role\": \"competitor\"},\n    {\"name\": \"Intel\", \"role\": \"competitor\"},\n    {\"name\": \"NetApp\", \"role\": \"competitor\"},\n    {\"name\": \"Pure Storage\", \"role\": \"competitor\"},\n    {\"name\": \"Securities and Exchange Commission\", \"role\": \"regulator\"},\n    {\"name\": \"SEC\", \"role\": \"regulator\"},\n    {\"name\": \"The Vanguard Group, Inc.\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names IBM's strategic partners, competitors across software/consulting/infrastructure/financing segments, regulatory bodies, and one former employer of an executive officer.\"\n}\n```",
+  "input_tokens": 4449,
+  "output_tokens": 612,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 4.133,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

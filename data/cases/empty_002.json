@@ -1,0 +1,80 @@
+{
+  "case_id": "empty_002",
+  "bucket": "empty",
+  "source_path": "data/docs/empty_002.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Alphabet",
+    "cik": "0001652044",
+    "filing_date": "2026-02-05",
+    "words": 3000,
+    "org_mentions": 1,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "NFL",
+      "SEC"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Alphabet Inc.",
+        "role": "self"
+      },
+      {
+        "name": "Google",
+        "role": "self"
+      },
+      {
+        "name": "YouTube",
+        "role": "self"
+      },
+      {
+        "name": "Google Play",
+        "role": "self"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "role": "self"
+      },
+      {
+        "name": "Google Workspace",
+        "role": "self"
+      },
+      {
+        "name": "Google Cloud",
+        "role": "self"
+      },
+      {
+        "name": "Vertex AI",
+        "role": "self"
+      },
+      {
+        "name": "Gemini",
+        "role": "self"
+      },
+      {
+        "name": "X",
+        "role": "self"
+      },
+      {
+        "name": "Waymo",
+        "role": "self"
+      },
+      {
+        "name": "NFL",
+        "role": "other"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case empty_002` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

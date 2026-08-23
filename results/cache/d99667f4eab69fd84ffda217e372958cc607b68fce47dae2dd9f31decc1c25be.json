@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"Amazon's 10-K describes an intensely competitive landscape spanning retail, e-commerce services, cloud/infrastructure computing, devices, digital content, advertising, grocery, logistics, and healthcare, but it enumerates only broad categories of current and potential competitors. No specific rival company is named anywhere in the competition discussion or risk factors; companies mentioned elsewhere (e.g., IronNet, Goldman Sachs, PepsiCo, Corning) appear solely in director biographies.\"}",
+  "input_tokens": 7926,
+  "output_tokens": 183,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.97,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

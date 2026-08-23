@@ -1,0 +1,50 @@
+{
+  "case_id": "adversarial_005",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_005.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Cloudflare",
+    "cik": "0001477333",
+    "filing_date": "2026-02-26",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "Newsweek",
+      "Best Practice Institute",
+      "Securities and Exchange Commission",
+      "SEC"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Cloudflare",
+        "role": "self"
+      },
+      {
+        "name": "Newsweek",
+        "role": "analyst"
+      },
+      {
+        "name": "Best Practice Institute",
+        "role": "analyst"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "regulator"
+      },
+      {
+        "name": "SEC",
+        "role": "regulator"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_005` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

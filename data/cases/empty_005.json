@@ -1,0 +1,164 @@
+{
+  "case_id": "empty_005",
+  "bucket": "empty",
+  "source_path": "data/docs/empty_005.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Microsoft",
+    "cik": "0000789019",
+    "filing_date": "2026-07-29",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "Nuance",
+      "Microsoft Partner Network"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Microsoft",
+        "role": "self"
+      },
+      {
+        "name": "LinkedIn",
+        "role": "self"
+      },
+      {
+        "name": "GitHub",
+        "role": "self"
+      },
+      {
+        "name": "Nuance",
+        "role": "other"
+      },
+      {
+        "name": "Azure",
+        "role": "self"
+      },
+      {
+        "name": "Office",
+        "role": "self"
+      },
+      {
+        "name": "Windows",
+        "role": "self"
+      },
+      {
+        "name": "Dynamics",
+        "role": "self"
+      },
+      {
+        "name": "Power BI",
+        "role": "self"
+      },
+      {
+        "name": "Exchange",
+        "role": "self"
+      },
+      {
+        "name": "SharePoint",
+        "role": "self"
+      },
+      {
+        "name": "Microsoft Teams",
+        "role": "self"
+      },
+      {
+        "name": "Power Apps",
+        "role": "self"
+      },
+      {
+        "name": "Power Automate",
+        "role": "self"
+      },
+      {
+        "name": "Outlook.com",
+        "role": "self"
+      },
+      {
+        "name": "OneDrive",
+        "role": "self"
+      },
+      {
+        "name": "Bing",
+        "role": "self"
+      },
+      {
+        "name": "Microsoft Edge",
+        "role": "self"
+      },
+      {
+        "name": "Microsoft News",
+        "role": "self"
+      },
+      {
+        "name": "Copilot",
+        "role": "self"
+      },
+      {
+        "name": "SQL Server",
+        "role": "self"
+      },
+      {
+        "name": "Windows Server",
+        "role": "self"
+      },
+      {
+        "name": "Visual Studio",
+        "role": "self"
+      },
+      {
+        "name": "System Center",
+        "role": "self"
+      },
+      {
+        "name": "Surface",
+        "role": "self"
+      },
+      {
+        "name": "XBOX",
+        "role": "self"
+      },
+      {
+        "name": "XBOX Game Pass",
+        "role": "self"
+      },
+      {
+        "name": "Microsoft Defender for Endpoint",
+        "role": "self"
+      },
+      {
+        "name": "Enterprise Mobility + Security",
+        "role": "self"
+      },
+      {
+        "name": "Microsoft 365 Copilot",
+        "role": "self"
+      },
+      {
+        "name": "Azure AI Foundry",
+        "role": "self"
+      },
+      {
+        "name": "Microsoft Partner Network",
+        "role": "partner"
+      },
+      {
+        "name": "Enterprise Support Services",
+        "role": "self"
+      },
+      {
+        "name": "Health and Life Sciences",
+        "role": "self"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case empty_005` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

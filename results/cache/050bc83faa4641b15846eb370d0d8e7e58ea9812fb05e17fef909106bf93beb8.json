@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Arista\", \"role\": \"self\"},\n    {\"name\": \"Jabil Inc.\", \"role\": \"supplier\"},\n    {\"name\": \"Sanmina Corporation\", \"role\": \"supplier\"},\n    {\"name\": \"Foxconn Hon Hai\", \"role\": \"supplier\"},\n    {\"name\": \"Broadcom\", \"role\": \"supplier\"},\n    {\"name\": \"Cisco\", \"role\": \"competitor\"},\n    {\"name\": \"Dell/EMC\", \"role\": \"competitor\"},\n    {\"name\": \"Extreme Networks\", \"role\": \"competitor\"},\n    {\"name\": \"Hewlett Packard Enterprise\", \"role\": \"competitor\"},\n    {\"name\": \"Huawei\", \"role\": \"competitor\"},\n    {\"name\": \"Juniper Networks\", \"role\": \"competitor\"},\n    {\"name\": \"Nvidia\", \"role\": \"competitor\"},\n    {\"name\": \"VMware\", \"role\": \"other\"},\n    {\"name\": \"Darktrace\", \"role\": \"competitor\"},\n    {\"name\": \"ExtraHop\", \"role\": \"competitor\"},\n    {\"name\": \"Gigamon\", \"role\": \"competitor\"},\n    {\"name\": \"Keysight\", \"role\": \"competitor\"},\n    {\"name\": \"Netscout\", \"role\": \"competitor\"},\n    {\"name\": \"Forbes\", \"role\": \"analyst\"},\n    {\"name\": \"Time Magazine\", \"role\": \"analyst\"},\n    {\"name\": \"Comparably\", \"role\": \"analyst\"},\n    {\"name\": \"Most Loved Workplace\", \"role\": \"analyst\"},\n    {\"name\": \"Securities and Exchange Commission\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names manufacturing partners, component suppliers, competitors in networking and security markets, and analyst/recognition firms that have evaluated the company.\"\n}\n```",
+  "input_tokens": 4130,
+  "output_tokens": 436,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.268,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

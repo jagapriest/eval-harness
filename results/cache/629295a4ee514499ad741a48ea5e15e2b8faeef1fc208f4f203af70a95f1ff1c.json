@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Amazon\", \"role\": \"competitor\"},\n    {\"name\": \"AWS\", \"role\": \"competitor\"},\n    {\"name\": \"Microsoft\", \"role\": \"competitor\"},\n    {\"name\": \"Azure\", \"role\": \"competitor\"},\n    {\"name\": \"Google\", \"role\": \"competitor\"},\n    {\"name\": \"GCP\", \"role\": \"competitor\"},\n    {\"name\": \"IBM\", \"role\": \"competitor\"},\n    {\"name\": \"IBM Cloud\", \"role\": \"competitor\"},\n    {\"name\": \"Alibaba\", \"role\": \"competitor\"},\n    {\"name\": \"Alibaba Cloud\", \"role\": \"competitor\"},\n    {\"name\": \"Oracle\", \"role\": \"competitor\"},\n    {\"name\": \"Oracle Cloud\", \"role\": \"competitor\"},\n    {\"name\": \"OVHcloud\", \"role\": \"competitor\"},\n    {\"name\": \"Akamai\", \"role\": \"competitor\"},\n    {\"name\": \"Linode\", \"role\": \"competitor\"},\n    {\"name\": \"Hetzner\", \"role\": \"competitor\"},\n    {\"name\": \"Vultr\", \"role\": \"competitor\"},\n    {\"name\": \"Contabo\", \"role\": \"competitor\"},\n    {\"name\": \"Coreweave\", \"role\": \"competitor\"},\n    {\"name\": \"Lambda Labs\", \"role\": \"competitor\"},\n    {\"name\": \"Kinsta\", \"role\": \"competitor\"},\n    {\"name\": \"WP Engine\", \"role\": \"competitor\"},\n    {\"name\": \"DigitalOcean, Inc.\", \"role\": \"self\"},\n    {\"name\": \"DigitalOcean, LLC\", \"role\": \"self\"},\n    {\"name\": \"DigitalOcean Holdings, Inc.\", \"role\": \"self\"},\n    {\"name\": \"World Intellectual Property Organization\", \"role\": \"other\"},\n    {\"name\": \"U.S. Treasury Department's Office of Foreign Assets Control\", \"role\": \"other\"},\n    {\"name\": \"SEC\", \"role\": \"other\"},\n    {\"name\": \"New York Stock Exchange\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names the filer (DigitalOcean), its major cloud computing competitors (AWS, Microsoft Azure, Google Cloud, Oracle, Alibaba, IBM), smaller niche competitors (OVHcloud, Linode, Hetzner, Vultr, Contabo, Coreweave, Lambda Labs, Kinsta, WP Engine), and regulatory/standards bodies (SEC, NYSE, WIPO, OFAC).\"\n}\n```",
+  "input_tokens": 4174,
+  "output_tokens": 603,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 4.033,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

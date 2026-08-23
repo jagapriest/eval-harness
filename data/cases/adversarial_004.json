@@ -1,0 +1,165 @@
+{
+  "case_id": "adversarial_004",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_004.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Broadcom",
+    "cik": "0001730168",
+    "filing_date": "2025-12-18",
+    "words": 3000,
+    "org_mentions": 8,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "VMware",
+      "Symantec",
+      "Taiwan Semiconductor Manufacturing Company Limited",
+      "TSMC",
+      "Advanced Semiconductor Engineering, Inc.",
+      "Foxconn Technology Group",
+      "Amkor Technology, Inc.",
+      "Siliconware Precision Industries Co., Ltd.",
+      "Integrated Circuit Systems, Inc.",
+      "Integrated Device Technology, Inc.",
+      "Commodore International, Ltd.",
+      "PepsiCo, Inc.",
+      "General Motors Corporation",
+      "Pacven Investment, Ltd.",
+      "Hume Industries Ltd.",
+      "LSI Corporation",
+      "PricewaterhouseCoopers LLP",
+      "SanDisk Corporation",
+      "Western Digital Corporation",
+      "Broadcom Corporation",
+      "Wilson Sonsini Goodrich & Rosati PC",
+      "Yuasa & Hara",
+      "Howrey & Simon LLP",
+      "Nortel Networks Corporation",
+      "Securities and Exchange Commission",
+      "International Organization for Standardization",
+      "AON"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Broadcom",
+        "role": "self"
+      },
+      {
+        "name": "VMware",
+        "role": "other"
+      },
+      {
+        "name": "Symantec",
+        "role": "other"
+      },
+      {
+        "name": "Taiwan Semiconductor Manufacturing Company Limited",
+        "role": "supplier"
+      },
+      {
+        "name": "TSMC",
+        "role": "supplier"
+      },
+      {
+        "name": "Advanced Semiconductor Engineering, Inc.",
+        "role": "supplier"
+      },
+      {
+        "name": "Foxconn Technology Group",
+        "role": "supplier"
+      },
+      {
+        "name": "Amkor Technology, Inc.",
+        "role": "supplier"
+      },
+      {
+        "name": "Siliconware Precision Industries Co., Ltd.",
+        "role": "supplier"
+      },
+      {
+        "name": "Integrated Circuit Systems, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Integrated Device Technology, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Commodore International, Ltd.",
+        "role": "other"
+      },
+      {
+        "name": "PepsiCo, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "General Motors Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Pacven Investment, Ltd.",
+        "role": "other"
+      },
+      {
+        "name": "Hume Industries Ltd.",
+        "role": "other"
+      },
+      {
+        "name": "LSI Corporation",
+        "role": "other"
+      },
+      {
+        "name": "PricewaterhouseCoopers LLP",
+        "role": "other"
+      },
+      {
+        "name": "SanDisk Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Western Digital Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Broadcom Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Wilson Sonsini Goodrich & Rosati PC",
+        "role": "other"
+      },
+      {
+        "name": "Yuasa & Hara",
+        "role": "other"
+      },
+      {
+        "name": "Howrey & Simon LLP",
+        "role": "other"
+      },
+      {
+        "name": "Nortel Networks Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "other"
+      },
+      {
+        "name": "International Organization for Standardization",
+        "role": "other"
+      },
+      {
+        "name": "AON",
+        "role": "analyst"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_004` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

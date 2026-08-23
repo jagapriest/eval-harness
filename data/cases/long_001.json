@@ -1,0 +1,256 @@
+{
+  "case_id": "long_001",
+  "bucket": "long",
+  "source_path": "data/docs/long_001.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Hewlett Packard Enterprise (long)",
+    "cik": "0001645590",
+    "filing_date": "2025-12-18",
+    "words": 9000,
+    "org_mentions": 11,
+    "proposed": [
+      "Dell Technologies Inc.",
+      "Super Micro Computer, Inc.",
+      "Cisco Systems, Inc.",
+      "Lenovo Group Ltd.",
+      "Fujitsu Network Communications, Inc.",
+      "Atos Information Technology Incorporated",
+      "Broadcom",
+      "IBM",
+      "NetApp Inc.",
+      "Nutanix",
+      "Pure Storage",
+      "Amazon Web Services",
+      "Google Cloud",
+      "Microsoft Azure",
+      "Arista Networks Inc",
+      "Nokia Corporation",
+      "Huawei Technologies Co. Ltd.",
+      "Ciena Corporation",
+      "NVIDIA Corporation",
+      "Extreme Networks, Inc.",
+      "Palo Alto Networks",
+      "Fortinet, Inc.",
+      "Zscaler, Inc.",
+      "Netskope, Inc.",
+      "Ruckus Networks",
+      "Ubiquiti",
+      "Nile",
+      "Meter"
+    ],
+    "proposed_must_not_include": [
+      "VMware",
+      "Iron Mountain, Inc.",
+      "Elevance Health, Inc.",
+      "UiPath, Inc.",
+      "Fluor Corporation",
+      "Unilever",
+      "Juniper Networks, Inc.",
+      "Morgan, Lewis & Bockius LLP",
+      "Electronic Data Systems"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Dell Technologies Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Super Micro Computer, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Cisco Systems, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Lenovo Group Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Fujitsu Network Communications, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Atos Information Technology Incorporated",
+        "role": "competitor"
+      },
+      {
+        "name": "Broadcom",
+        "role": "competitor"
+      },
+      {
+        "name": "IBM",
+        "role": "competitor"
+      },
+      {
+        "name": "NetApp Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Nutanix",
+        "role": "competitor"
+      },
+      {
+        "name": "Pure Storage",
+        "role": "competitor"
+      },
+      {
+        "name": "Amazon Web Services",
+        "role": "competitor"
+      },
+      {
+        "name": "Google Cloud",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft Azure",
+        "role": "competitor"
+      },
+      {
+        "name": "Arista Networks Inc",
+        "role": "competitor"
+      },
+      {
+        "name": "Nokia Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Huawei Technologies Co. Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Ciena Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "NVIDIA Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Extreme Networks, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Palo Alto Networks",
+        "role": "competitor"
+      },
+      {
+        "name": "Fortinet, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Zscaler, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Netskope, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Ruckus Networks",
+        "role": "competitor"
+      },
+      {
+        "name": "Ubiquiti",
+        "role": "competitor"
+      },
+      {
+        "name": "Nile",
+        "role": "competitor"
+      },
+      {
+        "name": "Meter",
+        "role": "competitor"
+      },
+      {
+        "name": "IBM Global Financing",
+        "role": "competitor"
+      },
+      {
+        "name": "Dell Financial Services",
+        "role": "competitor"
+      },
+      {
+        "name": "Cisco Capital",
+        "role": "competitor"
+      },
+      {
+        "name": "ERI",
+        "role": "competitor"
+      },
+      {
+        "name": "Ingram Micro",
+        "role": "competitor"
+      },
+      {
+        "name": "Sage Sustainable Electronics",
+        "role": "competitor"
+      },
+      {
+        "name": "Sims Recycling Solutions",
+        "role": "competitor"
+      },
+      {
+        "name": "VMware",
+        "role": "other"
+      },
+      {
+        "name": "Iron Mountain, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Elevance Health, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "UiPath, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Fluor Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Unilever",
+        "role": "other"
+      },
+      {
+        "name": "Juniper Networks, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Morgan, Lewis & Bockius LLP",
+        "role": "other"
+      },
+      {
+        "name": "Electronic Data Systems",
+        "role": "other"
+      },
+      {
+        "name": "HP Co.",
+        "role": "self"
+      },
+      {
+        "name": "HP Inc.",
+        "role": "self"
+      },
+      {
+        "name": "Hewlett Packard Enterprise",
+        "role": "self"
+      },
+      {
+        "name": "HPE",
+        "role": "self"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case long_001` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

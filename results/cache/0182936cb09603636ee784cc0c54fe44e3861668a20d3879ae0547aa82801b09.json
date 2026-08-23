@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"NetApp\", \"role\": \"self\"},\n    {\"name\": \"International Organization for Standardization\", \"role\": \"other\"},\n    {\"name\": \"U.S. Customs and Border Protection\", \"role\": \"other\"},\n    {\"name\": \"Responsible Business Alliance\", \"role\": \"other\"},\n    {\"name\": \"Cisco Systems\", \"role\": \"other\"},\n    {\"name\": \"Akamai Technologies\", \"role\": \"other\"},\n    {\"name\": \"McKinsey and Company\", \"role\": \"other\"},\n    {\"name\": \"Oracle Corporation\", \"role\": \"other\"},\n    {\"name\": \"Cigna Corporation\", \"role\": \"other\"},\n    {\"name\": \"Princeton University\", \"role\": \"other\"},\n    {\"name\": \"Stanford University\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names NetApp as the filer, along with its competitors, partners, standards bodies, and organizations associated with its executives' backgrounds and board memberships.\"\n}\n```",
+  "input_tokens": 4220,
+  "output_tokens": 246,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.835,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

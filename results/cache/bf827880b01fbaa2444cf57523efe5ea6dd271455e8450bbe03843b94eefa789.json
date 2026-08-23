@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"The document (Broadcom's 10-K) describes competition only in generic category terms \u2014 integrated device manufacturers, fabless semiconductor companies, internal resources of large integrated OEMs, and large enterprise software vendors \u2014 without naming any specific competing company. Companies that are named, such as TSMC, Amkor, Foxconn, ASE and Siliconware, appear as foundry/assembly suppliers and contract manufacturers, while LSI, SanDisk and Integrated Circuit Systems appear only in executive biographies or historical acquisition context. Therefore no qualifying competitors can be extracted.\"}",
+  "input_tokens": 7463,
+  "output_tokens": 214,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.875,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

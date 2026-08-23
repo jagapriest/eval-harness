@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"Texas Instruments Incorporated\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Securities and Exchange Commission\",\n      \"role\": \"regulator\"\n    }\n  ],\n  \"summary\": \"This document names Texas Instruments as the filer and the SEC as a regulator, with no other named commercial entities, competitors, customers, suppliers, partners, or analysts specifically identified.\"\n}\n```",
+  "input_tokens": 4206,
+  "output_tokens": 116,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.228,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

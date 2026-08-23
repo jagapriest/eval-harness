@@ -1,0 +1,139 @@
+{
+  "case_id": "ambiguous_003",
+  "bucket": "ambiguous",
+  "source_path": "data/docs/ambiguous_003.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Workday",
+    "cik": "0001327811",
+    "filing_date": "2026-03-06",
+    "words": 3000,
+    "org_mentions": 4,
+    "proposed": [
+      "Oracle Corporation",
+      "SAP SE",
+      "Anaplan, Inc.",
+      "Automatic Data Processing, Inc. (ADP)",
+      "Coupa Software Inc.",
+      "Dayforce, Inc.",
+      "Microsoft Corporation",
+      "NetSuite",
+      "ServiceNow, Inc.",
+      "UKG Inc."
+    ],
+    "proposed_must_not_include": [
+      "Amazon Web Services, Inc.",
+      "AWS",
+      "Google Cloud",
+      "ADP",
+      "Remote Technology, Inc.",
+      "Strada",
+      "Securities and Exchange Commission",
+      "SEC"
+    ],
+    "role_conflicts": [
+      "Microsoft Corporation (partner)"
+    ],
+    "disputed": [
+      "Automatic Data Processing, Inc. (extracted as competitor, entities say partner)",
+      "Microsoft Corporation (extracted as competitor, entities say partner)",
+      "Microsoft (extracted as competitor, entities say partner)"
+    ],
+    "entities": [
+      {
+        "name": "Workday",
+        "role": "self"
+      },
+      {
+        "name": "Amazon Web Services, Inc.",
+        "role": "partner"
+      },
+      {
+        "name": "AWS",
+        "role": "partner"
+      },
+      {
+        "name": "Google Cloud",
+        "role": "partner"
+      },
+      {
+        "name": "Automatic Data Processing, Inc.",
+        "role": "partner"
+      },
+      {
+        "name": "ADP",
+        "role": "partner"
+      },
+      {
+        "name": "Remote Technology, Inc.",
+        "role": "partner"
+      },
+      {
+        "name": "Strada",
+        "role": "partner"
+      },
+      {
+        "name": "Microsoft Corporation",
+        "role": "partner"
+      },
+      {
+        "name": "Microsoft",
+        "role": "partner"
+      },
+      {
+        "name": "Oracle Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Oracle",
+        "role": "competitor"
+      },
+      {
+        "name": "SAP SE",
+        "role": "competitor"
+      },
+      {
+        "name": "SAP",
+        "role": "competitor"
+      },
+      {
+        "name": "Anaplan, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Coupa Software Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Dayforce, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "NetSuite",
+        "role": "competitor"
+      },
+      {
+        "name": "ServiceNow, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "UKG Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "regulator"
+      },
+      {
+        "name": "SEC",
+        "role": "regulator"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case ambiguous_003` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

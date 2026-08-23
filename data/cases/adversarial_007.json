@@ -1,0 +1,114 @@
+{
+  "case_id": "adversarial_007",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_007.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "CrowdStrike",
+    "cik": "0001535527",
+    "filing_date": "2026-03-05",
+    "words": 3000,
+    "org_mentions": 1,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "AWS",
+      "Google Marketplace",
+      "Microsoft Marketplace",
+      "CrowdStrike Foundation",
+      "McAfee, Inc.",
+      "Foundstone, Inc.",
+      "Hewlett Packard Enterprise",
+      "OpenDNS, Inc.",
+      "Cisco",
+      "Net Optics, Inc.",
+      "Ixia",
+      "McAfee Corp.",
+      "Forbes Technology Counsel",
+      "Seton Hall University",
+      "McGill University",
+      "Edith Cowan University"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "CrowdStrike",
+        "role": "self"
+      },
+      {
+        "name": "AWS",
+        "role": "partner"
+      },
+      {
+        "name": "Google Marketplace",
+        "role": "partner"
+      },
+      {
+        "name": "Microsoft Marketplace",
+        "role": "partner"
+      },
+      {
+        "name": "CrowdStrike Store",
+        "role": "self"
+      },
+      {
+        "name": "CrowdStrike Foundation",
+        "role": "other"
+      },
+      {
+        "name": "McAfee, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Foundstone, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Hewlett Packard Enterprise",
+        "role": "other"
+      },
+      {
+        "name": "OpenDNS, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Cisco",
+        "role": "other"
+      },
+      {
+        "name": "Net Optics, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Ixia",
+        "role": "other"
+      },
+      {
+        "name": "McAfee Corp.",
+        "role": "other"
+      },
+      {
+        "name": "Forbes Technology Counsel",
+        "role": "other"
+      },
+      {
+        "name": "Seton Hall University",
+        "role": "other"
+      },
+      {
+        "name": "McGill University",
+        "role": "other"
+      },
+      {
+        "name": "Edith Cowan University",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_007` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

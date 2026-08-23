@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Responsible Business Alliance\", \"role\": \"partner\"},\n    {\"name\": \"Responsible Minerals Initiative\", \"role\": \"partner\"},\n    {\"name\": \"CDP Supply Chain program\", \"role\": \"partner\"},\n    {\"name\": \"United Nations Global Compact\", \"role\": \"other\"},\n    {\"name\": \"Cisco Systems, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Arista Networks, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Ciena Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Extreme Networks\", \"role\": \"competitor\"},\n    {\"name\": \"Hewlett Packard Enterprise Co.\", \"role\": \"competitor\"},\n    {\"name\": \"Huawei Technologies Co., Ltd.\", \"role\": \"competitor\"},\n    {\"name\": \"Fortinet, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"CommScope\", \"role\": \"competitor\"},\n    {\"name\": \"Cambium Networks\", \"role\": \"competitor\"},\n    {\"name\": \"Nokia Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"NVIDIA Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Ubiquiti, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Nile\", \"role\": \"competitor\"},\n    {\"name\": \"Meter\", \"role\": \"competitor\"},\n    {\"name\": \"Palo Alto Networks, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Check Point Software Technologies, Ltd.\", \"role\": \"competitor\"},\n    {\"name\": \"Zscaler, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Netskope, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Forcepoint LLC\", \"role\": \"competitor\"},\n    {\"name\": \"Juniper Networks, Inc.\", \"role\": \"self\"},\n    {\"name\": \"Great Place to Work\", \"role\": \"analyst\"},\n    {\"name\": \"Ethisphere\", \"role\": \"analyst\"},\n    {\"name\": \"LinkedIn Learning\", \"role\": \"supplier\"}\n  ],\n  \"summary\": \"This document names Juniper Networks and its competitors in network infrastructure, along with supply chain partners, industry consortia, certification bodies, and technology suppliers.\"\n}\n```",
+  "input_tokens": 4166,
+  "output_tokens": 533,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.713,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

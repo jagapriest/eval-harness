@@ -1,0 +1,180 @@
+{
+  "case_id": "clean_005",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_005.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Oracle",
+    "cik": "0001341439",
+    "filing_date": "2026-06-22",
+    "words": 3000,
+    "org_mentions": 9,
+    "proposed": [
+      "Adobe Systems Incorporated",
+      "Alphabet Inc.",
+      "Amazon.com, Inc.",
+      "Cisco Systems, Inc.",
+      "Intel Corporation",
+      "International Business Machines Corporation",
+      "Microsoft Corporation",
+      "Salesforce, Inc.",
+      "SAP SE",
+      "Hewlett-Packard Enterprise",
+      "Workday, Inc.",
+      "Allscripts Healthcare Solutions, Inc.",
+      "Arcadia Solutions",
+      "athenahealth, Inc.",
+      "Epic Systems Corporation",
+      "InterSystems Corporation"
+    ],
+    "proposed_must_not_include": [
+      "Cerner Corporation",
+      "Design Tech High School",
+      "Schneider Electric SE",
+      "General Electric",
+      "Anglo American plc",
+      "Paramount Skydance Corporation",
+      "The Walt Disney Company",
+      "Diem Association",
+      "HSBC Holdings, plc",
+      "Primavera Systems",
+      "SEC"
+    ],
+    "role_conflicts": [],
+    "disputed": [
+      "Amazon Web Services (extracted as competitor, entities say other)"
+    ],
+    "entities": [
+      {
+        "name": "Oracle",
+        "role": "self"
+      },
+      {
+        "name": "Adobe Systems Incorporated",
+        "role": "competitor"
+      },
+      {
+        "name": "Alphabet Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Amazon.com, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Cisco Systems, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Intel Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "International Business Machines Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Salesforce, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "SAP SE",
+        "role": "competitor"
+      },
+      {
+        "name": "Hewlett-Packard Enterprise",
+        "role": "competitor"
+      },
+      {
+        "name": "Workday, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Allscripts Healthcare Solutions, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Arcadia Solutions",
+        "role": "competitor"
+      },
+      {
+        "name": "athenahealth, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Epic Systems Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "InterSystems Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Cerner Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Design Tech High School",
+        "role": "other"
+      },
+      {
+        "name": "Oracle Health Foundation",
+        "role": "self"
+      },
+      {
+        "name": "Oracle Education Foundation",
+        "role": "self"
+      },
+      {
+        "name": "Schneider Electric SE",
+        "role": "other"
+      },
+      {
+        "name": "General Electric",
+        "role": "other"
+      },
+      {
+        "name": "Anglo American plc",
+        "role": "other"
+      },
+      {
+        "name": "Paramount Skydance Corporation",
+        "role": "other"
+      },
+      {
+        "name": "The Walt Disney Company",
+        "role": "other"
+      },
+      {
+        "name": "Diem Association",
+        "role": "other"
+      },
+      {
+        "name": "HSBC Holdings, plc",
+        "role": "other"
+      },
+      {
+        "name": "Primavera Systems",
+        "role": "other"
+      },
+      {
+        "name": "Amazon Web Services",
+        "role": "other"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_005` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

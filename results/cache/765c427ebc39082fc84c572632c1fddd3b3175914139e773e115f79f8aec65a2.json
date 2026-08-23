@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"CyberArk Software Ltd.\", \"role\": \"other\"},\n    {\"name\": \"Cisco Systems, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Microsoft\", \"role\": \"competitor\"},\n    {\"name\": \"Alphabet\", \"role\": \"competitor\"},\n    {\"name\": \"Check Point Software Technologies Ltd.\", \"role\": \"competitor\"},\n    {\"name\": \"Fortinet, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"CrowdStrike Holdings, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Zscaler, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Wiz, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Amazon\", \"role\": \"partner\"},\n    {\"name\": \"Oracle Corporation\", \"role\": \"partner\"},\n    {\"name\": \"Flextronics International, Ltd.\", \"role\": \"supplier\"},\n    {\"name\": \"Best Practice Institute\", \"role\": \"analyst\"},\n    {\"name\": \"Glassdoor\", \"role\": \"analyst\"},\n    {\"name\": \"Comparably\", \"role\": \"analyst\"},\n    {\"name\": \"Palo Alto Networks\", \"role\": \"self\"}\n  ],\n  \"summary\": \"This document names the filer (Palo Alto Networks), its main competitors in enterprise security, cloud marketplace partners, a manufacturing supplier, analyst/rating firms that assess the company, and an acquisition target.\"\n}\n```",
+  "input_tokens": 4256,
+  "output_tokens": 346,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.112,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

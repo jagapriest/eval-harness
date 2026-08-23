@@ -1,0 +1,106 @@
+{
+  "case_id": "clean_014",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_014.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Super Micro Computer",
+    "cik": "0001375365",
+    "filing_date": "2025-08-28",
+    "words": 3000,
+    "org_mentions": 1,
+    "proposed": [
+      "Cisco",
+      "Dell",
+      "Hewlett-Packard Enterprise",
+      "Lenovo",
+      "Foxconn",
+      "Quanta Computer",
+      "Wiwynn Corporation"
+    ],
+    "proposed_must_not_include": [
+      "Ablecom Technology, Inc.",
+      "Compuware Technology, Inc.",
+      "NVIDIA",
+      "Responsible Business Alliance",
+      "U.S. Treasury",
+      "Office of Foreign Assets Control",
+      "U.S. Commerce Department",
+      "Bureau of Industry and Security"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "SMCI",
+        "role": "self"
+      },
+      {
+        "name": "Cisco",
+        "role": "competitor"
+      },
+      {
+        "name": "Dell",
+        "role": "competitor"
+      },
+      {
+        "name": "Hewlett-Packard Enterprise",
+        "role": "competitor"
+      },
+      {
+        "name": "Lenovo",
+        "role": "competitor"
+      },
+      {
+        "name": "Foxconn",
+        "role": "competitor"
+      },
+      {
+        "name": "Quanta Computer",
+        "role": "competitor"
+      },
+      {
+        "name": "Wiwynn Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Ablecom Technology, Inc.",
+        "role": "supplier"
+      },
+      {
+        "name": "Compuware Technology, Inc.",
+        "role": "supplier"
+      },
+      {
+        "name": "NVIDIA",
+        "role": "other"
+      },
+      {
+        "name": "Responsible Business Alliance",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Treasury",
+        "role": "other"
+      },
+      {
+        "name": "Office of Foreign Assets Control",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Commerce Department",
+        "role": "other"
+      },
+      {
+        "name": "Bureau of Industry and Security",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_014` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

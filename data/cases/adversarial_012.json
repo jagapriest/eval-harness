@@ -1,0 +1,105 @@
+{
+  "case_id": "adversarial_012",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_012.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Zoom",
+    "cik": "0001585521",
+    "filing_date": "2026-02-27",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "Securities and Exchange Commission",
+      "Microsoft",
+      "Google",
+      "OpenAI",
+      "Anthropic",
+      "NVIDIA",
+      "Gartner",
+      "TrustRadius",
+      "G2",
+      "Forrester",
+      "IDC",
+      "Fast Company",
+      "Fortune",
+      "Newsweek",
+      "UC Today"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "regulator"
+      },
+      {
+        "name": "Microsoft",
+        "role": "other"
+      },
+      {
+        "name": "Google",
+        "role": "other"
+      },
+      {
+        "name": "OpenAI",
+        "role": "supplier"
+      },
+      {
+        "name": "Anthropic",
+        "role": "supplier"
+      },
+      {
+        "name": "NVIDIA",
+        "role": "supplier"
+      },
+      {
+        "name": "Gartner",
+        "role": "analyst"
+      },
+      {
+        "name": "TrustRadius",
+        "role": "analyst"
+      },
+      {
+        "name": "G2",
+        "role": "analyst"
+      },
+      {
+        "name": "Forrester",
+        "role": "analyst"
+      },
+      {
+        "name": "IDC",
+        "role": "analyst"
+      },
+      {
+        "name": "Fast Company",
+        "role": "analyst"
+      },
+      {
+        "name": "Fortune",
+        "role": "analyst"
+      },
+      {
+        "name": "Newsweek",
+        "role": "analyst"
+      },
+      {
+        "name": "UC Today",
+        "role": "analyst"
+      },
+      {
+        "name": "Zoom",
+        "role": "self"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_012` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

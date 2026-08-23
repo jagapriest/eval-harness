@@ -1,0 +1,87 @@
+{
+  "case_id": "ambiguous_007",
+  "bucket": "ambiguous",
+  "source_path": "data/docs/ambiguous_007.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Snowflake",
+    "cik": "0001640147",
+    "filing_date": "2026-03-20",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [
+      "Amazon Web Services (AWS)",
+      "Microsoft Azure",
+      "Google Cloud Platform (GCP)"
+    ],
+    "proposed_must_not_include": [
+      "SEC"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Snowflake",
+        "role": "self"
+      },
+      {
+        "name": "Amazon Web Services",
+        "role": "competitor"
+      },
+      {
+        "name": "AWS",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft Azure",
+        "role": "competitor"
+      },
+      {
+        "name": "Azure",
+        "role": "competitor"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "role": "competitor"
+      },
+      {
+        "name": "GCP",
+        "role": "competitor"
+      },
+      {
+        "name": "Snowflake Partner Network",
+        "role": "self"
+      },
+      {
+        "name": "Snowflake Ventures",
+        "role": "self"
+      },
+      {
+        "name": "Powered by Snowflake Start Up",
+        "role": "self"
+      },
+      {
+        "name": "Snowflake Intelligence",
+        "role": "self"
+      },
+      {
+        "name": "Snowflake Openflow",
+        "role": "self"
+      },
+      {
+        "name": "Snowflake AI Data Cloud",
+        "role": "self"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case ambiguous_007` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

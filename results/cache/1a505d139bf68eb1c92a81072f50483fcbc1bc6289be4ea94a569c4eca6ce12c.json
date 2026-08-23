@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"This Micron 10-K excerpt describes the company's memory and storage products, business units, and notes that it \\\"faces intense competition in the semiconductor memory and storage markets,\\\" but the text provided names no specific competing companies. Only Micron's own brands (Micron, Crucial) and product lines are named. Therefore no qualifying competitors can be extracted.\"}",
+  "input_tokens": 8207,
+  "output_tokens": 131,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.38,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

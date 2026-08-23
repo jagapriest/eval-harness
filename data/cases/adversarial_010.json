@@ -1,0 +1,80 @@
+{
+  "case_id": "adversarial_010",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_010.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "NetApp",
+    "cik": "0001002047",
+    "filing_date": "2026-06-05",
+    "words": 3000,
+    "org_mentions": 2,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "International Organization for Standardization",
+      "U.S. Customs and Border Protection",
+      "Responsible Business Alliance",
+      "Cisco Systems",
+      "Akamai Technologies",
+      "McKinsey and Company",
+      "Oracle Corporation",
+      "Cigna Corporation",
+      "Princeton University",
+      "Stanford University"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "NetApp",
+        "role": "self"
+      },
+      {
+        "name": "International Organization for Standardization",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Customs and Border Protection",
+        "role": "other"
+      },
+      {
+        "name": "Responsible Business Alliance",
+        "role": "other"
+      },
+      {
+        "name": "Cisco Systems",
+        "role": "other"
+      },
+      {
+        "name": "Akamai Technologies",
+        "role": "other"
+      },
+      {
+        "name": "McKinsey and Company",
+        "role": "other"
+      },
+      {
+        "name": "Oracle Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Cigna Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Princeton University",
+        "role": "other"
+      },
+      {
+        "name": "Stanford University",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_010` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

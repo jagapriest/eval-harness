@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"The Salesforce filing's competition section describes only generic categories of rivals \u2014 vendors of packaged business software, cloud application service providers, AI-native startups and emerging companies, free/bundled software providers, niche industry-specific vendors, productivity and unified communications providers, platform development companies, and would-be customers building internal applications. No specific competitor company is named anywhere in the document. Other named entities (Trailhead, Agentforce, Hyperforce, Dreamforce, Salesforce+, Career Connect) are the company's own products, programs or events rather than competitors.\"}",
+  "input_tokens": 7263,
+  "output_tokens": 200,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.776,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

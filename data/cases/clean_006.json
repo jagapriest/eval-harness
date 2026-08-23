@@ -1,0 +1,162 @@
+{
+  "case_id": "clean_006",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_006.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "DigitalOcean",
+    "cik": "0001582961",
+    "filing_date": "2026-02-24",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [
+      "Amazon (AWS)",
+      "Microsoft (Azure)",
+      "Google (GCP)",
+      "IBM (IBM Cloud)",
+      "Alibaba (Alibaba Cloud)",
+      "Oracle (Oracle Cloud)",
+      "OVHcloud",
+      "Akamai (Linode)",
+      "Hetzner",
+      "Vultr",
+      "Contabo",
+      "CoreWeave",
+      "Lambda Labs",
+      "Kinsta",
+      "WP Engine"
+    ],
+    "proposed_must_not_include": [
+      "World Intellectual Property Organization",
+      "U.S. Treasury Department's Office of Foreign Assets Control",
+      "SEC",
+      "New York Stock Exchange"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Amazon",
+        "role": "competitor"
+      },
+      {
+        "name": "AWS",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft",
+        "role": "competitor"
+      },
+      {
+        "name": "Azure",
+        "role": "competitor"
+      },
+      {
+        "name": "Google",
+        "role": "competitor"
+      },
+      {
+        "name": "GCP",
+        "role": "competitor"
+      },
+      {
+        "name": "IBM",
+        "role": "competitor"
+      },
+      {
+        "name": "IBM Cloud",
+        "role": "competitor"
+      },
+      {
+        "name": "Alibaba",
+        "role": "competitor"
+      },
+      {
+        "name": "Alibaba Cloud",
+        "role": "competitor"
+      },
+      {
+        "name": "Oracle",
+        "role": "competitor"
+      },
+      {
+        "name": "Oracle Cloud",
+        "role": "competitor"
+      },
+      {
+        "name": "OVHcloud",
+        "role": "competitor"
+      },
+      {
+        "name": "Akamai",
+        "role": "competitor"
+      },
+      {
+        "name": "Linode",
+        "role": "competitor"
+      },
+      {
+        "name": "Hetzner",
+        "role": "competitor"
+      },
+      {
+        "name": "Vultr",
+        "role": "competitor"
+      },
+      {
+        "name": "Contabo",
+        "role": "competitor"
+      },
+      {
+        "name": "Coreweave",
+        "role": "competitor"
+      },
+      {
+        "name": "Lambda Labs",
+        "role": "competitor"
+      },
+      {
+        "name": "Kinsta",
+        "role": "competitor"
+      },
+      {
+        "name": "WP Engine",
+        "role": "competitor"
+      },
+      {
+        "name": "DigitalOcean, Inc.",
+        "role": "self"
+      },
+      {
+        "name": "DigitalOcean, LLC",
+        "role": "self"
+      },
+      {
+        "name": "DigitalOcean Holdings, Inc.",
+        "role": "self"
+      },
+      {
+        "name": "World Intellectual Property Organization",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Treasury Department's Office of Foreign Assets Control",
+        "role": "other"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      },
+      {
+        "name": "New York Stock Exchange",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_006` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

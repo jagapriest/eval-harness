@@ -1,0 +1,60 @@
+{
+  "case_id": "adversarial_009",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_009.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Elastic",
+    "cik": "0001707753",
+    "filing_date": "2026-06-08",
+    "words": 3000,
+    "org_mentions": 1,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "Amazon Web Services",
+      "AWS",
+      "Google Cloud Platform",
+      "GCP",
+      "Microsoft Azure",
+      "Azure"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Elastic N.V.",
+        "role": "self"
+      },
+      {
+        "name": "Amazon Web Services",
+        "role": "partner"
+      },
+      {
+        "name": "AWS",
+        "role": "partner"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "role": "partner"
+      },
+      {
+        "name": "GCP",
+        "role": "partner"
+      },
+      {
+        "name": "Microsoft Azure",
+        "role": "partner"
+      },
+      {
+        "name": "Azure",
+        "role": "partner"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_009` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

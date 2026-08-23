@@ -1,21 +1,197 @@
 {
   "case_id": "ambiguous_002",
-  "bucket": "empty",
+  "bucket": "ambiguous",
   "source_path": "data/docs/ambiguous_002.txt",
-  "expected": {
-    "competitors": [],
-    "must_not_include": [
+  "needs_adjudication": true,
+  "screening": {
+    "company": "IBM",
+    "cik": "0000051143",
+    "filing_date": "2026-02-24",
+    "words": 3000,
+    "org_mentions": 1,
+    "proposed": [
+      "Alphabet (Google)",
+      "Amazon",
+      "BMC",
+      "Broadcom",
       "Microsoft",
       "Oracle",
+      "Salesforce",
       "SAP",
-      "Workday",
-      "ServiceNow",
-      "Adobe",
-      "HubSpot",
-      "Zoho",
-      "Monday.com",
-      "Amazon Web Services"
+      "Splunk, a CISCO Company",
+      "Accenture",
+      "Capgemini",
+      "Dell Technologies",
+      "Hewlett-Packard Enterprise (HPE)",
+      "Intel",
+      "NetApp",
+      "Pure Storage"
     ],
-    "notes": "RE-BUCKETED from 'ambiguous' to 'empty'. Salesforce describes seven competitor *categories* ('vendors of packaged business software', 'AI-native companies and emerging startups') and names no company. Heavy bait for training-knowledge fills."
+    "proposed_must_not_include": [
+      "Adobe",
+      "Palo Alto Networks",
+      "Samsung Electronics",
+      "Securities and Exchange Commission",
+      "SEC",
+      "The Vanguard Group, Inc."
+    ],
+    "role_conflicts": [
+      "Microsoft (partner)",
+      "Oracle (partner)",
+      "Salesforce (partner)",
+      "SAP (partner)"
+    ],
+    "disputed": [
+      "Amazon Web Services (extracted as competitor, entities say partner)",
+      "AWS (extracted as competitor, entities say partner)",
+      "Microsoft (extracted as competitor, entities say partner)",
+      "Oracle (extracted as competitor, entities say partner)",
+      "Salesforce (extracted as competitor, entities say partner)",
+      "SAP (extracted as competitor, entities say partner)"
+    ],
+    "entities": [
+      {
+        "name": "International Business Machines Corporation",
+        "role": "self"
+      },
+      {
+        "name": "IBM",
+        "role": "self"
+      },
+      {
+        "name": "Computing-Tabulating-Recording Co.",
+        "role": "self"
+      },
+      {
+        "name": "C-T-R",
+        "role": "self"
+      },
+      {
+        "name": "Computing Scale Co. of America",
+        "role": "self"
+      },
+      {
+        "name": "Tabulating Machine Co.",
+        "role": "self"
+      },
+      {
+        "name": "The International Time Recording Co. of New York",
+        "role": "self"
+      },
+      {
+        "name": "Adobe",
+        "role": "partner"
+      },
+      {
+        "name": "Amazon Web Services",
+        "role": "partner"
+      },
+      {
+        "name": "AWS",
+        "role": "partner"
+      },
+      {
+        "name": "Microsoft",
+        "role": "partner"
+      },
+      {
+        "name": "Oracle",
+        "role": "partner"
+      },
+      {
+        "name": "Palo Alto Networks",
+        "role": "partner"
+      },
+      {
+        "name": "Salesforce",
+        "role": "partner"
+      },
+      {
+        "name": "Samsung Electronics",
+        "role": "partner"
+      },
+      {
+        "name": "SAP",
+        "role": "partner"
+      },
+      {
+        "name": "Alphabet",
+        "role": "competitor"
+      },
+      {
+        "name": "Google",
+        "role": "competitor"
+      },
+      {
+        "name": "Amazon",
+        "role": "competitor"
+      },
+      {
+        "name": "BMC",
+        "role": "competitor"
+      },
+      {
+        "name": "Broadcom",
+        "role": "competitor"
+      },
+      {
+        "name": "Splunk",
+        "role": "competitor"
+      },
+      {
+        "name": "CISCO Company",
+        "role": "competitor"
+      },
+      {
+        "name": "Accenture",
+        "role": "competitor"
+      },
+      {
+        "name": "Capgemini",
+        "role": "competitor"
+      },
+      {
+        "name": "Dell Technologies",
+        "role": "competitor"
+      },
+      {
+        "name": "Hewlett-Packard Enterprise",
+        "role": "competitor"
+      },
+      {
+        "name": "HPE",
+        "role": "competitor"
+      },
+      {
+        "name": "Intel",
+        "role": "competitor"
+      },
+      {
+        "name": "NetApp",
+        "role": "competitor"
+      },
+      {
+        "name": "Pure Storage",
+        "role": "competitor"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "regulator"
+      },
+      {
+        "name": "SEC",
+        "role": "regulator"
+      },
+      {
+        "name": "The Vanguard Group, Inc.",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case ambiguous_002` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
   }
 }

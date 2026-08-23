@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Datadog\", \"role\": \"self\"},\n    {\"name\": \"IBM\", \"role\": \"competitor\"},\n    {\"name\": \"Microsoft Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"SolarWinds Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Cisco Systems, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"New Relic, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Dynatrace Software Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Elastic N.V.\", \"role\": \"competitor\"},\n    {\"name\": \"Amazon Web Services\", \"role\": \"competitor\"},\n    {\"name\": \"AWS\", \"role\": \"competitor\"},\n    {\"name\": \"Microsoft Azure\", \"role\": \"competitor\"},\n    {\"name\": \"Google Cloud Platform\", \"role\": \"competitor\"},\n    {\"name\": \"GCP\", \"role\": \"competitor\"},\n    {\"name\": \"SEC\", \"role\": \"other\"},\n    {\"name\": \"Delaware\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names Datadog (the filer), its direct competitors in monitoring, analytics, and cloud services, and regulatory bodies.\"\n}\n```",
+  "input_tokens": 4138,
+  "output_tokens": 294,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.091,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

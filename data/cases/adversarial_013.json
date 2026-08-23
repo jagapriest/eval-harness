@@ -1,0 +1,50 @@
+{
+  "case_id": "adversarial_013",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_013.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Zscaler",
+    "cik": "0001713683",
+    "filing_date": "2025-09-11",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "FedRAMP",
+      "DOD",
+      "StateRamp",
+      "SEC"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Zscaler",
+        "role": "self"
+      },
+      {
+        "name": "FedRAMP",
+        "role": "other"
+      },
+      {
+        "name": "DOD",
+        "role": "other"
+      },
+      {
+        "name": "StateRamp",
+        "role": "other"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_013` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

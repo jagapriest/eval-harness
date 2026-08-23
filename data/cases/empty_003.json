@@ -1,0 +1,29 @@
+{
+  "case_id": "empty_003",
+  "bucket": "empty",
+  "source_path": "data/docs/empty_003.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "HashiCorp",
+    "cik": "0001720671",
+    "filing_date": "2024-03-21",
+    "words": 3000,
+    "org_mentions": 1,
+    "proposed": [],
+    "proposed_must_not_include": [],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "HashiCorp",
+        "role": "self"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case empty_003` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

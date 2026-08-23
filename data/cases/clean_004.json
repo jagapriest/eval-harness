@@ -1,0 +1,161 @@
+{
+  "case_id": "clean_004",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_004.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Juniper Networks",
+    "cik": "0001043604",
+    "filing_date": "2025-02-21",
+    "words": 3000,
+    "org_mentions": 6,
+    "proposed": [
+      "Cisco Systems, Inc.",
+      "Arista Networks, Inc.",
+      "Ciena Corporation",
+      "Extreme Networks",
+      "Hewlett Packard Enterprise Co.",
+      "Huawei Technologies Co., Ltd.",
+      "Fortinet, Inc.",
+      "Ruckus Networks (CommScope)",
+      "Cambium Networks",
+      "Nokia Corporation",
+      "NVIDIA Corporation",
+      "Ubiquiti, Inc.",
+      "Nile",
+      "Meter",
+      "Palo Alto Networks, Inc.",
+      "Check Point Software Technologies, Ltd.",
+      "Zscaler, Inc.",
+      "Netskope, Inc.",
+      "Forcepoint LLC"
+    ],
+    "proposed_must_not_include": [
+      "Responsible Business Alliance",
+      "Responsible Minerals Initiative",
+      "CDP Supply Chain program",
+      "United Nations Global Compact",
+      "Great Place to Work",
+      "Ethisphere",
+      "LinkedIn Learning"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Responsible Business Alliance",
+        "role": "partner"
+      },
+      {
+        "name": "Responsible Minerals Initiative",
+        "role": "partner"
+      },
+      {
+        "name": "CDP Supply Chain program",
+        "role": "partner"
+      },
+      {
+        "name": "United Nations Global Compact",
+        "role": "other"
+      },
+      {
+        "name": "Cisco Systems, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Arista Networks, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Ciena Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Extreme Networks",
+        "role": "competitor"
+      },
+      {
+        "name": "Hewlett Packard Enterprise Co.",
+        "role": "competitor"
+      },
+      {
+        "name": "Huawei Technologies Co., Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Fortinet, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "CommScope",
+        "role": "competitor"
+      },
+      {
+        "name": "Cambium Networks",
+        "role": "competitor"
+      },
+      {
+        "name": "Nokia Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "NVIDIA Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Ubiquiti, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Nile",
+        "role": "competitor"
+      },
+      {
+        "name": "Meter",
+        "role": "competitor"
+      },
+      {
+        "name": "Palo Alto Networks, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Check Point Software Technologies, Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Zscaler, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Netskope, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Forcepoint LLC",
+        "role": "competitor"
+      },
+      {
+        "name": "Juniper Networks, Inc.",
+        "role": "self"
+      },
+      {
+        "name": "Great Place to Work",
+        "role": "analyst"
+      },
+      {
+        "name": "Ethisphere",
+        "role": "analyst"
+      },
+      {
+        "name": "LinkedIn Learning",
+        "role": "supplier"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_004` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

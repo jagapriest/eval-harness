@@ -19,6 +19,16 @@ CONFIG_DIR = ROOT / "configs"
 REQUIRED = ("id", "model", "prompt_file", "pricing")
 VALID_EFFORT = {"low", "medium", "high", "xhigh", "max", None}
 
+# `output_config.effort` is not universal. Haiku 4.5 and Sonnet 4.5 reject it with
+# HTTP 400 ("This model does not support the effort parameter"). Caught the hard way:
+# configs/cheaper.yaml shipped with effort set on Haiku and would have returned 400 on
+# every case of the cheaper-vs-structured comparison.
+NO_EFFORT_SUBSTRINGS = ("haiku", "sonnet-4-5")
+
+
+def supports_effort(model: str) -> bool:
+    return not any(token in model for token in NO_EFFORT_SUBSTRINGS)
+
 
 class ConfigError(ValueError):
     """Raised when a config file is missing required fields or has invalid values."""
@@ -43,6 +53,12 @@ def load_config(path: str | Path, root: Path | None = None) -> RunConfig:
     if effort not in VALID_EFFORT:
         raise ConfigError(
             f"{path.name}: effort must be one of low/medium/high/xhigh/max, got {effort!r}"
+        )
+
+    if effort and not supports_effort(raw["model"]):
+        raise ConfigError(
+            f"{path.name}: model {raw['model']!r} does not support output_config.effort "
+            f"(the API returns 400). Remove `effort` from this config."
         )
 
     prompt_path = root / raw["prompt_file"]

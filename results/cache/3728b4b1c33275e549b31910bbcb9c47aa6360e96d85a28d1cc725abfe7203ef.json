@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"Snowflake\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Amazon Web Services\",\n      \"role\": \"competitor\"\n    },\n    {\n      \"name\": \"AWS\",\n      \"role\": \"competitor\"\n    },\n    {\n      \"name\": \"Microsoft Azure\",\n      \"role\": \"competitor\"\n    },\n    {\n      \"name\": \"Azure\",\n      \"role\": \"competitor\"\n    },\n    {\n      \"name\": \"Google Cloud Platform\",\n      \"role\": \"competitor\"\n    },\n    {\n      \"name\": \"GCP\",\n      \"role\": \"competitor\"\n    },\n    {\n      \"name\": \"Snowflake Partner Network\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Snowflake Ventures\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Powered by Snowflake Start Up\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Snowflake Intelligence\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Snowflake Openflow\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Snowflake AI Data Cloud\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"SEC\",\n      \"role\": \"other\"\n    }\n  ],\n  \"summary\": \"This document names the filer company Snowflake and its platform/service variants, three major public cloud providers as competitors, and the SEC as a regulator.\"\n}\n```",
+  "input_tokens": 4201,
+  "output_tokens": 411,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.852,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

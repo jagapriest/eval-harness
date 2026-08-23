@@ -2,21 +2,199 @@
   "case_id": "ambiguous_001",
   "bucket": "ambiguous",
   "source_path": "data/docs/ambiguous_001.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "NVIDIA",
+    "cik": "0001045810",
+    "filing_date": "2026-02-25",
+    "words": 3000,
+    "org_mentions": 10,
+    "proposed": [
+      "Advanced Micro Devices, Inc. (AMD)",
+      "Huawei Technologies Co. Ltd.",
+      "Intel Corporation",
+      "Alibaba Group",
+      "Alphabet Inc.",
+      "Amazon, Inc.",
+      "Baidu, Inc.",
+      "Microsoft Corporation",
+      "Ambarella, Inc.",
+      "Broadcom",
+      "Qualcomm Incorporated",
+      "Renesas Electronics Corporation",
+      "Samsung Electronics Co., Ltd.",
+      "Tesla, Inc.",
+      "Arista Networks",
+      "Cisco Systems, Inc.",
+      "Hewlett Packard Enterprise Company",
+      "Lumentum Holdings Inc.",
+      "Marvell Technology, Inc"
+    ],
+    "proposed_must_not_include": [
+      "Taiwan Semiconductor Manufacturing Company Limited",
+      "TSMC",
+      "Samsung",
+      "SK Hynix Inc.",
+      "Micron Technology, Inc.",
+      "Hon Hai Precision Industry Co., Ltd.",
+      "Wistron Corporation",
+      "Fabrinet",
+      "International Organization for Standardization",
+      "LSI"
+    ],
+    "role_conflicts": [
+      "Samsung Electronics Co., Ltd. (supplier)"
+    ],
+    "disputed": [
+      "Samsung Electronics Co., Ltd. (extracted as competitor, entities say supplier)"
+    ],
+    "entities": [
+      {
+        "name": "NVIDIA",
+        "role": "self"
+      },
+      {
+        "name": "Taiwan Semiconductor Manufacturing Company Limited",
+        "role": "supplier"
+      },
+      {
+        "name": "TSMC",
+        "role": "supplier"
+      },
+      {
+        "name": "Samsung Electronics Co., Ltd.",
+        "role": "supplier"
+      },
+      {
+        "name": "Samsung",
+        "role": "supplier"
+      },
+      {
+        "name": "SK Hynix Inc.",
+        "role": "supplier"
+      },
+      {
+        "name": "Micron Technology, Inc.",
+        "role": "supplier"
+      },
+      {
+        "name": "Hon Hai Precision Industry Co., Ltd.",
+        "role": "supplier"
+      },
+      {
+        "name": "Wistron Corporation",
+        "role": "supplier"
+      },
+      {
+        "name": "Fabrinet",
+        "role": "supplier"
+      },
+      {
+        "name": "Advanced Micro Devices, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "AMD",
+        "role": "competitor"
+      },
+      {
+        "name": "Huawei Technologies Co. Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Huawei",
+        "role": "competitor"
+      },
+      {
+        "name": "Intel Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Intel",
+        "role": "competitor"
+      },
+      {
+        "name": "Alibaba Group",
+        "role": "competitor"
+      },
+      {
+        "name": "Alphabet Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Amazon, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Amazon",
+        "role": "competitor"
+      },
+      {
+        "name": "Baidu, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft",
+        "role": "competitor"
+      },
+      {
+        "name": "Ambarella, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Broadcom",
+        "role": "competitor"
+      },
+      {
+        "name": "Qualcomm Incorporated",
+        "role": "competitor"
+      },
+      {
+        "name": "Renesas Electronics Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Tesla, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Arista Networks",
+        "role": "competitor"
+      },
+      {
+        "name": "Cisco Systems, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Hewlett Packard Enterprise Company",
+        "role": "competitor"
+      },
+      {
+        "name": "Lumentum Holdings Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Marvell Technology, Inc",
+        "role": "competitor"
+      },
+      {
+        "name": "International Organization for Standardization",
+        "role": "other"
+      },
+      {
+        "name": "LSI",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case ambiguous_001` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
   "expected": {
-    "competitors": [
-      "Amazon Web Services",
-      "Microsoft Azure",
-      "Google Cloud Platform"
-    ],
-    "must_not_include": [
-      "Databricks",
-      "Teradata",
-      "Oracle",
-      "Cloudera",
-      "MongoDB",
-      "Palantir",
-      "Google BigQuery"
-    ],
-    "notes": "The canonical partner-and-competitor case: AWS/Azure/GCP are named as competitors and are also the clouds Snowflake runs on. Counted as competitors because the document presents them as such explicitly. Databricks is Snowflake's most-cited rival in trade press but is NOT named in this document -- its appearance is training-knowledge leakage. OPEN QUESTION (post-spike): baseline emitted 4 competitor *categories* as entries, self-labeled '(unnamed)' -- e.g. 'existing observability solution providers'. PRD S3 requires 'a named commercial entity', so these score as false positives, but the baseline prompt never states that exclusion. This is the intended baseline->structured delta and should stay a scored failure."
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
   }
 }

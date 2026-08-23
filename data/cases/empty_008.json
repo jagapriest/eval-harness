@@ -1,0 +1,35 @@
+{
+  "case_id": "empty_008",
+  "bucket": "empty",
+  "source_path": "data/docs/empty_008.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Texas Instruments",
+    "cik": "0000097476",
+    "filing_date": "2026-02-06",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "Securities and Exchange Commission"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Texas Instruments Incorporated",
+        "role": "self"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "regulator"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case empty_008` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

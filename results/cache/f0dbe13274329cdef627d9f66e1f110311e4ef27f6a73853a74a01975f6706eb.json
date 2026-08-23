@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"The filing (Texas Instruments) describes intense competition in the fragmented analog and embedded processing semiconductor markets, referring only to unnamed categories such as large broad-based suppliers, small niche suppliers, and emerging companies in Asia, along with China's state-backed domestic semiconductor industry. No specific competitor company is named anywhere in the document. Therefore no qualifying competitors can be extracted.\"}",
+  "input_tokens": 7516,
+  "output_tokens": 151,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.154,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

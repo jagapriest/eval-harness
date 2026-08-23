@@ -1,0 +1,75 @@
+{
+  "case_id": "ambiguous_004",
+  "bucket": "ambiguous",
+  "source_path": "data/docs/ambiguous_004.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "MongoDB",
+    "cik": "0001441816",
+    "filing_date": "2026-03-11",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [
+      "IBM",
+      "Microsoft",
+      "Oracle",
+      "AWS",
+      "GCP (Google Cloud Platform)"
+    ],
+    "proposed_must_not_include": [
+      "Nasdaq",
+      "U.S. Securities and Exchange Commission",
+      "SEC"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "IBM",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft",
+        "role": "competitor"
+      },
+      {
+        "name": "Oracle",
+        "role": "competitor"
+      },
+      {
+        "name": "AWS",
+        "role": "competitor"
+      },
+      {
+        "name": "GCP",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft Azure",
+        "role": "competitor"
+      },
+      {
+        "name": "MongoDB, Inc.",
+        "role": "self"
+      },
+      {
+        "name": "Nasdaq",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "role": "regulator"
+      },
+      {
+        "name": "SEC",
+        "role": "regulator"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case ambiguous_004` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

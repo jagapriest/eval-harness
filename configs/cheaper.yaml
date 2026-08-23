@@ -4,7 +4,7 @@
 id: cheaper
 model: claude-haiku-4-5
 prompt_file: prompts/structured.md
-effort: medium
+# effort: omitted -- claude-haiku-4-5 rejects it with HTTP 400
 structured_output: true
 thinking: false
 max_tokens: 8000

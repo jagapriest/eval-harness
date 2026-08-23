@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"AMD\", \"role\": \"competitor\"},\n    {\"name\": \"Apple\", \"role\": \"competitor\"},\n    {\"name\": \"Qualcomm\", \"role\": \"competitor\"},\n    {\"name\": \"MediaTek\", \"role\": \"competitor\"},\n    {\"name\": \"NVIDIA\", \"role\": \"competitor\"},\n    {\"name\": \"Amazon\", \"role\": \"competitor\"},\n    {\"name\": \"Google\", \"role\": \"competitor\"},\n    {\"name\": \"Meta\", \"role\": \"competitor\"},\n    {\"name\": \"Microsoft\", \"role\": \"competitor\"},\n    {\"name\": \"Broadcom\", \"role\": \"competitor\"},\n    {\"name\": \"TSMC\", \"role\": \"competitor\"},\n    {\"name\": \"Samsung\", \"role\": \"competitor\"},\n    {\"name\": \"GlobalFoundries\", \"role\": \"competitor\"},\n    {\"name\": \"UMC\", \"role\": \"competitor\"},\n    {\"name\": \"SMIC\", \"role\": \"competitor\"},\n    {\"name\": \"Intel\", \"role\": \"self\"},\n    {\"name\": \"Mobileye\", \"role\": \"other\"},\n    {\"name\": \"IMS\", \"role\": \"other\"},\n    {\"name\": \"Altera\", \"role\": \"other\"},\n    {\"name\": \"PyTorch\", \"role\": \"other\"},\n    {\"name\": \"TensorFlow\", \"role\": \"other\"},\n    {\"name\": \"Hugging Face\", \"role\": \"other\"},\n    {\"name\": \"vLLM\", \"role\": \"other\"},\n    {\"name\": \"WebNN\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names Intel and its competitors in semiconductor design and manufacturing (AMD, NVIDIA, TSMC, Samsung, etc.), some of Intel's affiliated companies (Mobileye, Altera, IMS), and several third-party software frameworks.\"\n}\n```",
+  "input_tokens": 4428,
+  "output_tokens": 448,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.6,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

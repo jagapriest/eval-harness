@@ -1,0 +1,52 @@
+{
+  "case_id": "empty_009",
+  "bucket": "empty",
+  "source_path": "data/docs/empty_009.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Twilio",
+    "cik": "0001447669",
+    "filing_date": "2026-02-24",
+    "words": 3000,
+    "org_mentions": 1,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "Securities and Exchange Commission",
+      "SEC"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Twilio",
+        "role": "self"
+      },
+      {
+        "name": "Twilio Segment",
+        "role": "self"
+      },
+      {
+        "name": "Segment",
+        "role": "self"
+      },
+      {
+        "name": "Twilio.org",
+        "role": "self"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "regulator"
+      },
+      {
+        "name": "SEC",
+        "role": "regulator"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case empty_009` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

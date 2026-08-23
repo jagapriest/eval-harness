@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"Twilio\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Twilio Segment\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Segment\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Twilio.org\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Securities and Exchange Commission\",\n      \"role\": \"regulator\"\n    },\n    {\n      \"name\": \"SEC\",\n      \"role\": \"regulator\"\n    }\n  ],\n  \"summary\": \"This document names Twilio (the filer itself and its business units) and the Securities and Exchange Commission as a regulator, with no named competitors, customers, suppliers, partners, or analysts specifically identified.\"\n}\n```",
+  "input_tokens": 4260,
+  "output_tokens": 217,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.661,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

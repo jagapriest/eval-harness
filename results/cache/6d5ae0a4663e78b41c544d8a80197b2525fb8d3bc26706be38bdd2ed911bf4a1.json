@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Fortinet\", \"role\": \"self\"},\n    {\"name\": \"Check Point Software Technologies Ltd.\", \"role\": \"competitor\"},\n    {\"name\": \"Cisco Systems, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"CrowdStrike Holdings, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"F5 Networks, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Hewlett-Packard Enterprise\", \"role\": \"competitor\"},\n    {\"name\": \"Huawei Technologies Co., Ltd.\", \"role\": \"competitor\"},\n    {\"name\": \"Microsoft Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Netskope Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Palo Alto Networks, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"SonicWALL, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Sophos Group Plc\", \"role\": \"competitor\"},\n    {\"name\": \"Zscaler, Inc.\", \"role\": \"competitor\"},\n    {\"name\": \"Dow Jones Sustainability Indices\", \"role\": \"other\"},\n    {\"name\": \"Carbon Disclosure Project\", \"role\": \"other\"},\n    {\"name\": \"Ecovadis\", \"role\": \"other\"},\n    {\"name\": \"Science Based Targets Initiatives\", \"role\": \"other\"},\n    {\"name\": \"World Economic Forum\", \"role\": \"other\"},\n    {\"name\": \"Securities and Exchange Commission\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names competitors in the cybersecurity and networking markets, regulatory bodies, sustainability certification organizations, and the filer itself.\"\n}\n```",
+  "input_tokens": 4200,
+  "output_tokens": 406,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.079,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

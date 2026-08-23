@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"This HashiCorp 10-K excerpt describes the company's products, cloud operating model, open-core strategy, and partner ecosystem. It references competition only generically (\\\"our ability to compete effectively with existing competitors and new market entrants\\\", \\\"highly competitive and rapidly changing environment\\\") without naming any specific competing company. Named third parties appear as partners, ISVs, or cloud service providers rather than rivals.\"}",
+  "input_tokens": 7527,
+  "output_tokens": 152,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.347,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Securities and Exchange Commission\", \"role\": \"regulator\"},\n    {\"name\": \"Microsoft\", \"role\": \"other\"},\n    {\"name\": \"Google\", \"role\": \"other\"},\n    {\"name\": \"OpenAI\", \"role\": \"supplier\"},\n    {\"name\": \"Anthropic\", \"role\": \"supplier\"},\n    {\"name\": \"NVIDIA\", \"role\": \"supplier\"},\n    {\"name\": \"Gartner\", \"role\": \"analyst\"},\n    {\"name\": \"TrustRadius\", \"role\": \"analyst\"},\n    {\"name\": \"G2\", \"role\": \"analyst\"},\n    {\"name\": \"Forrester\", \"role\": \"analyst\"},\n    {\"name\": \"IDC\", \"role\": \"analyst\"},\n    {\"name\": \"Fast Company\", \"role\": \"analyst\"},\n    {\"name\": \"Fortune\", \"role\": \"analyst\"},\n    {\"name\": \"Newsweek\", \"role\": \"analyst\"},\n    {\"name\": \"UC Today\", \"role\": \"analyst\"},\n    {\"name\": \"Zoom\", \"role\": \"self\"}\n  ],\n  \"summary\": \"This document names Zoom itself, major cloud AI/LLM providers, software vendors for integrations, analyst and review firms that evaluate communications and collaboration platforms, and the SEC as a regulator.\"\n}\n```",
+  "input_tokens": 4246,
+  "output_tokens": 316,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.557,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

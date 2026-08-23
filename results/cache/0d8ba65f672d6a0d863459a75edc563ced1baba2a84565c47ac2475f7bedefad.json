@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"The document's competition section describes rival categories only \u2014 providers of internet content delivery and hosting, security and cloud computing solutions, equipment-based solutions, and large \\\"hyper-scaler\\\" cloud computing providers \u2014 without naming any specific company. Named companies appear solely as customers (e.g., Adobe, eBay, Spotify) or channel partners (e.g., Deloitte, Microsoft Azure, Optiv), which are excluded. Therefore no qualifying competitors can be extracted.\"}",
+  "input_tokens": 7482,
+  "output_tokens": 177,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.768,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

@@ -1,0 +1,16 @@
+# Screening-only config. Extracts every named organization and its role, so the
+# screener can tell "names companies, none of them competitors" (adversarial) from
+# "names almost nothing" (empty) -- and so non-competitor names can be proposed as
+# must_not_include candidates.
+#
+# Never reported as a candidate configuration; it does not perform the task under test.
+id: entities
+model: claude-haiku-4-5
+prompt_file: prompts/entities.md
+# effort: omitted -- claude-haiku-4-5 rejects it with HTTP 400
+structured_output: false
+thinking: false
+max_tokens: 4000
+pricing:
+  input_per_mtok: 1.00
+  output_per_mtok: 5.00

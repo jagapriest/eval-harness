@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"This NetApp 10-K competition section describes rival categories only \u2014 broad-portfolio infrastructure vendors, specialized technology providers, cloud service providers, startups, and newer AI-focused entrants \u2014 without naming any specific competing company. Companies named elsewhere (Cisco Systems, Akamai Technologies, Oracle, McKinsey, Cigna) appear solely in executive biographies, not as competitors. Accordingly, no qualifying competitors can be extracted.\"}",
+  "input_tokens": 7596,
+  "output_tokens": 172,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 5.374,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

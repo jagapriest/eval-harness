@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"Okta\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Auth0\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Microsoft\",\n      \"role\": \"competitor\"\n    },\n    {\n      \"name\": \"Tides Foundation\",\n      \"role\": \"partner\"\n    },\n    {\n      \"name\": \"SEC\",\n      \"role\": \"other\"\n    }\n  ],\n  \"summary\": \"This document names the filer itself (Okta and its Auth0 platform), one named competitor (Microsoft), a partner organization (Tides Foundation), and a regulator (SEC).\"\n}\n```",
+  "input_tokens": 4092,
+  "output_tokens": 183,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 1.783,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

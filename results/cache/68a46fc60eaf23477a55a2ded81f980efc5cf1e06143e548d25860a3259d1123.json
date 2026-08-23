@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"U.S. Department of War\",\n      \"role\": \"customer\"\n    },\n    {\n      \"name\": \"U.S. Department of Defense\",\n      \"role\": \"customer\"\n    },\n    {\n      \"name\": \"U.S. Government\",\n      \"role\": \"customer\"\n    },\n    {\n      \"name\": \"U.S. Securities and Exchange Commission\",\n      \"role\": \"regulator\"\n    },\n    {\n      \"name\": \"Teledyne\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Teledyne Technologies Incorporated\",\n      \"role\": \"self\"\n    }\n  ],\n  \"summary\": \"This document names the filer (Teledyne Technologies Incorporated), its major government customer (U.S. Department of War/Defense), and regulatory bodies (SEC), with no named competitors, suppliers, partners, or analysts.\"\n}\n```",
+  "input_tokens": 4291,
+  "output_tokens": 239,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.906,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

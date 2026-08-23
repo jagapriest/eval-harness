@@ -1,0 +1,170 @@
+{
+  "case_id": "ambiguous_005",
+  "bucket": "ambiguous",
+  "source_path": "data/docs/ambiguous_005.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Pure Storage",
+    "cik": "0001474432",
+    "filing_date": "2026-03-25",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [
+      "Dell EMC",
+      "NetApp",
+      "Hitachi Vantara",
+      "HP Enterprise",
+      "IBM"
+    ],
+    "proposed_must_not_include": [
+      "Fortune 500 companies",
+      "VMware",
+      "RedHat",
+      "Nutanix",
+      "Microsoft",
+      "Oracle",
+      "SAP",
+      "Microsoft Azure",
+      "AWS",
+      "Google",
+      "Commvault",
+      "Rubrik",
+      "Veeam",
+      "Cisco",
+      "NVIDIA",
+      "Responsible Business Alliance",
+      "International Organization for Standardization",
+      "Sustainability Accounting Standards Board",
+      "Global Reporting Initiative",
+      "United Nations",
+      "Task Force on Climate-related Financial Disclosures",
+      "SEC"
+    ],
+    "role_conflicts": [
+      "IBM (partner)"
+    ],
+    "disputed": [
+      "IBM (extracted as competitor, entities say partner)"
+    ],
+    "entities": [
+      {
+        "name": "Fortune 500 companies",
+        "role": "customer"
+      },
+      {
+        "name": "VMware",
+        "role": "partner"
+      },
+      {
+        "name": "RedHat",
+        "role": "partner"
+      },
+      {
+        "name": "Nutanix",
+        "role": "partner"
+      },
+      {
+        "name": "Microsoft",
+        "role": "partner"
+      },
+      {
+        "name": "Oracle",
+        "role": "partner"
+      },
+      {
+        "name": "SAP",
+        "role": "partner"
+      },
+      {
+        "name": "Microsoft Azure",
+        "role": "partner"
+      },
+      {
+        "name": "AWS",
+        "role": "partner"
+      },
+      {
+        "name": "Google",
+        "role": "partner"
+      },
+      {
+        "name": "IBM",
+        "role": "partner"
+      },
+      {
+        "name": "Commvault",
+        "role": "partner"
+      },
+      {
+        "name": "Rubrik",
+        "role": "partner"
+      },
+      {
+        "name": "Veeam",
+        "role": "partner"
+      },
+      {
+        "name": "Cisco",
+        "role": "partner"
+      },
+      {
+        "name": "NVIDIA",
+        "role": "partner"
+      },
+      {
+        "name": "Responsible Business Alliance",
+        "role": "other"
+      },
+      {
+        "name": "Dell EMC",
+        "role": "competitor"
+      },
+      {
+        "name": "NetApp",
+        "role": "competitor"
+      },
+      {
+        "name": "Hitachi Vantara",
+        "role": "competitor"
+      },
+      {
+        "name": "HP Enterprise",
+        "role": "competitor"
+      },
+      {
+        "name": "International Organization for Standardization",
+        "role": "other"
+      },
+      {
+        "name": "Sustainability Accounting Standards Board",
+        "role": "other"
+      },
+      {
+        "name": "Global Reporting Initiative",
+        "role": "other"
+      },
+      {
+        "name": "United Nations",
+        "role": "other"
+      },
+      {
+        "name": "Task Force on Climate-related Financial Disclosures",
+        "role": "other"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      },
+      {
+        "name": "Everpure",
+        "role": "self"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case ambiguous_005` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

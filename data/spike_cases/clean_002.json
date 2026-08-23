@@ -1,0 +1,47 @@
+{
+  "case_id": "clean_002",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_002.txt",
+  "expected": {
+    "competitors": [
+      "Dell Technologies",
+      "Super Micro Computer",
+      "Cisco Systems",
+      "Lenovo Group",
+      "Fujitsu Network Communications",
+      "Atos Information Technology",
+      "Broadcom",
+      "IBM",
+      "NetApp",
+      "Nutanix",
+      "Pure Storage",
+      "Amazon Web Services",
+      "Google Cloud",
+      "Microsoft Azure",
+      "Arista Networks",
+      "Nokia",
+      "Huawei Technologies",
+      "Ciena",
+      "NVIDIA",
+      "Extreme Networks",
+      "Palo Alto Networks",
+      "Fortinet",
+      "Zscaler",
+      "Netskope",
+      "Ruckus Networks",
+      "Ubiquiti",
+      "Nile",
+      "Meter"
+    ],
+    "must_not_include": [
+      "VMware",
+      "Oracle",
+      "Hitachi Vantara",
+      "Quantum Corporation",
+      "Seagate Technology",
+      "Western Digital",
+      "Juniper Networks"
+    ],
+    "notes": "JUDGMENT CALL: the ITAD names (ERI, Ingram Micro, Sage Sustainable Electronics, Sims Recycling Solutions) compete with HPE Financial Services, an adjacency -- not the document's primary enterprise IT infrastructure market. PRD S3 says 'competing in the document's primary market', which would exclude them. Included here because the document explicitly labels them 'our primary ITAD competitors'; the definition is genuinely ambiguous for multi-segment filers and needs an owner ruling. VMware is in must_not_include because the document names Broadcom (its acquirer) -- a model substituting the better-known brand is a precision failure worth catching. LABEL CORRECTION (post-spike): first-pass labeling missed 5 named competitors -- Nile and Meter (networking-as-a-service) and IBM Global Financing, Dell Financial Services, Cisco Capital (HPE Financial Services). All five were surfaced by the model and verified in the source text. The financing trio compounds the multi-segment ambiguity noted above. OWNER RULING (2026-08-22): PRIMARY MARKET ONLY. The 7 HPE Financial Services names -- ERI, Ingram Micro, Sage Sustainable Electronics, Sims Recycling Solutions, IBM Global Financing, Dell Financial Services, Cisco Capital -- compete in ITAD and captive financing, not in the document's primary enterprise IT infrastructure market, and are EXCLUDED from expected. They are real named competitors, so they are recorded here for provenance but deliberately NOT added to must_not_include: extracting one is an out-of-scope error, not a fabrication, and the two should stay distinguishable when reviewing failures."
+  }
+}

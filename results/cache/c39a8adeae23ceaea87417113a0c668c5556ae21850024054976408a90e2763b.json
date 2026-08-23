@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Microsoft\", \"role\": \"self\"},\n    {\"name\": \"LinkedIn\", \"role\": \"self\"},\n    {\"name\": \"GitHub\", \"role\": \"self\"},\n    {\"name\": \"Nuance\", \"role\": \"other\"},\n    {\"name\": \"Azure\", \"role\": \"self\"},\n    {\"name\": \"Office\", \"role\": \"self\"},\n    {\"name\": \"Windows\", \"role\": \"self\"},\n    {\"name\": \"Dynamics\", \"role\": \"self\"},\n    {\"name\": \"Power BI\", \"role\": \"self\"},\n    {\"name\": \"Exchange\", \"role\": \"self\"},\n    {\"name\": \"SharePoint\", \"role\": \"self\"},\n    {\"name\": \"Microsoft Teams\", \"role\": \"self\"},\n    {\"name\": \"Power Apps\", \"role\": \"self\"},\n    {\"name\": \"Power Automate\", \"role\": \"self\"},\n    {\"name\": \"Outlook.com\", \"role\": \"self\"},\n    {\"name\": \"OneDrive\", \"role\": \"self\"},\n    {\"name\": \"Bing\", \"role\": \"self\"},\n    {\"name\": \"Microsoft Edge\", \"role\": \"self\"},\n    {\"name\": \"Microsoft News\", \"role\": \"self\"},\n    {\"name\": \"Copilot\", \"role\": \"self\"},\n    {\"name\": \"SQL Server\", \"role\": \"self\"},\n    {\"name\": \"Windows Server\", \"role\": \"self\"},\n    {\"name\": \"Visual Studio\", \"role\": \"self\"},\n    {\"name\": \"System Center\", \"role\": \"self\"},\n    {\"name\": \"Surface\", \"role\": \"self\"},\n    {\"name\": \"XBOX\", \"role\": \"self\"},\n    {\"name\": \"XBOX Game Pass\", \"role\": \"self\"},\n    {\"name\": \"Microsoft Defender for Endpoint\", \"role\": \"self\"},\n    {\"name\": \"Enterprise Mobility + Security\", \"role\": \"self\"},\n    {\"name\": \"Microsoft 365 Copilot\", \"role\": \"self\"},\n    {\"name\": \"Azure AI Foundry\", \"role\": \"self\"},\n    {\"name\": \"Microsoft Partner Network\", \"role\": \"partner\"},\n    {\"name\": \"Enterprise Support Services\", \"role\": \"self\"},\n    {\"name\": \"Health and Life Sciences\", \"role\": \"self\"}\n  ],\n  \"summary\": \"This document names Microsoft and its subsidiaries and products, along with references to various competitors and partner ecosystems across productivity, cloud, gaming, and professional networking sectors.\"\n}\n```",
+  "input_tokens": 4181,
+  "output_tokens": 593,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.883,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

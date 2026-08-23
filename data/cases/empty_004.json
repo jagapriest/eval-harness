@@ -1,0 +1,39 @@
+{
+  "case_id": "empty_004",
+  "bucket": "empty",
+  "source_path": "data/docs/empty_004.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Micron Technology",
+    "cik": "0000723125",
+    "filing_date": "2025-10-03",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "Cyberspace Administration of China"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Micron",
+        "role": "self"
+      },
+      {
+        "name": "Crucial",
+        "role": "self"
+      },
+      {
+        "name": "Cyberspace Administration of China",
+        "role": "regulator"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case empty_004` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

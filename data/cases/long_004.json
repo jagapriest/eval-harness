@@ -1,0 +1,210 @@
+{
+  "case_id": "long_004",
+  "bucket": "long",
+  "source_path": "data/docs/long_004.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "NetApp (long)",
+    "cik": "0001002047",
+    "filing_date": "2026-06-05",
+    "words": 9000,
+    "org_mentions": 6,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "International Organization for Standardization",
+      "U.S. Customs and Border Protection",
+      "Responsible Business Alliance",
+      "McKinsey and Company",
+      "Cigna Corporation",
+      "Princeton University",
+      "Stanford University",
+      "Gestamp",
+      "Georgetown University",
+      "IESE Business School University of Navarra",
+      "Harvard Business School",
+      "Oxford University",
+      "ESIC Business & Marketing School",
+      "Dialog Semiconductor",
+      "Schlumberger",
+      "American University of Beirut",
+      "Columbia Business School",
+      "MKS, Inc.",
+      "Goa University",
+      "Indiana University Kelley School of Business",
+      "University of California at Los Angeles",
+      "Santa Clara University",
+      "SEC",
+      "Flexera Software LLC"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "International Organization for Standardization",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Customs and Border Protection",
+        "role": "other"
+      },
+      {
+        "name": "Responsible Business Alliance",
+        "role": "other"
+      },
+      {
+        "name": "Cisco Systems",
+        "role": "competitor"
+      },
+      {
+        "name": "Akamai Technologies",
+        "role": "competitor"
+      },
+      {
+        "name": "McKinsey and Company",
+        "role": "other"
+      },
+      {
+        "name": "Oracle Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Cigna Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Princeton University",
+        "role": "other"
+      },
+      {
+        "name": "Stanford University",
+        "role": "other"
+      },
+      {
+        "name": "Microsoft",
+        "role": "competitor"
+      },
+      {
+        "name": "Gestamp",
+        "role": "other"
+      },
+      {
+        "name": "Georgetown University",
+        "role": "other"
+      },
+      {
+        "name": "IESE Business School University of Navarra",
+        "role": "other"
+      },
+      {
+        "name": "Harvard Business School",
+        "role": "other"
+      },
+      {
+        "name": "Oxford University",
+        "role": "other"
+      },
+      {
+        "name": "ESIC Business & Marketing School",
+        "role": "other"
+      },
+      {
+        "name": "Western Digital Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Sandisk",
+        "role": "competitor"
+      },
+      {
+        "name": "Dialog Semiconductor",
+        "role": "other"
+      },
+      {
+        "name": "Renesas Electronics",
+        "role": "competitor"
+      },
+      {
+        "name": "Advanced Micro Devices",
+        "role": "competitor"
+      },
+      {
+        "name": "Freescale Semiconductor",
+        "role": "competitor"
+      },
+      {
+        "name": "NXP Semiconductors",
+        "role": "competitor"
+      },
+      {
+        "name": "Motorola",
+        "role": "competitor"
+      },
+      {
+        "name": "Schlumberger",
+        "role": "other"
+      },
+      {
+        "name": "American University of Beirut",
+        "role": "other"
+      },
+      {
+        "name": "Columbia Business School",
+        "role": "other"
+      },
+      {
+        "name": "MKS, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Salesforce",
+        "role": "competitor"
+      },
+      {
+        "name": "Zscaler",
+        "role": "competitor"
+      },
+      {
+        "name": "Goa University",
+        "role": "other"
+      },
+      {
+        "name": "Indiana University Kelley School of Business",
+        "role": "other"
+      },
+      {
+        "name": "Xilinx",
+        "role": "competitor"
+      },
+      {
+        "name": "AMD",
+        "role": "competitor"
+      },
+      {
+        "name": "University of California at Los Angeles",
+        "role": "other"
+      },
+      {
+        "name": "Santa Clara University",
+        "role": "other"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      },
+      {
+        "name": "NetApp",
+        "role": "self"
+      },
+      {
+        "name": "Flexera Software LLC",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case long_004` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Amazon.com, Inc.\", \"role\": \"self\"},\n    {\"name\": \"Amazon Web Services\", \"role\": \"self\"},\n    {\"name\": \"Securities and Exchange Commission\", \"role\": \"regulator\"},\n    {\"name\": \"IronNet, Inc.\", \"role\": \"other\"},\n    {\"name\": \"Goldman Sachs Group, Inc.\", \"role\": \"other\"},\n    {\"name\": \"Wilmer Cutler Pickering Hale and Dorr LLP\", \"role\": \"other\"},\n    {\"name\": \"MIT Schwarzman College of Computing\", \"role\": \"other\"},\n    {\"name\": \"AI Fund, L.P.\", \"role\": \"other\"},\n    {\"name\": \"PepsiCo, Inc.\", \"role\": \"other\"},\n    {\"name\": \"Bridgewater Associates, LP\", \"role\": \"other\"},\n    {\"name\": \"Marshall University\", \"role\": \"other\"},\n    {\"name\": \"Martha's Table\", \"role\": \"other\"},\n    {\"name\": \"Corning Incorporated\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names Amazon and its subsidiaries, government regulators, and various organizations affiliated with Amazon's board members and executives.\"\n}\n```",
+  "input_tokens": 4500,
+  "output_tokens": 300,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.695,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

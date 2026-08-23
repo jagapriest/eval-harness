@@ -1,0 +1,98 @@
+{
+  "case_id": "clean_012",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_012.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Datadog",
+    "cik": "0001561550",
+    "filing_date": "2026-02-18",
+    "words": 3000,
+    "org_mentions": 4,
+    "proposed": [
+      "IBM",
+      "Microsoft Corporation",
+      "SolarWinds Corporation",
+      "Cisco Systems, Inc.",
+      "New Relic, Inc.",
+      "Dynatrace Software Inc.",
+      "Elastic N.V.",
+      "Amazon Web Services",
+      "Google Cloud Platform"
+    ],
+    "proposed_must_not_include": [
+      "SEC",
+      "Delaware"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Datadog",
+        "role": "self"
+      },
+      {
+        "name": "IBM",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "SolarWinds Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Cisco Systems, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "New Relic, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Dynatrace Software Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Elastic N.V.",
+        "role": "competitor"
+      },
+      {
+        "name": "Amazon Web Services",
+        "role": "competitor"
+      },
+      {
+        "name": "AWS",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft Azure",
+        "role": "competitor"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "role": "competitor"
+      },
+      {
+        "name": "GCP",
+        "role": "competitor"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      },
+      {
+        "name": "Delaware",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_012` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

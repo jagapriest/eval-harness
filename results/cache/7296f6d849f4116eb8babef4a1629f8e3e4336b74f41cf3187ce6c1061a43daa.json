@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"Confluent\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"Securities and Exchange Commission\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"International Business Machines Corporation\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"IBM\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Corvo Merger Sub, Inc.\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"LinkedIn\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Twitter\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"X\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"LinkedIn\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Facebook\",\n      \"role\": \"other\"\n    }\n  ],\n  \"summary\": \"This document names Confluent itself, its proposed acquirer IBM, and various social media platforms and regulatory bodies, with no suppliers, competitors, or partners explicitly identified.\"\n}\n```",
+  "input_tokens": 4222,
+  "output_tokens": 296,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.842,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

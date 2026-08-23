@@ -2,20 +2,369 @@
   "case_id": "adversarial_001",
   "bucket": "adversarial",
   "source_path": "data/docs/adversarial_001.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Akamai",
+    "cik": "0001086222",
+    "filing_date": "2026-02-20",
+    "words": 3000,
+    "org_mentions": 1,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "adidas",
+      "Adobe",
+      "Aflac",
+      "Airbnb",
+      "Asus",
+      "Autodesk",
+      "Bank of Montreal",
+      "Carnival Corporation",
+      "Comcast",
+      "Commerzbank",
+      "Daiwa Institute of Research",
+      "eBay",
+      "Electronic Arts",
+      "Epic Games",
+      "Fidelity Investments",
+      "Honda",
+      "Japan Airlines",
+      "Liberty Mutual",
+      "Maersk Transportation & Logistics",
+      "Marriott",
+      "NBCUniversal",
+      "Panasonic",
+      "Panera Bread",
+      "Paramount Global",
+      "Philips",
+      "Rabobank",
+      "Riot Games",
+      "Sony Interactive Entertainment",
+      "RTL",
+      "Spotify",
+      "Telefonica",
+      "Toshiba",
+      "Ubisoft",
+      "WarnerMedia",
+      "The Washington Post",
+      "U.S. Department of Defense",
+      "U.S. Department of Labor",
+      "U.S. Department of Transportation",
+      "U.S. Department of the Treasury",
+      "AHEAD",
+      "Avant",
+      "BV Tech",
+      "Carahsoft",
+      "CPD",
+      "Deloitte",
+      "Deutsche Telecom",
+      "Doyen",
+      "Guidepoint",
+      "Kyndryl",
+      "LevelBlue",
+      "Macnica",
+      "Microsoft Azure",
+      "Netpoleon",
+      "Oplium",
+      "Optiv",
+      "Presidio",
+      "SHI",
+      "Telefonica Group",
+      "Trace3",
+      "WWT",
+      "Securities and Exchange Commission",
+      "U.S. Foreign Corrupt Practices Act",
+      "UK Bribery Act",
+      "International Traffic in Arms Regulations",
+      "Export Administration Regulations",
+      "Office of Foreign Assets Control",
+      "European Union General Data Protection Regulation",
+      "California Consumer Privacy Act"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Akamai",
+        "role": "self"
+      },
+      {
+        "name": "adidas",
+        "role": "customer"
+      },
+      {
+        "name": "Adobe",
+        "role": "customer"
+      },
+      {
+        "name": "Aflac",
+        "role": "customer"
+      },
+      {
+        "name": "Airbnb",
+        "role": "customer"
+      },
+      {
+        "name": "Asus",
+        "role": "customer"
+      },
+      {
+        "name": "Autodesk",
+        "role": "customer"
+      },
+      {
+        "name": "Bank of Montreal",
+        "role": "customer"
+      },
+      {
+        "name": "Carnival Corporation",
+        "role": "customer"
+      },
+      {
+        "name": "Comcast",
+        "role": "customer"
+      },
+      {
+        "name": "Commerzbank",
+        "role": "customer"
+      },
+      {
+        "name": "Daiwa Institute of Research",
+        "role": "customer"
+      },
+      {
+        "name": "eBay",
+        "role": "customer"
+      },
+      {
+        "name": "Electronic Arts",
+        "role": "customer"
+      },
+      {
+        "name": "Epic Games",
+        "role": "customer"
+      },
+      {
+        "name": "Fidelity Investments",
+        "role": "customer"
+      },
+      {
+        "name": "Honda",
+        "role": "customer"
+      },
+      {
+        "name": "Japan Airlines",
+        "role": "customer"
+      },
+      {
+        "name": "Liberty Mutual",
+        "role": "customer"
+      },
+      {
+        "name": "Maersk Transportation & Logistics",
+        "role": "customer"
+      },
+      {
+        "name": "Marriott",
+        "role": "customer"
+      },
+      {
+        "name": "NBCUniversal",
+        "role": "customer"
+      },
+      {
+        "name": "Panasonic",
+        "role": "customer"
+      },
+      {
+        "name": "Panera Bread",
+        "role": "customer"
+      },
+      {
+        "name": "Paramount Global",
+        "role": "customer"
+      },
+      {
+        "name": "Philips",
+        "role": "customer"
+      },
+      {
+        "name": "Rabobank",
+        "role": "customer"
+      },
+      {
+        "name": "Riot Games",
+        "role": "customer"
+      },
+      {
+        "name": "Sony Interactive Entertainment",
+        "role": "customer"
+      },
+      {
+        "name": "RTL",
+        "role": "customer"
+      },
+      {
+        "name": "Spotify",
+        "role": "customer"
+      },
+      {
+        "name": "Telefonica",
+        "role": "customer"
+      },
+      {
+        "name": "Toshiba",
+        "role": "customer"
+      },
+      {
+        "name": "Ubisoft",
+        "role": "customer"
+      },
+      {
+        "name": "WarnerMedia",
+        "role": "customer"
+      },
+      {
+        "name": "The Washington Post",
+        "role": "customer"
+      },
+      {
+        "name": "U.S. Department of Defense",
+        "role": "customer"
+      },
+      {
+        "name": "U.S. Department of Labor",
+        "role": "customer"
+      },
+      {
+        "name": "U.S. Department of Transportation",
+        "role": "customer"
+      },
+      {
+        "name": "U.S. Department of the Treasury",
+        "role": "customer"
+      },
+      {
+        "name": "AHEAD",
+        "role": "partner"
+      },
+      {
+        "name": "Avant",
+        "role": "partner"
+      },
+      {
+        "name": "BV Tech",
+        "role": "partner"
+      },
+      {
+        "name": "Carahsoft",
+        "role": "partner"
+      },
+      {
+        "name": "CPD",
+        "role": "partner"
+      },
+      {
+        "name": "Deloitte",
+        "role": "partner"
+      },
+      {
+        "name": "Deutsche Telecom",
+        "role": "partner"
+      },
+      {
+        "name": "Doyen",
+        "role": "partner"
+      },
+      {
+        "name": "Guidepoint",
+        "role": "partner"
+      },
+      {
+        "name": "Kyndryl",
+        "role": "partner"
+      },
+      {
+        "name": "LevelBlue",
+        "role": "partner"
+      },
+      {
+        "name": "Macnica",
+        "role": "partner"
+      },
+      {
+        "name": "Microsoft Azure",
+        "role": "partner"
+      },
+      {
+        "name": "Netpoleon",
+        "role": "partner"
+      },
+      {
+        "name": "Oplium",
+        "role": "partner"
+      },
+      {
+        "name": "Optiv",
+        "role": "partner"
+      },
+      {
+        "name": "Presidio",
+        "role": "partner"
+      },
+      {
+        "name": "SHI",
+        "role": "partner"
+      },
+      {
+        "name": "Telefonica Group",
+        "role": "partner"
+      },
+      {
+        "name": "Trace3",
+        "role": "partner"
+      },
+      {
+        "name": "WWT",
+        "role": "partner"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Foreign Corrupt Practices Act",
+        "role": "other"
+      },
+      {
+        "name": "UK Bribery Act",
+        "role": "other"
+      },
+      {
+        "name": "International Traffic in Arms Regulations",
+        "role": "other"
+      },
+      {
+        "name": "Export Administration Regulations",
+        "role": "other"
+      },
+      {
+        "name": "Office of Foreign Assets Control",
+        "role": "other"
+      },
+      {
+        "name": "European Union General Data Protection Regulation",
+        "role": "other"
+      },
+      {
+        "name": "California Consumer Privacy Act",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_001` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
   "expected": {
     "competitors": [],
-    "must_not_include": [
-      "Snowflake",
-      "Databricks",
-      "IBM",
-      "Accenture",
-      "Booz Allen Hamilton",
-      "C3.ai",
-      "Microsoft",
-      "Amazon Web Services",
-      "Deloitte",
-      "Leidos"
-    ],
-    "notes": "Palantir names only categories: 'internal software development efforts of our potential customers', 'large enterprise software companies, government contractors, and system integrators'. The 'competing with our customers' internal development' framing is strong bait -- a model may name the customers themselves, or fill in the well-known rivals absent from the text."
+    "must_not_include": [],
+    "notes": ""
   }
 }

@@ -1,0 +1,115 @@
+{
+  "case_id": "adversarial_008",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_008.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Dell Technologies",
+    "cik": "0001571996",
+    "filing_date": "2026-03-16",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "ISO",
+      "Satmetrix Systems, Inc.",
+      "Bain & Company, Inc.",
+      "Fred Reichheld",
+      "U.S. Federal Communications Commission",
+      "U.S. Federal Trade Commission",
+      "U.S. Department of Justice",
+      "European Union",
+      "U.S. Department of Commerce",
+      "U.S. Department of the Treasury",
+      "U.S. Customs and Border Protection",
+      "U.S. Consumer Product Safety Commission",
+      "U.S. Department of Transportation",
+      "U.S. Department of Health and Human Services",
+      "Responsible Business Alliance",
+      "United Nations",
+      "Organisation for Economic Co-operation and Development"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "ISO",
+        "role": "other"
+      },
+      {
+        "name": "Dell Technologies",
+        "role": "self"
+      },
+      {
+        "name": "Satmetrix Systems, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Bain & Company, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Fred Reichheld",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Federal Communications Commission",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Federal Trade Commission",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of Justice",
+        "role": "other"
+      },
+      {
+        "name": "European Union",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of Commerce",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of the Treasury",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Customs and Border Protection",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Consumer Product Safety Commission",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of Transportation",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of Health and Human Services",
+        "role": "other"
+      },
+      {
+        "name": "Responsible Business Alliance",
+        "role": "other"
+      },
+      {
+        "name": "United Nations",
+        "role": "other"
+      },
+      {
+        "name": "Organisation for Economic Co-operation and Development",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_008` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "case_id": "adversarial_002",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_002.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Amazon",
+    "cik": "0001018724",
+    "filing_date": "2026-02-06",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "Securities and Exchange Commission",
+      "IronNet, Inc.",
+      "Goldman Sachs Group, Inc.",
+      "Wilmer Cutler Pickering Hale and Dorr LLP",
+      "MIT Schwarzman College of Computing",
+      "AI Fund, L.P.",
+      "PepsiCo, Inc.",
+      "Bridgewater Associates, LP",
+      "Marshall University",
+      "Martha's Table",
+      "Corning Incorporated"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Amazon.com, Inc.",
+        "role": "self"
+      },
+      {
+        "name": "Amazon Web Services",
+        "role": "self"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "regulator"
+      },
+      {
+        "name": "IronNet, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Goldman Sachs Group, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Wilmer Cutler Pickering Hale and Dorr LLP",
+        "role": "other"
+      },
+      {
+        "name": "MIT Schwarzman College of Computing",
+        "role": "other"
+      },
+      {
+        "name": "AI Fund, L.P.",
+        "role": "other"
+      },
+      {
+        "name": "PepsiCo, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Bridgewater Associates, LP",
+        "role": "other"
+      },
+      {
+        "name": "Marshall University",
+        "role": "other"
+      },
+      {
+        "name": "Martha's Table",
+        "role": "other"
+      },
+      {
+        "name": "Corning Incorporated",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_002` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[{\"name\":\"Dell EMC\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"},{\"name\":\"NetApp\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"},{\"name\":\"Hitachi Vantara\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"},{\"name\":\"HP Enterprise\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"},{\"name\":\"IBM\",\"evidence\":\"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\"confidence\":\"high\"}],\"summary\":\"Everpure competes in the data storage market chiefly against legacy storage vendors Dell EMC, NetApp, Hitachi Vantara, HP Enterprise and IBM. It also cites unnamed categories \u2014 cloud providers, hyperconverged vendors, startups and specialized vendors \u2014 which are not extractable. Companies such as VMware, Microsoft, AWS, Google, Cisco, NVIDIA, Commvault, Rubrik and Veeam appear only as technology or ecosystem partners; IBM is also listed as a cloud partner but is explicitly named as a main competitor.\"}",
+  "input_tokens": 7497,
+  "output_tokens": 590,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 7.585,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

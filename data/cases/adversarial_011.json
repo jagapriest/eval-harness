@@ -1,0 +1,45 @@
+{
+  "case_id": "adversarial_011",
+  "bucket": "adversarial",
+  "source_path": "data/docs/adversarial_011.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Palantir",
+    "cik": "0001321655",
+    "filing_date": "2026-02-17",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "European General Data Protection Regulation (GDPR)",
+      "EU AI Act",
+      "Securities and Exchange Commission (SEC)"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Palantir",
+        "role": "self"
+      },
+      {
+        "name": "European General Data Protection Regulation (GDPR)",
+        "role": "other"
+      },
+      {
+        "name": "EU AI Act",
+        "role": "other"
+      },
+      {
+        "name": "Securities and Exchange Commission (SEC)",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case adversarial_011` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

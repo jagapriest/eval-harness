@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"QUALCOMM Incorporated\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"NASDAQ Global Select Market\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"TechInsights\",\n      \"role\": \"analyst\"\n    }\n  ],\n  \"summary\": \"This document names the filer (Qualcomm Incorporated), a stock exchange (NASDAQ), and an analyst firm (TechInsights) that provided industry research data.\"\n}\n```",
+  "input_tokens": 4578,
+  "output_tokens": 141,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 1.864,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

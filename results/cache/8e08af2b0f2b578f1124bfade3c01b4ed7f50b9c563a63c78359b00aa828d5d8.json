@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"This Microsoft 10-K excerpt describes competition only in generic category terms \u2014 \\\"software and global application vendors,\\\" \\\"cloud service providers and open-source offerings,\\\" \\\"hyperscalers,\\\" \\\"online professional networks,\\\" \\\"other console platforms,\\\" and \\\"search engines\\\" \u2014 without naming any specific rival company. All companies named in the document (Microsoft's own brands such as Azure, LinkedIn, GitHub, Bing, XBOX, Dynamics) are the filer's own products or business units, not competitors. Therefore no qualifying named competitor can be extracted.\"}",
+  "input_tokens": 7811,
+  "output_tokens": 207,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 4.285,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

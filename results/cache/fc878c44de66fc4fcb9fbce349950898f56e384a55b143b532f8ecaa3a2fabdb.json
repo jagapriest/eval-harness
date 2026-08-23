@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"Alphabet's 10-K describes competition entirely in categorical terms \u2014 general purpose and vertical search engines, online advertising platforms, offline advertising media, digital content and application platforms, enterprise cloud providers, AI model developers, consumer hardware makers, digital video providers, social networks, and workspace communication tools. No specific rival company is named anywhere in the competition discussion or risk factors. The only company names appearing (Google, YouTube, Waymo, X moonshot factory) are Alphabet's own businesses or products.\"}",
+  "input_tokens": 7311,
+  "output_tokens": 188,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.261,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

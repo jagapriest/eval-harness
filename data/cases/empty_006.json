@@ -1,0 +1,40 @@
+{
+  "case_id": "empty_006",
+  "bucket": "empty",
+  "source_path": "data/docs/empty_006.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Qualcomm",
+    "cik": "0000804328",
+    "filing_date": "2025-11-05",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "NASDAQ Global Select Market",
+      "TechInsights"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "QUALCOMM Incorporated",
+        "role": "self"
+      },
+      {
+        "name": "NASDAQ Global Select Market",
+        "role": "other"
+      },
+      {
+        "name": "TechInsights",
+        "role": "analyst"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case empty_006` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

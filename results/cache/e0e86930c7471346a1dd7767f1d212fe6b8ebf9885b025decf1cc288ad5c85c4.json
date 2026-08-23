@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\n      \"name\": \"Palantir\",\n      \"role\": \"self\"\n    },\n    {\n      \"name\": \"European General Data Protection Regulation (GDPR)\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"EU AI Act\",\n      \"role\": \"other\"\n    },\n    {\n      \"name\": \"Securities and Exchange Commission (SEC)\",\n      \"role\": \"other\"\n    }\n  ],\n  \"summary\": \"This document names Palantir as the filer and references regulatory bodies and regulations, but does not name any specific competitors, customers, suppliers, partners, or analyst firms.\"\n}\n```",
+  "input_tokens": 4088,
+  "output_tokens": 169,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 1.774,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

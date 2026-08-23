@@ -1,0 +1,237 @@
+{
+  "case_id": "long_003",
+  "bucket": "long",
+  "source_path": "data/docs/long_003.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Dell Technologies (long)",
+    "cik": "0001571996",
+    "filing_date": "2026-03-16",
+    "words": 9000,
+    "org_mentions": 9,
+    "proposed": [],
+    "proposed_must_not_include": [
+      "Satmetrix Systems, Inc.",
+      "Bain & Company, Inc.",
+      "U.S. Federal Communications Commission",
+      "U.S. Federal Trade Commission",
+      "U.S. Department of Justice",
+      "European Union",
+      "U.S. Department of Commerce",
+      "U.S. Department of the Treasury",
+      "U.S. Customs and Border Protection",
+      "U.S. Consumer Product Safety Commission",
+      "U.S. Department of Transportation",
+      "U.S. Department of Health and Human Services",
+      "MSD Capital, L.P.",
+      "DFO Management, LLC",
+      "Michael & Susan Dell Foundation",
+      "World Economic Forum",
+      "International Business Council",
+      "Technology CEO Council",
+      "Business Roundtable",
+      "Tsinghua University",
+      "Indian School of Business",
+      "BDT & MSD Advisory Board",
+      "United Nations Foundation",
+      "SecureWorks Corp.",
+      "VMware, Inc.",
+      "Motorola, Inc",
+      "Caterpillar Inc.",
+      "IBM Credit Corporation",
+      "Rogers & Wells",
+      "EMC Corporation",
+      "Snowflake Inc.",
+      "IonQ, Inc.",
+      "CapGemini Ernst & Young",
+      "Xerox Corporation",
+      "Responsible Business Alliance",
+      "Organisation for Economic Co-operation and Development",
+      "United Nations",
+      "SEC",
+      "Democratic Republic of the Congo"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Dell Technologies",
+        "role": "self"
+      },
+      {
+        "name": "Dell",
+        "role": "self"
+      },
+      {
+        "name": "Satmetrix Systems, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Bain & Company, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Federal Communications Commission",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Federal Trade Commission",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of Justice",
+        "role": "other"
+      },
+      {
+        "name": "European Union",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of Commerce",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of the Treasury",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Customs and Border Protection",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Consumer Product Safety Commission",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of Transportation",
+        "role": "other"
+      },
+      {
+        "name": "U.S. Department of Health and Human Services",
+        "role": "other"
+      },
+      {
+        "name": "MSD Capital, L.P.",
+        "role": "other"
+      },
+      {
+        "name": "DFO Management, LLC",
+        "role": "other"
+      },
+      {
+        "name": "Michael & Susan Dell Foundation",
+        "role": "other"
+      },
+      {
+        "name": "World Economic Forum",
+        "role": "other"
+      },
+      {
+        "name": "International Business Council",
+        "role": "other"
+      },
+      {
+        "name": "Technology CEO Council",
+        "role": "other"
+      },
+      {
+        "name": "Business Roundtable",
+        "role": "other"
+      },
+      {
+        "name": "Tsinghua University",
+        "role": "other"
+      },
+      {
+        "name": "Indian School of Business",
+        "role": "other"
+      },
+      {
+        "name": "BDT & MSD Advisory Board",
+        "role": "other"
+      },
+      {
+        "name": "United Nations Foundation",
+        "role": "other"
+      },
+      {
+        "name": "SecureWorks Corp.",
+        "role": "other"
+      },
+      {
+        "name": "Sophos Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "VMware, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "Broadcom Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Motorola, Inc",
+        "role": "other"
+      },
+      {
+        "name": "Caterpillar Inc.",
+        "role": "other"
+      },
+      {
+        "name": "IBM Credit Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Rogers & Wells",
+        "role": "other"
+      },
+      {
+        "name": "EMC Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Snowflake Inc.",
+        "role": "other"
+      },
+      {
+        "name": "IonQ, Inc.",
+        "role": "other"
+      },
+      {
+        "name": "CapGemini Ernst & Young",
+        "role": "other"
+      },
+      {
+        "name": "Xerox Corporation",
+        "role": "other"
+      },
+      {
+        "name": "Responsible Business Alliance",
+        "role": "other"
+      },
+      {
+        "name": "Organisation for Economic Co-operation and Development",
+        "role": "other"
+      },
+      {
+        "name": "United Nations",
+        "role": "other"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      },
+      {
+        "name": "Democratic Republic of the Congo",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case long_003` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "case_id": "clean_010",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_010.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Fortinet",
+    "cik": "0001262039",
+    "filing_date": "2026-02-25",
+    "words": 3000,
+    "org_mentions": 4,
+    "proposed": [
+      "Check Point Software Technologies Ltd.",
+      "Cisco Systems, Inc.",
+      "CrowdStrike Holdings, Inc.",
+      "F5 Networks, Inc.",
+      "Hewlett-Packard Enterprise",
+      "Huawei Technologies Co., Ltd.",
+      "Microsoft Corporation",
+      "Netskope Inc.",
+      "Palo Alto Networks, Inc.",
+      "SonicWALL, Inc.",
+      "Sophos Group Plc",
+      "Zscaler, Inc."
+    ],
+    "proposed_must_not_include": [
+      "Dow Jones Sustainability Indices",
+      "Carbon Disclosure Project",
+      "Ecovadis",
+      "Science Based Targets Initiatives",
+      "World Economic Forum",
+      "Securities and Exchange Commission"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Fortinet",
+        "role": "self"
+      },
+      {
+        "name": "Check Point Software Technologies Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Cisco Systems, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "CrowdStrike Holdings, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "F5 Networks, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Hewlett-Packard Enterprise",
+        "role": "competitor"
+      },
+      {
+        "name": "Huawei Technologies Co., Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Netskope Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Palo Alto Networks, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "SonicWALL, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Sophos Group Plc",
+        "role": "competitor"
+      },
+      {
+        "name": "Zscaler, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Dow Jones Sustainability Indices",
+        "role": "other"
+      },
+      {
+        "name": "Carbon Disclosure Project",
+        "role": "other"
+      },
+      {
+        "name": "Ecovadis",
+        "role": "other"
+      },
+      {
+        "name": "Science Based Targets Initiatives",
+        "role": "other"
+      },
+      {
+        "name": "World Economic Forum",
+        "role": "other"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_010` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

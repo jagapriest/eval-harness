@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"This Teledyne Technologies 10-K section discusses competition only in general terms, noting the company \\\"encounters a wide variety of competitors, none of which we believe offer the same product and service lines.\\\" No specific competing company is named anywhere in the document; other named entities are customers (U.S. Department of War), regulators, or the company itself.\"}",
+  "input_tokens": 7397,
+  "output_tokens": 122,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.726,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

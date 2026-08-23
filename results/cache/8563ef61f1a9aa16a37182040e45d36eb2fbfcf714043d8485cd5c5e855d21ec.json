@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"ISO\", \"role\": \"other\"},\n    {\"name\": \"Dell Technologies\", \"role\": \"self\"},\n    {\"name\": \"Satmetrix Systems, Inc.\", \"role\": \"other\"},\n    {\"name\": \"Bain & Company, Inc.\", \"role\": \"other\"},\n    {\"name\": \"Fred Reichheld\", \"role\": \"other\"},\n    {\"name\": \"U.S. Federal Communications Commission\", \"role\": \"other\"},\n    {\"name\": \"U.S. Federal Trade Commission\", \"role\": \"other\"},\n    {\"name\": \"U.S. Department of Justice\", \"role\": \"other\"},\n    {\"name\": \"European Union\", \"role\": \"other\"},\n    {\"name\": \"U.S. Department of Commerce\", \"role\": \"other\"},\n    {\"name\": \"U.S. Department of the Treasury\", \"role\": \"other\"},\n    {\"name\": \"U.S. Customs and Border Protection\", \"role\": \"other\"},\n    {\"name\": \"U.S. Consumer Product Safety Commission\", \"role\": \"other\"},\n    {\"name\": \"U.S. Department of Transportation\", \"role\": \"other\"},\n    {\"name\": \"U.S. Department of Health and Human Services\", \"role\": \"other\"},\n    {\"name\": \"Responsible Business Alliance\", \"role\": \"other\"},\n    {\"name\": \"United Nations\", \"role\": \"other\"},\n    {\"name\": \"Organisation for Economic Co-operation and Development\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names Dell Technologies itself, multiple U.S. federal and international regulatory agencies and standards bodies, and various organizations related to corporate responsibility and human rights frameworks.\"\n}\n```",
+  "input_tokens": 4088,
+  "output_tokens": 401,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.047,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[{\"name\":\"Amazon Web Services (AWS)\",\"evidence\":\"large, well-established, public cloud providers that generally compete in all of our markets, including Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud Platform (GCP)\",\"confidence\":\"high\"},{\"name\":\"Microsoft Azure\",\"evidence\":\"public cloud providers that generally compete in all of our markets, including Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud Platform (GCP)\",\"confidence\":\"high\"},{\"name\":\"Google Cloud Platform (GCP)\",\"evidence\":\"public cloud providers that generally compete in all of our markets, including Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud Platform (GCP)\",\"confidence\":\"high\"}],\"summary\":\"Snowflake describes a highly competitive, rapidly evolving data/AI cloud market where the only named rivals are the three major public cloud providers: AWS, Microsoft Azure, and Google Cloud Platform. Other competition is described only in generic categories \u2014 less-established cloud companies, legacy database and big data vendors, observability providers, and emerging entrants \u2014 with no company names. Partners in the Snowflake Partner Network and system integrators are excluded as non-competitors.\"}",
+  "input_tokens": 7361,
+  "output_tokens": 450,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 5.506,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

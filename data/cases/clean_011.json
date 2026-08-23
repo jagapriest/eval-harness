@@ -1,0 +1,121 @@
+{
+  "case_id": "clean_011",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_011.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "AMD",
+    "cik": "0000002488",
+    "filing_date": "2026-02-04",
+    "words": 3000,
+    "org_mentions": 11,
+    "proposed": [
+      "Intel Corporation",
+      "Nvidia Corporation",
+      "Altera",
+      "Lattice Semiconductor Corporation",
+      "Microsemi Corporation",
+      "Broadcom Corporation",
+      "Marvell Technology Group, Ltd.",
+      "Analog Devices",
+      "Texas Instruments Incorporated",
+      "NXP Semiconductors N.V.",
+      "Qualcomm Incorporated"
+    ],
+    "proposed_must_not_include": [
+      "Taiwan Semiconductor Manufacturing Company Limited",
+      "GLOBALFOUNDRIES Inc.",
+      "United Microelectronics Corporation",
+      "Samsung Electronics Co., Ltd.",
+      "Tongfu Microelectronics Co., Ltd.",
+      "Siliconware Precision Industries Ltd.",
+      "King Yuan Electronics Company"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Intel Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Nvidia Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Altera",
+        "role": "competitor"
+      },
+      {
+        "name": "Arm",
+        "role": "competitor"
+      },
+      {
+        "name": "Lattice Semiconductor Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsemi Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Broadcom Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Marvell Technology Group, Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Analog Devices",
+        "role": "competitor"
+      },
+      {
+        "name": "Texas Instruments Incorporated",
+        "role": "competitor"
+      },
+      {
+        "name": "NXP Semiconductors N.V.",
+        "role": "competitor"
+      },
+      {
+        "name": "Qualcomm Incorporated",
+        "role": "competitor"
+      },
+      {
+        "name": "Taiwan Semiconductor Manufacturing Company Limited",
+        "role": "supplier"
+      },
+      {
+        "name": "GLOBALFOUNDRIES Inc.",
+        "role": "supplier"
+      },
+      {
+        "name": "United Microelectronics Corporation",
+        "role": "supplier"
+      },
+      {
+        "name": "Samsung Electronics Co., Ltd.",
+        "role": "supplier"
+      },
+      {
+        "name": "Tongfu Microelectronics Co., Ltd.",
+        "role": "supplier"
+      },
+      {
+        "name": "Siliconware Precision Industries Ltd.",
+        "role": "supplier"
+      },
+      {
+        "name": "King Yuan Electronics Company",
+        "role": "supplier"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_011` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

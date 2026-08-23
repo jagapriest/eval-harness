@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Elastic N.V.\", \"role\": \"self\"},\n    {\"name\": \"Amazon Web Services\", \"role\": \"partner\"},\n    {\"name\": \"AWS\", \"role\": \"partner\"},\n    {\"name\": \"Google Cloud Platform\", \"role\": \"partner\"},\n    {\"name\": \"GCP\", \"role\": \"partner\"},\n    {\"name\": \"Microsoft Azure\", \"role\": \"partner\"},\n    {\"name\": \"Azure\", \"role\": \"partner\"}\n  ],\n  \"summary\": \"This document names the filing company (Elastic N.V.) and three major cloud service providers that serve as distribution and delivery partners for its platform offerings.\"\n}\n```",
+  "input_tokens": 4174,
+  "output_tokens": 165,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 1.631,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

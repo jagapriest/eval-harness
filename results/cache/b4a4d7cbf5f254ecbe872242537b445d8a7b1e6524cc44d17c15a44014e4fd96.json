@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Broadcom\", \"role\": \"self\"},\n    {\"name\": \"VMware\", \"role\": \"other\"},\n    {\"name\": \"Symantec\", \"role\": \"other\"},\n    {\"name\": \"Taiwan Semiconductor Manufacturing Company Limited\", \"role\": \"supplier\"},\n    {\"name\": \"TSMC\", \"role\": \"supplier\"},\n    {\"name\": \"Advanced Semiconductor Engineering, Inc.\", \"role\": \"supplier\"},\n    {\"name\": \"Foxconn Technology Group\", \"role\": \"supplier\"},\n    {\"name\": \"Amkor Technology, Inc.\", \"role\": \"supplier\"},\n    {\"name\": \"Siliconware Precision Industries Co., Ltd.\", \"role\": \"supplier\"},\n    {\"name\": \"Integrated Circuit Systems, Inc.\", \"role\": \"other\"},\n    {\"name\": \"Integrated Device Technology, Inc.\", \"role\": \"other\"},\n    {\"name\": \"Commodore International, Ltd.\", \"role\": \"other\"},\n    {\"name\": \"PepsiCo, Inc.\", \"role\": \"other\"},\n    {\"name\": \"General Motors Corporation\", \"role\": \"other\"},\n    {\"name\": \"Pacven Investment, Ltd.\", \"role\": \"other\"},\n    {\"name\": \"Hume Industries Ltd.\", \"role\": \"other\"},\n    {\"name\": \"LSI Corporation\", \"role\": \"other\"},\n    {\"name\": \"PricewaterhouseCoopers LLP\", \"role\": \"other\"},\n    {\"name\": \"SanDisk Corporation\", \"role\": \"other\"},\n    {\"name\": \"Western Digital Corporation\", \"role\": \"other\"},\n    {\"name\": \"Broadcom Corporation\", \"role\": \"other\"},\n    {\"name\": \"Wilson Sonsini Goodrich & Rosati PC\", \"role\": \"other\"},\n    {\"name\": \"Yuasa & Hara\", \"role\": \"other\"},\n    {\"name\": \"Howrey & Simon LLP\", \"role\": \"other\"},\n    {\"name\": \"Nortel Networks Corporation\", \"role\": \"other\"},\n    {\"name\": \"Securities and Exchange Commission\", \"role\": \"other\"},\n    {\"name\": \"International Organization for Standardization\", \"role\": \"other\"},\n    {\"name\": \"AON\", \"role\": \"analyst\"}\n  ],\n  \"summary\": \"This document names semiconductor manufacturers, foundries and assembly partners, software companies, historical business affiliations of executives, law firms, and industry analysis firms that appear in a company's 10-K filing.\"\n}\n```",
+  "input_tokens": 4245,
+  "output_tokens": 587,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 4.262,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

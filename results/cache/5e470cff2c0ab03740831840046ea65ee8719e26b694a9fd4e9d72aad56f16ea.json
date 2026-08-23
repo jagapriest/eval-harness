@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[{\"name\":\"Cisco\",\"evidence\":\"our principal competitors include: global technology vendors, such as Cisco, Dell, Hewlett-Packard Enterprise, and Lenovo\",\"confidence\":\"high\"},{\"name\":\"Dell\",\"evidence\":\"our principal competitors include: global technology vendors, such as Cisco, Dell, Hewlett-Packard Enterprise, and Lenovo\",\"confidence\":\"high\"},{\"name\":\"Hewlett-Packard Enterprise\",\"evidence\":\"our principal competitors include: global technology vendors, such as Cisco, Dell, Hewlett-Packard Enterprise, and Lenovo\",\"confidence\":\"high\"},{\"name\":\"Lenovo\",\"evidence\":\"our principal competitors include: global technology vendors, such as Cisco, Dell, Hewlett-Packard Enterprise, and Lenovo\",\"confidence\":\"high\"},{\"name\":\"Foxconn\",\"evidence\":\"and ODMs, such as Foxconn, Quanta Computer, and Wiwynn Corporation\",\"confidence\":\"high\"},{\"name\":\"Quanta Computer\",\"evidence\":\"and ODMs, such as Foxconn, Quanta Computer, and Wiwynn Corporation\",\"confidence\":\"high\"},{\"name\":\"Wiwynn Corporation\",\"evidence\":\"and ODMs, such as Foxconn, Quanta Computer, and Wiwynn Corporation\",\"confidence\":\"high\"}],\"summary\":\"Super Micro competes in the highly competitive market for x86-based servers, storage, and accelerated compute platforms, naming global technology vendors Cisco, Dell, HPE, and Lenovo as principal competitors, alongside ODMs Foxconn, Quanta Computer, and Wiwynn. Ablecom and Compuware are excluded as related-party contract manufacturers, and NVIDIA appears only as a component supplier.\"}",
+  "input_tokens": 7459,
+  "output_tokens": 634,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 8.604,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

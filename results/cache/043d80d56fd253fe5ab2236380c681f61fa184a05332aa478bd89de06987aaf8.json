@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"This excerpt of Qualcomm's Form 10-K covers business overview, industry trends and segment descriptions, but names no specific competing companies. Entities mentioned (e.g., TechInsights) appear as analyst/research sources, and AI models such as GPT-4o, Llama3 and Stable Diffusion are cited as technology examples, not competitors. The document references competition only in general terms, such as customer vertical integration.\"}",
+  "input_tokens": 8073,
+  "output_tokens": 154,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.602,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

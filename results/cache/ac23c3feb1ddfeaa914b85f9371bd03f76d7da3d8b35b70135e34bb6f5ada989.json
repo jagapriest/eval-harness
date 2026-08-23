@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"The NetApp 10-K describes intense competition in storage, data management, and AI data pipeline markets, but refers only to unnamed categories such as full-stack vendors, established public companies, flash-storage-focused entrants, cloud service providers, and startups. No specific competitor company is named; other firms mentioned (Cisco, Microsoft, Western Digital, Zscaler, Flexera, etc.) appear as executive biography employers, a divestiture buyer, or unrelated context.\"}",
+  "input_tokens": 19537,
+  "output_tokens": 174,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 4.038,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

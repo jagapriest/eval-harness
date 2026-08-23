@@ -1,0 +1,61 @@
+{
+  "case_id": "ambiguous_006",
+  "bucket": "ambiguous",
+  "source_path": "data/docs/ambiguous_006.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "ServiceNow",
+    "cik": "0001373715",
+    "filing_date": "2026-01-29",
+    "words": 3000,
+    "org_mentions": 0,
+    "proposed": [
+      "Microsoft",
+      "Oracle",
+      "SAP",
+      "Salesforce",
+      "Workday"
+    ],
+    "proposed_must_not_include": [
+      "SEC"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Microsoft",
+        "role": "competitor"
+      },
+      {
+        "name": "Oracle",
+        "role": "competitor"
+      },
+      {
+        "name": "SAP",
+        "role": "competitor"
+      },
+      {
+        "name": "Salesforce",
+        "role": "competitor"
+      },
+      {
+        "name": "Workday",
+        "role": "competitor"
+      },
+      {
+        "name": "SEC",
+        "role": "other"
+      },
+      {
+        "name": "ServiceNow",
+        "role": "self"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case ambiguous_006` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

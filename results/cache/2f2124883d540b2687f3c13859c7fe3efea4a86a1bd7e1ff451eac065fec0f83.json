@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"SMCI\", \"role\": \"self\"},\n    {\"name\": \"Cisco\", \"role\": \"competitor\"},\n    {\"name\": \"Dell\", \"role\": \"competitor\"},\n    {\"name\": \"Hewlett-Packard Enterprise\", \"role\": \"competitor\"},\n    {\"name\": \"Lenovo\", \"role\": \"competitor\"},\n    {\"name\": \"Foxconn\", \"role\": \"competitor\"},\n    {\"name\": \"Quanta Computer\", \"role\": \"competitor\"},\n    {\"name\": \"Wiwynn Corporation\", \"role\": \"competitor\"},\n    {\"name\": \"Ablecom Technology, Inc.\", \"role\": \"supplier\"},\n    {\"name\": \"Compuware Technology, Inc.\", \"role\": \"supplier\"},\n    {\"name\": \"NVIDIA\", \"role\": \"other\"},\n    {\"name\": \"Responsible Business Alliance\", \"role\": \"other\"},\n    {\"name\": \"U.S. Treasury\", \"role\": \"other\"},\n    {\"name\": \"Office of Foreign Assets Control\", \"role\": \"other\"},\n    {\"name\": \"U.S. Commerce Department\", \"role\": \"other\"},\n    {\"name\": \"Bureau of Industry and Security\", \"role\": \"other\"}\n  ],\n  \"summary\": \"This document names the filer itself, its direct competitors in server and computing hardware, manufacturing suppliers and partners, and U.S. government regulatory agencies.\"\n}\n```",
+  "input_tokens": 4117,
+  "output_tokens": 336,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.871,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

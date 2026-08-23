@@ -1,0 +1,146 @@
+{
+  "case_id": "clean_003",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_003.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Cisco Systems",
+    "cik": "0000858877",
+    "filing_date": "2025-09-03",
+    "words": 3000,
+    "org_mentions": 10,
+    "proposed": [
+      "Amazon Web Services LLC",
+      "Arista Networks, Inc.",
+      "Broadcom Inc.",
+      "Ciena Corporation",
+      "CrowdStrike Holdings, Inc.",
+      "Datadog Inc.",
+      "Dell Technologies Inc.",
+      "Dynatrace Inc.",
+      "Fortinet, Inc.",
+      "Hewlett-Packard Enterprise Company",
+      "Huawei Technologies Co., Ltd.",
+      "Microsoft Corporation",
+      "New Relic, Inc.",
+      "Nokia Corporation",
+      "Nvidia Corporation",
+      "Palo Alto Networks, Inc.",
+      "RingCentral, Inc.",
+      "Zoom Video Communications, Inc.",
+      "Zscaler, Inc."
+    ],
+    "proposed_must_not_include": [
+      "International Organization for Standardization",
+      "Fortune",
+      "Great Place to Work",
+      "Splunk"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "Amazon Web Services LLC",
+        "role": "competitor"
+      },
+      {
+        "name": "Arista Networks, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Broadcom Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Ciena Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "CrowdStrike Holdings, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Datadog Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Dell Technologies Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Dynatrace Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Fortinet, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Hewlett-Packard Enterprise Company",
+        "role": "competitor"
+      },
+      {
+        "name": "Huawei Technologies Co., Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "New Relic, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Nokia Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Nvidia Corporation",
+        "role": "competitor"
+      },
+      {
+        "name": "Palo Alto Networks, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "RingCentral, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Zoom Video Communications, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Zscaler, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "International Organization for Standardization",
+        "role": "other"
+      },
+      {
+        "name": "Fortune",
+        "role": "analyst"
+      },
+      {
+        "name": "Great Place to Work",
+        "role": "analyst"
+      },
+      {
+        "name": "Cisco",
+        "role": "self"
+      },
+      {
+        "name": "Splunk",
+        "role": "other"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_003` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

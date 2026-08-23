@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"The competition discussion describes only unnamed categories \u2014 customers' internal software development efforts, outside consultants, IT services companies, packaged enterprise and open source software, large enterprise software companies, government contractors, system integrators, and emerging or established entrants. No specific competing company is named anywhere in the document. Palantir itself is the filer, not a competitor.\"}",
+  "input_tokens": 7193,
+  "output_tokens": 129,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 2.762,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

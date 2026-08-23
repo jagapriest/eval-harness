@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[{\"name\":\"Cisco Systems, Inc.\",\"evidence\":\"large companies that incorporate security features in their products, such as Cisco Systems, Inc. (\\\"Cisco\\\"), Microsoft, Alphabet\",\"confidence\":\"high\"},{\"name\":\"Microsoft\",\"evidence\":\"large companies that incorporate security features in their products, such as Cisco Systems, Inc. (\\\"Cisco\\\"), Microsoft, Alphabet\",\"confidence\":\"high\"},{\"name\":\"Alphabet\",\"evidence\":\"large companies that incorporate security features in their products, such as Cisco Systems, Inc. (\\\"Cisco\\\"), Microsoft, Alphabet\",\"confidence\":\"high\"},{\"name\":\"Check Point Software Technologies Ltd.\",\"evidence\":\"independent security vendors, such as Check Point Software Technologies Ltd. (\\\"Check Point\\\"), Fortinet, Inc. (\\\"Fortinet\\\")\",\"confidence\":\"high\"},{\"name\":\"Fortinet, Inc.\",\"evidence\":\"independent security vendors, such as Check Point Software Technologies Ltd. (\\\"Check Point\\\"), Fortinet, Inc. (\\\"Fortinet\\\")\",\"confidence\":\"high\"},{\"name\":\"CrowdStrike Holdings, Inc.\",\"evidence\":\"CrowdStrike Holdings, Inc. (\\\"CrowdStrike\\\"), Zscaler, Inc. (\\\"Zscaler\\\"), and Wiz, Inc. (\\\"Wiz\\\"), that offer a mix of security products\",\"confidence\":\"high\"},{\"name\":\"Zscaler, Inc.\",\"evidence\":\"CrowdStrike Holdings, Inc. (\\\"CrowdStrike\\\"), Zscaler, Inc. (\\\"Zscaler\\\"), and Wiz, Inc. (\\\"Wiz\\\"), that offer a mix of security products\",\"confidence\":\"high\"},{\"name\":\"Wiz, Inc.\",\"evidence\":\"CrowdStrike Holdings, Inc. (\\\"CrowdStrike\\\"), Zscaler, Inc. (\\\"Zscaler\\\"), and Wiz, Inc. (\\\"Wiz\\\"), that offer a mix of security products\",\"confidence\":\"high\"}],\"summary\":\"Palo Alto Networks describes an intensely competitive enterprise security market with four competitor categories: large platform vendors embedding security (Cisco, Microsoft, Alphabet), independent security vendors (Check Point, Fortinet, CrowdStrike, Zscaler, Wiz), point-product startups, and public cloud security providers. Other named entities \u2014 CyberArk (pending acquisition), Flex (manufacturing partner), and AWS/Azure/Oracle cloud marketplaces (distribution channels) \u2014 are excluded as non-competitors.\"}",
+  "input_tokens": 7628,
+  "output_tokens": 933,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 8.69,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

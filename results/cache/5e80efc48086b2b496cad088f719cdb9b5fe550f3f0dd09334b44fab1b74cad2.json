@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[],\"summary\":\"This excerpt of Confluent's 10-K describes its Data Streaming Platform, open source foundations (Apache Kafka, Flink, Iceberg), and product portfolio, but references competition only generically as \\\"competing offerings\\\" or self-managed open source alternatives. IBM appears solely as the acquirer under a proposed merger agreement, not as a competitor. No named commercial competitor in the data streaming market is identified in the text.\"}",
+  "input_tokens": 7454,
+  "output_tokens": 157,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.678,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

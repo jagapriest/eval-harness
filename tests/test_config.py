@@ -30,8 +30,19 @@ def write_config(tmp_path, name="c", **overrides):
 
 # --------------------------- shipped configs ---------------------------
 
-def test_all_four_configs_exist():
-    assert available() == ["baseline", "cheaper", "regressed", "structured"]
+EVAL_CONFIGS = ["baseline", "cheaper", "regressed", "structured"]
+
+
+def test_all_four_eval_configs_exist():
+    """`entities` is a screening helper, not a configuration under test."""
+    assert set(EVAL_CONFIGS).issubset(set(available()))
+
+
+def test_entities_config_is_screening_only():
+    """It does not perform the task under test and must never be reported."""
+    cfg = load_named("entities")
+    assert "role" in cfg.prompt_template
+    assert "competitors" not in cfg.prompt_template.split("Return only JSON")[1]
 
 
 @pytest.mark.parametrize("name", ["baseline", "cheaper", "regressed", "structured"])
@@ -123,6 +134,41 @@ def test_missing_required_field_is_rejected(tmp_path, field):
     path.write_text(yaml.safe_dump(body))
     with pytest.raises(ConfigError, match=field):
         load_config(path, root=tmp_path)
+
+
+def test_effort_on_a_model_that_rejects_it_is_caught_at_load_time(tmp_path):
+    """Haiku 4.5 returns HTTP 400 for output_config.effort.
+
+    configs/cheaper.yaml shipped with effort set on Haiku. Every case of the
+    cheaper-vs-structured comparison would have failed at run time. Catch it here.
+    """
+    path = write_config(tmp_path, model="claude-haiku-4-5", effort="medium")
+    with pytest.raises(ConfigError, match="does not support"):
+        load_config(path, root=tmp_path)
+
+
+def test_haiku_without_effort_loads_fine(tmp_path):
+    cfg = load_config(
+        write_config(tmp_path, model="claude-haiku-4-5", effort=None), root=tmp_path
+    )
+    assert cfg.effort is None
+
+
+@pytest.mark.parametrize("model,ok", [
+    ("claude-opus-5", True), ("claude-sonnet-5", True), ("claude-opus-4-8", True),
+    ("claude-haiku-4-5", False), ("claude-sonnet-4-5", False),
+])
+def test_effort_support_table(model, ok):
+    from src.config import supports_effort
+    assert supports_effort(model) is ok
+
+
+def test_shipped_haiku_configs_omit_effort():
+    """Guards the real files, not just the loader."""
+    for name in ("cheaper", "entities"):
+        cfg = load_named(name)
+        if "haiku" in cfg.model:
+            assert cfg.effort is None, f"{name} sets effort on {cfg.model}"
 
 
 def test_invalid_effort_is_rejected(tmp_path):

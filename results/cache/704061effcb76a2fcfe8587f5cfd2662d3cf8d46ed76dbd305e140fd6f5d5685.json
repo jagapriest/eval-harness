@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[{\"name\":\"Microsoft\",\"evidence\":\"Our principal competitor is Microsoft.\",\"confidence\":\"high\"}],\"summary\":\"Okta describes a highly competitive, rapidly evolving identity market with competitor categories including authentication, identity governance, MFA, IaaS and CIAM providers, plus in-house and open-source solutions. Microsoft is the only company named, and it is explicitly identified as Okta's principal competitor.\"}",
+  "input_tokens": 7101,
+  "output_tokens": 153,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 3.189,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

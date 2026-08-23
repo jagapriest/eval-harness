@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"HashiCorp\", \"role\": \"self\"}\n  ],\n  \"summary\": \"This document names only HashiCorp itself, as it is an excerpt from HashiCorp's annual report describing the company's business, products, and market position.\"\n}\n```",
+  "input_tokens": 4271,
+  "output_tokens": 78,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 1.341,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}

@@ -1,0 +1,106 @@
+{
+  "case_id": "clean_013",
+  "bucket": "clean",
+  "source_path": "data/docs/clean_013.txt",
+  "needs_adjudication": true,
+  "screening": {
+    "company": "Palo Alto Networks",
+    "cik": "0001327567",
+    "filing_date": "2025-08-29",
+    "words": 3000,
+    "org_mentions": 3,
+    "proposed": [
+      "Cisco Systems, Inc.",
+      "Microsoft",
+      "Alphabet",
+      "Check Point Software Technologies Ltd.",
+      "Fortinet, Inc.",
+      "CrowdStrike Holdings, Inc.",
+      "Zscaler, Inc.",
+      "Wiz, Inc."
+    ],
+    "proposed_must_not_include": [
+      "CyberArk Software Ltd.",
+      "Amazon",
+      "Oracle Corporation",
+      "Flextronics International, Ltd.",
+      "Best Practice Institute",
+      "Glassdoor",
+      "Comparably"
+    ],
+    "role_conflicts": [],
+    "disputed": [],
+    "entities": [
+      {
+        "name": "CyberArk Software Ltd.",
+        "role": "other"
+      },
+      {
+        "name": "Cisco Systems, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Microsoft",
+        "role": "competitor"
+      },
+      {
+        "name": "Alphabet",
+        "role": "competitor"
+      },
+      {
+        "name": "Check Point Software Technologies Ltd.",
+        "role": "competitor"
+      },
+      {
+        "name": "Fortinet, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "CrowdStrike Holdings, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Zscaler, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Wiz, Inc.",
+        "role": "competitor"
+      },
+      {
+        "name": "Amazon",
+        "role": "partner"
+      },
+      {
+        "name": "Oracle Corporation",
+        "role": "partner"
+      },
+      {
+        "name": "Flextronics International, Ltd.",
+        "role": "supplier"
+      },
+      {
+        "name": "Best Practice Institute",
+        "role": "analyst"
+      },
+      {
+        "name": "Glassdoor",
+        "role": "analyst"
+      },
+      {
+        "name": "Comparably",
+        "role": "analyst"
+      },
+      {
+        "name": "Palo Alto Networks",
+        "role": "self"
+      }
+    ],
+    "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_013` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
+  },
+  "expected": {
+    "competitors": [],
+    "must_not_include": [],
+    "notes": ""
+  }
+}

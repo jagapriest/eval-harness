@@ -1,0 +1,12 @@
+{
+  "raw_text": "```json\n{\n  \"entities\": [\n    {\"name\": \"Fortune 500 companies\", \"role\": \"customer\"},\n    {\"name\": \"VMware\", \"role\": \"partner\"},\n    {\"name\": \"RedHat\", \"role\": \"partner\"},\n    {\"name\": \"Nutanix\", \"role\": \"partner\"},\n    {\"name\": \"Microsoft\", \"role\": \"partner\"},\n    {\"name\": \"Oracle\", \"role\": \"partner\"},\n    {\"name\": \"SAP\", \"role\": \"partner\"},\n    {\"name\": \"Microsoft Azure\", \"role\": \"partner\"},\n    {\"name\": \"AWS\", \"role\": \"partner\"},\n    {\"name\": \"Google\", \"role\": \"partner\"},\n    {\"name\": \"IBM\", \"role\": \"partner\"},\n    {\"name\": \"Commvault\", \"role\": \"partner\"},\n    {\"name\": \"Rubrik\", \"role\": \"partner\"},\n    {\"name\": \"Veeam\", \"role\": \"partner\"},\n    {\"name\": \"Cisco\", \"role\": \"partner\"},\n    {\"name\": \"NVIDIA\", \"role\": \"partner\"},\n    {\"name\": \"Responsible Business Alliance\", \"role\": \"other\"},\n    {\"name\": \"Dell EMC\", \"role\": \"competitor\"},\n    {\"name\": \"NetApp\", \"role\": \"competitor\"},\n    {\"name\": \"Hitachi Vantara\", \"role\": \"competitor\"},\n    {\"name\": \"HP Enterprise\", \"role\": \"competitor\"},\n    {\"name\": \"Huawei\", \"role\": \"competitor\"},\n    {\"name\": \"Everpure\", \"role\": \"self\"},\n    {\"name\": \"International Organization for Standardization\", \"role\": \"other\"},\n    {\"name\": \"Sustainability Accounting Standards Board\", \"role\": \"other\"},\n    {\"name\": \"Global Reporting Initiative\", \"role\": \"other\"},\n    {\"name\": \"United Nations\", \"role\": \"other\"},\n    {\"name\": \"Task Force on Climate-related Financial Disclosures\", \"role\": \"other\"},\n    {\"name\": \"SEC\", \"role\": \"regulator\"}\n  ],\n  \"summary\": \"This document names technology and infrastructure partners (Microsoft, AWS, Google, Oracle, SAP, VMware, etc.), competitors in data storage (Dell EMC, NetApp, HP Enterprise, IBM, Hitachi Vantara, Huawei), the filer itself (Everpure), standards bodies and regulatory agencies (ISO, SEC, SASB, GRI), and support organizations (Responsible Business Alliance).\"\n}\n```",
+  "input_tokens": 11552,
+  "output_tokens": 589,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 5.119,
+  "stop_reason": "end_turn",
+  "model_version": "claude-haiku-4-5-20251001",
+  "error": null,
+  "attempts": 1
+}
