@@ -71,3 +71,20 @@ Set grader tests, and a real normalization bug they caught.
   it. Ground truth moves for reasons no prompt can fix -- this is the concrete
   example for the golden-set-maintenance section of the writeup.
 ---
+
+## 2026-08-23 - US-005
+Schema grader tests.
+- Added tests/test_schema_grader.py; 93 tests total passing
+- Covers all four parse paths (direct / fence / regex / failed), the 25-word
+  evidence cap incl. the exact boundary, confidence enum, missing fields, and a
+  bare top-level array
+- parse_method is asserted to survive a schema failure: knowing HOW the JSON was
+  recovered must not be erased by the fact that it was then invalid
+
+**Learnings for future iterations:**
+- The empty competitor list is VALID and has its own test. It is the correct
+  answer on 3 of 5 spike documents; a future "tighten validation" change that
+  rejects it would break the empty bucket entirely.
+- MAX_EVIDENCE_WORDS is imported from the grader rather than hardcoded as 25 in
+  tests, so raising the cap does not silently leave stale assertions behind.
+---
