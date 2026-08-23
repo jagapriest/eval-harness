@@ -112,3 +112,25 @@ Judge grader for prose only.
   no competitors; a judge that penalized a short correct "none" would invert the
   empty bucket.
 ---
+
+## 2026-08-23 - US-007
+Metrics, bucket breakout, bootstrap CIs.
+- Added src/metrics.py, tests/test_metrics.py; 146 tests passing
+- Report exposes aggregate AND by_bucket together, plus worst_bucket() which names
+  the bucket an aggregate would hide
+- bootstrap_ci is seeded (BOOTSTRAP_SEED) so a committed results file regenerates
+  identical intervals
+- exceeds_noise_floor() is the gate US-010 will use: a drop must clear
+  noise_floor x 2, not merely be negative
+
+**Learnings for future iterations:**
+- forbidden_rate and verbatim_rate are denominated in EXTRACTIONS, not cases. One
+  forbidden hit among 30 extractions is not the same failure as one among one.
+- An empty case cites no evidence; verbatim_rate is 1.0 there, not 0.0. Getting
+  this backwards would make the empty bucket look like an evidence catastrophe.
+- Cached results have latency 0.0 and are excluded from percentiles, otherwise a
+  re-run reports a fictional p50.
+- A test asserting different seeds give different CI bounds FAILED: at n=5 the
+  2.5% quantile lands on the same discrete value. Seed sensitivity is not a
+  required property; determinism is. Replaced with a stability test.
+---

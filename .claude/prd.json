@@ -186,7 +186,7 @@
       "category": "analysis",
       "manual": false,
       "blocking": false,
-      "passes": false
+      "passes": true
     },
     {
       "id": "US-008",
