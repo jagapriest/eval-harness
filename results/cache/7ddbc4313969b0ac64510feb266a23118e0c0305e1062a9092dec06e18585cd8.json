@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document (Salesforce's Form 10-K competition and business discussion) does not name any specific competitor companies by name. It instead describes competition generically by category, including vendors of packaged business software, on-premises enterprise application vendors and cloud application service providers, AI-native companies and emerging startups built on generative AI and large language models, free or bundled software providers, point solution vendors (business intelligence, data preparation, integration, marketing, e-commerce, AI software/services), productivity/email and unified communications providers, consumer application companies entering business software, platform development and cloud development platform companies, and even prospective customers building internal applications. Salesforce characterizes the market as highly competitive, rapidly evolving, fragmented, and subject to low barriers to entry, and expects more companies to become competitive threats.\"\n}",
+  "input_tokens": 5907,
+  "output_tokens": 375,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 7.595,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

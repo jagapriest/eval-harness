@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Large Infrastructure-as-a-Service providers (unnamed)\",\n      \"evidence\": \"We also face competition from non-traditional IT companies, including large Infrastructure-as-a-Service providers, that often buy their infrastructure directly from original design manufacturers.\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"Original design manufacturers (unnamed)\",\n      \"evidence\": \"large Infrastructure-as-a-Service providers, that often buy their infrastructure directly from original design manufacturers\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"Branded and generic competitors / specialized product-line competitors (unnamed)\",\n      \"evidence\": \"ongoing product and price competition in all areas of our business from both branded and generic competitors, including companies that specialize in one or more\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"summary\": \"This Dell Technologies filing excerpt describes competition only in generic terms and does not name any specific rival company. It identifies broad competitor categories: branded and generic hardware/software/services vendors, niche specialists in single product or service lines, and non-traditional IT players such as large Infrastructure-as-a-Service providers that source directly from original design manufacturers. Dell frames its differentiation around an end-to-end solutions portfolio, direct and channel go-to-market model, supply chain scale, and global services, while flagging risks from new market entrants and new strategic alliances among existing competitors.\"\n}",
+  "input_tokens": 6049,
+  "output_tokens": 719,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 9.551,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

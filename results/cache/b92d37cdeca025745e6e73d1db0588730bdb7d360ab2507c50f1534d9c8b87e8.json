@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\"competitors\":[{\"name\":\"Amazon Web Services (AWS)\",\"evidence\":\"large, well-established, public cloud providers that generally compete in all of our markets, including Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud Platform (GCP)\",\"confidence\":\"high\"},{\"name\":\"Microsoft Azure\",\"evidence\":\"public cloud providers that generally compete in all of our markets, including Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud Platform (GCP)\",\"confidence\":\"high\"},{\"name\":\"Google Cloud Platform (GCP)\",\"evidence\":\"including Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud Platform (GCP)\",\"confidence\":\"high\"},{\"name\":\"Less-established public and private cloud companies (unnamed)\",\"evidence\":\"less-established public and private cloud companies with products that compete in some or all of our markets\",\"confidence\":\"medium\"},{\"name\":\"Vendors of legacy database and big data solutions (unnamed)\",\"evidence\":\"other established vendors of legacy database solutions or big data offerings\",\"confidence\":\"medium\"},{\"name\":\"Existing observability solution providers (unnamed)\",\"evidence\":\"existing observability solution providers, particularly those with strong technological, marketing, and sales positions\",\"confidence\":\"medium\"},{\"name\":\"New or emerging entrants (unnamed)\",\"evidence\":\"new or emerging entrants seeking to develop competing technologies\",\"confidence\":\"low\"}],\"summary\":\"The document (a Snowflake 10-K) describes highly competitive, rapidly evolving markets where the only explicitly named rivals are the large hyperscale cloud providers AWS, Microsoft Azure, and Google Cloud Platform, which compete across all of Snowflake's markets. Other competition is described only generically: smaller public and private cloud companies, legacy database and big data vendors, observability solution providers, and emerging entrants. Snowflake claims differentiation on cloud-native architecture, cross-cloud data sharing, price-performance transparency, elasticity, governance, and enterprise-grade AI capabilities.\"}",
+  "input_tokens": 5962,
+  "output_tokens": 726,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 8.518,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

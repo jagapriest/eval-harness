@@ -17,6 +17,6 @@
       "Palantir",
       "Google BigQuery"
     ],
-    "notes": "The canonical partner-and-competitor case: AWS/Azure/GCP are named as competitors and are also the clouds Snowflake runs on. Counted as competitors because the document presents them as such explicitly. Databricks is Snowflake's most-cited rival in trade press but is NOT named in this document -- its appearance is training-knowledge leakage."
+    "notes": "The canonical partner-and-competitor case: AWS/Azure/GCP are named as competitors and are also the clouds Snowflake runs on. Counted as competitors because the document presents them as such explicitly. Databricks is Snowflake's most-cited rival in trade press but is NOT named in this document -- its appearance is training-knowledge leakage. OPEN QUESTION (post-spike): baseline emitted 4 competitor *categories* as entries, self-labeled '(unnamed)' -- e.g. 'existing observability solution providers'. PRD S3 requires 'a named commercial entity', so these score as false positives, but the baseline prompt never states that exclusion. This is the intended baseline->structured delta and should stay a scored failure."
   }
 }

@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document (Dell Technologies' annual report competition and business discussion) does not identify any competitor by name. It describes competition only in generic terms, referencing 'branded and generic competitors,' companies specializing in one or more of its product or service lines, and 'non-traditional IT companies, including large Infrastructure-as-a-Service providers' that buy infrastructure directly from original design manufacturers. Other companies mentioned (Satmetrix Systems, Bain & Company) appear solely as Net Promoter Score trademark holders, not as rivals.\"\n}",
+  "input_tokens": 6094,
+  "output_tokens": 439,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 7.062,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

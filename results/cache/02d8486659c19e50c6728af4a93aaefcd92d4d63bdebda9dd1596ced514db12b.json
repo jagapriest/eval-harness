@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Customers' internal software development efforts (in-house build)\",\n      \"evidence\": \"We are fundamentally competing with the internal software development efforts of our potential customers.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Large enterprise software companies (unnamed)\",\n      \"evidence\": \"our competitors include large enterprise software companies, government contractors, and system integrators\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"name\": \"Government contractors (unnamed)\",\n      \"evidence\": \"our competitors include large enterprise software companies, government contractors, and system integrators\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"name\": \"Systems integrators and IT services companies (unnamed)\",\n      \"evidence\": \"a patchwork of custom solutions, outside consultants, IT services companies, packaged enterprise and open source software, and significant internal IT resources\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"name\": \"Packaged enterprise and open source software\",\n      \"evidence\": \"packaged enterprise and open source software, and significant internal IT resources\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"name\": \"Emerging and newly entering companies (unnamed)\",\n      \"evidence\": \"We also face competition from emerging companies as well as established companies that have entered, and may continue to enter, this market.\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"summary\": \"The document, a Palantir annual report excerpt, describes its competitive landscape only in categorical terms and does not name any specific rival company. Palantir states its primary competition comes from customers building their own data platforms internally, supplemented by consultants, IT services firms, packaged and open source software, large enterprise software vendors, government contractors, and systems integrators. It also acknowledges pressure from emerging and newly entering competitors, some of which have greater name recognition, resources, and distribution reach.\"\n}",
+  "input_tokens": 5793,
+  "output_tokens": 784,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 11.096,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

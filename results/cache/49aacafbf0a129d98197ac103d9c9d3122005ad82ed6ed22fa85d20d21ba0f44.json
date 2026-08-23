@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Amazon Web Services (AWS)\",\n      \"evidence\": \"large, well-established, public cloud providers that generally compete in all of our markets, including Amazon Web Services (AWS)\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Microsoft Azure\",\n      \"evidence\": \"public cloud providers that generally compete in all of our markets, including Amazon Web Services (AWS), Microsoft Azure (Azure)\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Google Cloud Platform (GCP)\",\n      \"evidence\": \"including Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud Platform (GCP)\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Less-established public and private cloud companies (unnamed)\",\n      \"evidence\": \"less-established public and private cloud companies with products that compete in some or all of our markets\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"Legacy database and big data vendors (unnamed)\",\n      \"evidence\": \"other established vendors of legacy database solutions or big data offerings\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"Existing observability solution providers (unnamed)\",\n      \"evidence\": \"existing observability solution providers, particularly those with strong technological, marketing, and sales positions\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"New or emerging entrants (unnamed)\",\n      \"evidence\": \"new or emerging entrants seeking to develop competing technologies\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"summary\": \"The document describes a highly competitive and rapidly evolving market in which the only explicitly named rivals are the three major hyperscale cloud providers: Amazon Web Services, Microsoft Azure, and Google Cloud Platform. Additional competition is described only in generic categories, including smaller cloud companies, legacy database and big data vendors, observability solution providers, and emerging entrants. The company positions itself on cloud-native architecture, cross-cloud interoperability, price-performance, AI/LLM availability, and security and governance.\"\n}",
+  "input_tokens": 5998,
+  "output_tokens": 773,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 8.34,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

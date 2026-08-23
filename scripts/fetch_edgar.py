@@ -64,6 +64,9 @@ def html_to_text(html: str) -> str:
     ):
         text = text.replace(entity, char)
     text = re.sub(r"&#\d+;", " ", text)
+    # Page-break artifacts ("10 Table of Contents") inject mid-sentence and would
+    # otherwise manufacture false evidence-verbatim failures against quoted spans.
+    text = re.sub(r"\s*\b\d{1,3}\s+Table of Contents?\b\s*", " ", text, flags=re.IGNORECASE)
     text = re.sub(r"[ \t\xa0]+", " ", text)
     text = re.sub(r"\n\s*\n\s*\n+", "\n\n", text)
     return text.strip()

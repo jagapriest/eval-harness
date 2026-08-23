@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document discusses competition only in generic terms and does not name any specific competitor companies. Palantir states its primary competition comes from customers' own internal software development efforts, plus a patchwork of custom solutions, outside consultants, IT services companies, packaged enterprise and open source software, large enterprise software companies, government contractors, and system integrators. It also cites emerging and established entrants, noting some rivals have greater name recognition, larger customer bases, and substantially greater financial and technical resources.\"\n}",
+  "input_tokens": 5838,
+  "output_tokens": 463,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 7.864,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

@@ -33,7 +33,12 @@
       "ERI",
       "Ingram Micro",
       "Sage Sustainable Electronics",
-      "Sims Recycling Solutions"
+      "Sims Recycling Solutions",
+      "Nile",
+      "Meter",
+      "IBM Global Financing",
+      "Dell Financial Services",
+      "Cisco Capital"
     ],
     "must_not_include": [
       "VMware",
@@ -44,6 +49,6 @@
       "Western Digital",
       "Juniper Networks"
     ],
-    "notes": "JUDGMENT CALL: the ITAD names (ERI, Ingram Micro, Sage Sustainable Electronics, Sims Recycling Solutions) compete with HPE Financial Services, an adjacency -- not the document's primary enterprise IT infrastructure market. PRD S3 says 'competing in the document's primary market', which would exclude them. Included here because the document explicitly labels them 'our primary ITAD competitors'; the definition is genuinely ambiguous for multi-segment filers and needs an owner ruling. VMware is in must_not_include because the document names Broadcom (its acquirer) -- a model substituting the better-known brand is a precision failure worth catching."
+    "notes": "JUDGMENT CALL: the ITAD names (ERI, Ingram Micro, Sage Sustainable Electronics, Sims Recycling Solutions) compete with HPE Financial Services, an adjacency -- not the document's primary enterprise IT infrastructure market. PRD S3 says 'competing in the document's primary market', which would exclude them. Included here because the document explicitly labels them 'our primary ITAD competitors'; the definition is genuinely ambiguous for multi-segment filers and needs an owner ruling. VMware is in must_not_include because the document names Broadcom (its acquirer) -- a model substituting the better-known brand is a precision failure worth catching. LABEL CORRECTION (post-spike): first-pass labeling missed 5 named competitors -- Nile and Meter (networking-as-a-service) and IBM Global Financing, Dell Financial Services, Cisco Capital (HPE Financial Services). All five were surfaced by the model and verified in the source text. The financing trio compounds the multi-segment ambiguity noted above."
   }
 }

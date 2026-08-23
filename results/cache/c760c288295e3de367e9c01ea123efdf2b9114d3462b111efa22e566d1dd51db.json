@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document (Salesforce's Form 10-K competition disclosure) describes its market as highly competitive, fragmented and rapidly evolving with low barriers to entry, but it does not name any specific competitor companies. Instead, it identifies only generic categories of rivals: packaged and on-premises enterprise software vendors, cloud application service providers, AI-native startups built on generative AI and large language models, free or bundled software providers, point solution and industry-specific vendors, productivity/email and unified communications providers, and cloud development platform companies (as well as customers who build applications in-house). Salesforce also notes it expects more companies to become competitive threats as it expands into new markets.\"\n}",
+  "input_tokens": 5871,
+  "output_tokens": 345,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 6.503,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}
