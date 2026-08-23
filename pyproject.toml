@@ -21,6 +21,8 @@ build-backend = "setuptools.build_meta"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
+markers = ["live: hits the real API; excluded by default"]
+addopts = "-m 'not live'"
 
 [tool.pyright]
 extraPaths = ["."]

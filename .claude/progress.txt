@@ -88,3 +88,27 @@ Schema grader tests.
 - MAX_EVIDENCE_WORDS is imported from the grader rather than hardcoded as 25 in
   tests, so raising the cap does not silently leave stale assertions behind.
 ---
+
+## 2026-08-23 - US-006
+Judge grader for prose only.
+- Added src/graders/judge_grader.py, prompts/judge.md, tests/test_judge_grader.py
+- 121 tests passing, 1 deselected (the live cache test)
+- Rubric grades faithfulness/relevance/concision 1-5 with all five levels defined
+  per axis and three worked examples; tests assert the levels exist so a future
+  rubric edit cannot silently drop one
+- 3 sequential calls, per-axis median. Sequential is deliberate: the first call
+  must land before the others so they hit a warmed cache instead of racing to
+  write it. A test asserts all three requests are byte-identical.
+- sample_spread exposes the judge's OWN instability per axis -- useful in the
+  writeup alongside the extraction noise floor
+
+**Learnings for future iterations:**
+- pyproject now defines a `live` marker with addopts = -m 'not live'. Tests that
+  need the real API go behind it. Run them with: pytest -m live
+- A test asserting rubric phrases failed on a hard-wrapped line. Use flat() to
+  collapse whitespace before phrase matching -- same class of bug as the EDGAR
+  pagination artifacts, now hit twice.
+- The rubric explicitly protects the correct-empty answer. 3 of 5 spike docs name
+  no competitors; a judge that penalized a short correct "none" would invert the
+  empty bucket.
+---
