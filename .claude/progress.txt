@@ -5,3 +5,24 @@
 - Tests must not call the live API
 
 ---
+
+## 2026-08-22 - US-002
+Model-assisted pre-labeling CLI.
+- Added src/prelabel.py, src/cli.py, tests/test_prelabel.py (12 tests, all passing)
+- Adjudication logic separated from I/O via an injected prompt_fn, so it tests
+  without a TTY and without any live API call
+- Unrecognized input DEFERS rather than accepts: a mis-keyed label is worse than
+  an unresolved one
+- apply_adjudication UNIONS accepted names into expected; it must never replace,
+  since a case may already carry hand labels
+- Provenance written to expected.prelabel on every touched case so the assist can
+  be disclosed in the writeup
+
+**Learnings for future iterations:**
+- pyproject sets asyncio_mode, which warns unless pytest-asyncio is installed --
+  it now is
+- Candidate.evidence_flag reuses evidence_is_verbatim/evidence_similarity from the
+  set grader; do not write a second verbatim checker
+- The CLI loads .env itself via load_env(); scripts/ have their own copies of this
+  loader, worth consolidating when US-011 lands
+---
