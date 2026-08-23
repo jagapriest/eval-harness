@@ -1,0 +1,432 @@
+{
+  "name": "Competitor Extraction Eval Harness",
+  "version": "1.0.0",
+  "created": "2026-08-22",
+  "status": "ready_for_implementation",
+  "introduction": "An evaluation harness for one capability: extracting named competitors from a market document. Golden dataset, deterministic and LLM-judge grading, judge validation against hand scores, and a cost/quality frontier across model configurations, plus a published writeup. Success is not a passing score; success is a harness that catches a deliberately regressed prompt by a margin exceeding its measured noise floor. A vertical-slice spike has already run (writeup/spike-findings.md) and its measured results are load-bearing throughout.",
+  "goals": [
+    "50 labeled cases across five buckets, re-weighted toward where measurement is unstable",
+    "Three graders: schema and set (deterministic), judge (prose only)",
+    "Judge validated against 15 hand-scored cases, agreement reported as weighted kappa",
+    "Three configurations scored on a held-out test split with a cost/quality frontier",
+    "A measured noise floor, with the regression test gated on it",
+    "A published writeup of 1,200-2,000 words"
+  ],
+  "ownerRulings": [
+    "R-1 PRIMARY MARKET ONLY: adjacent-segment competitors are excluded from expected, recorded in notes, and NOT added to must_not_include. Extracting one is an out-of-scope error, not a fabrication.",
+    "R-2 Buckets re-weighted toward empty/adversarial: 10 clean, 12 ambiguous, 15 adversarial, 10 empty, 3 long.",
+    "R-3 Manual steps are blocking gates in this file, not omissions."
+  ],
+  "manualGatePolicy": "Stories with manual=true MUST NOT be implemented by an automated loop. The loop must halt at each gate and wait for the owner. A model-generated golden set, model-generated hand scores, or model-generated findings.md would void the artifact this project exists to produce.",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "[MANUAL GATE] Source and label 50 cases",
+      "description": "As the owner, I need a golden dataset I personally adjudicated, because the labeling is the expertise and a model-generated golden set would void the artifact.",
+      "acceptanceCriteria": [
+        "50 cases: 10 clean, 12 ambiguous, 15 adversarial, 10 empty, 3 long",
+        "clean cases sourced from analyst comparisons or trade press, NOT 10-Ks",
+        "must_not_include populated on at least 25 cases",
+        "Every judgment call logged in notes; R-1 applied to multi-segment filers",
+        "At least 10 cases labeled cold (no model assistance) to measure anchoring",
+        "Cold-vs-adjudicated disagreement rate recorded",
+        "Split committed: 15 dev / 35 test",
+        "HALT: an automated loop must not label cases"
+      ],
+      "files": ["data/cases/", "data/docs/", "data/splits.json"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "dataset",
+      "manual": true,
+      "blocking": true,
+      "passes": false
+    },
+    {
+      "id": "US-002",
+      "title": "Model-assisted pre-labeling CLI",
+      "description": "As the owner, I want a tool that proposes candidates for me to accept or reject, so labeling is faster and catches names I would miss by reading.",
+      "acceptanceCriteria": [
+        "python -m src.cli prelabel --case <id> shows each candidate with its evidence span",
+        "Accepts y / n / ? (defer) per candidate and writes to the case file",
+        "Records per-case adjudication time to results/labeling_cost.jsonl",
+        "Pre-labeling provenance recorded on each case so it can be disclosed",
+        "Unit test on a fixture case"
+      ],
+      "files": ["src/cli.py", "src/prelabel.py", "tests/test_prelabel.py"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "dataset",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-003",
+      "title": "Config loader and four YAML configs",
+      "description": "As a developer, I want configs to carry model, effort, structured-output flag, and pinned pricing so runs are reproducible and cost charts regenerate identically.",
+      "acceptanceCriteria": [
+        "configs/{baseline,structured,cheaper,regressed}.yaml load into RunConfig",
+        "Each pins model ID, effort, structured_output, prompt path, and price table",
+        "structured uses output_config.format; baseline uses prompt-instructed JSON",
+        "cheaper targets claude-haiku-4-5 at its own pricing",
+        "regressed equals the structured prompt with exclusion criteria deleted",
+        "Round-trip test asserts loaded values match the YAML"
+      ],
+      "files": ["src/config.py", "configs/baseline.yaml", "configs/structured.yaml", "configs/cheaper.yaml", "configs/regressed.yaml", "prompts/structured.md", "prompts/regressed.md", "tests/test_config.py"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "harness",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-004",
+      "title": "Set grader unit tests",
+      "description": "As a developer, I need the set grader tested, because it silently lies when normalization is wrong.",
+      "acceptanceCriteria": [
+        "Normalization: 'Dell Technologies Inc.' equals 'Dell'; 'HPE' equals 'Hewlett Packard Enterprise'",
+        "Near-miss returns a third outcome, not a false positive, at ratio >= 0.85",
+        "must_not_include hits tracked separately from false positives",
+        "Exact and near-verbatim (>= 0.95) evidence graded as distinct outcomes",
+        "Regression test for the mid-phrase-quote case found in the spike",
+        "Regression test for pagination-artifact normalization"
+      ],
+      "files": ["tests/test_set_grader.py", "src/graders/set_grader.py"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "harness",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-005",
+      "title": "Schema grader unit tests",
+      "description": "As a developer, I need to know not just whether JSON parsed but how it was recovered, because the fallback path is load-bearing and intermittent.",
+      "acceptanceCriteria": [
+        "direct / fence / regex / failed parse paths each covered",
+        "Over-length evidence (>25 words) fails validation and is reported",
+        "Confidence enum violations rejected",
+        "Test asserts parse method is recorded, not just validity"
+      ],
+      "files": ["tests/test_schema_grader.py", "src/graders/schema_grader.py"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "harness",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-006",
+      "title": "Judge grader for prose only",
+      "description": "As a developer, I want an LLM judge with a validated rubric that grades only what a rule cannot.",
+      "acceptanceCriteria": [
+        "Grades summary and evidence quality only, never the competitor set",
+        "Rubric scores faithfulness / relevance / concision 1-5 with a worked example per level",
+        "Requires reasoning before score, in that order",
+        "3 calls per case, median taken. Do NOT set temperature: it is removed on current models and returns 400",
+        "Document placed first with a cache_control breakpoint",
+        "Test asserts cache_read_input_tokens > 0 on calls 2 and 3",
+        "Median-of-3 unit test on synthetic scores"
+      ],
+      "files": ["src/graders/judge_grader.py", "prompts/judge.md", "tests/test_judge_grader.py"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "harness",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-007",
+      "title": "Metrics with bucket breakout and bootstrap CIs",
+      "description": "As the owner, I need every metric broken out by bucket with confidence intervals, because an aggregate that hides a bucket failure is a false assurance.",
+      "acceptanceCriteria": [
+        "Precision, recall, F1, must_not_include rate, schema validity, verbatim rate",
+        "Every metric broken out by bucket; no aggregate reported without its breakout",
+        "Bootstrap 95% CI (1,000 resamples) on every F1",
+        "Cost and p50/p95 latency per config",
+        "Known-input test asserts CI bounds are stable"
+      ],
+      "files": ["src/metrics.py", "tests/test_metrics.py"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "analysis",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-008",
+      "title": "Noise-floor measurement as a first-class run mode",
+      "description": "As the owner, I need the run-to-run floor measured on the real dev split, because a regression is only real if it exceeds it.",
+      "acceptanceCriteria": [
+        "python -m src.cli noise --config baseline --replicates 3 runs on the dev split",
+        "Reports per-case and macro-F1 spread and stdev",
+        "Writes results/noise_floor.json consumed by US-010",
+        "Generalizes scripts/variance.py, which currently hardcodes baseline"
+      ],
+      "files": ["src/cli.py", "src/noise.py", "results/noise_floor.json"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "analysis",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-009",
+      "title": "Report generation with two charts",
+      "description": "As the owner, I want a markdown report and exactly two charts, so the deliverable is a frontier rather than a winner.",
+      "acceptanceCriteria": [
+        "Markdown report: metrics by bucket by config, with CIs",
+        "Chart 1: F1 by bucket by config with CI bars",
+        "Chart 2: cost vs F1 frontier",
+        "Exactly two charts, matplotlib only",
+        "Any coverage the run drops (top-N, sampling, retries) is logged, not silent"
+      ],
+      "files": ["src/report.py", "tests/test_report.py"],
+      "isNewFile": true,
+      "priority": "medium",
+      "category": "analysis",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-010",
+      "title": "Regression test gated on the measured noise floor",
+      "description": "As the owner, I need proof the harness catches a regression. This is the acceptance criterion the whole project exists for.",
+      "acceptanceCriteria": [
+        "pytest tests/test_regression.py compares baseline vs regressed on the dev split",
+        "Asserts the precision drop exceeds noise_floor x 2 from results/noise_floor.json",
+        "Runs fully offline from the committed dev-split cache, no API key required",
+        "Fails loudly if the cache is missing rather than silently calling the API"
+      ],
+      "files": ["tests/test_regression.py", "results/cache/"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "harness",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-011",
+      "title": "CLI",
+      "description": "As a developer, I want one entry point for every operation so the repo is reproducible from a clean clone.",
+      "acceptanceCriteria": [
+        "run, grade, report, noise, prelabel subcommands",
+        "python -m src.cli run --config configs/baseline.yaml works from a clean clone",
+        "--no-cache and --split {dev,test} flags",
+        "End-to-end test on cached fixtures"
+      ],
+      "files": ["src/cli.py", "tests/test_cli.py"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "harness",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-012",
+      "title": "README and committed cache",
+      "description": "As a reader, I want to verify the harness works in 30 seconds without signing up for anything.",
+      "acceptanceCriteria": [
+        "Reproduce section is exactly three commands",
+        "Dev-split response cache committed so pytest runs offline in seconds",
+        "Documents that results are JSONL and the run-to-run diff is the regression signal",
+        "States the measured noise floor and what it means for interpreting deltas"
+      ],
+      "files": ["README.md", "results/cache/"],
+      "isNewFile": true,
+      "priority": "medium",
+      "category": "docs",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-013",
+      "title": "[MANUAL GATE] Hand-score 15 cases and report judge agreement",
+      "description": "As the owner, I must hand-score the judge's cases myself, because the entire point of validation is that a human disagreed at a measurable rate.",
+      "acceptanceCriteria": [
+        "15 cases hand-scored on all three rubric axes before seeing judge output",
+        "Agreement reported as quadratic-weighted Cohen's kappa, plus exact and +/-1 rates",
+        "If agreement is under 80%, the rubric is revised, not the model",
+        "HALT: an automated loop must not hand-score"
+      ],
+      "files": ["data/hand_scores.json", "writeup/judge-validation.md"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "validation",
+      "manual": true,
+      "blocking": true,
+      "passes": false
+    },
+    {
+      "id": "US-014",
+      "title": "Score three configs on the held-out test split",
+      "description": "As the owner, I want the three configurations scored once on held-out data, and the spike's variance prediction explicitly tested.",
+      "acceptanceCriteria": [
+        "baseline, structured, and cheaper run on the 35-case test split",
+        "Results committed as timestamped JSONL",
+        "A second run produces a readable diff",
+        "Test split touched exactly twice total across the project",
+        "Explicitly tests the spike prediction: does structured collapse the variance concentrated in empty/adversarial?"
+      ],
+      "files": ["results/", "writeup/results.md"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "analysis",
+      "manual": false,
+      "blocking": false,
+      "passes": false
+    },
+    {
+      "id": "US-015",
+      "title": "[MANUAL GATE] Write findings.md",
+      "description": "As the owner, I must write this myself. The code is table stakes; the writeup is what a hiring manager reads, and generated prose fails at exactly the sections that matter.",
+      "acceptanceCriteria": [
+        "Sections: question, task/definition, dataset, grader design, judge validation, results, what surprised me, what I would do at customer scale",
+        "Includes 'what this harness cannot tell you': sample size, source bias, single labeler, one capability",
+        "Discloses model-assisted pre-labeling and the cold-label disagreement rate",
+        "Reports the noise floor and the 17% first-pass label error plainly",
+        "1,200-2,000 words, practitioner tone",
+        "HALT: an automated loop must not write this"
+      ],
+      "files": ["writeup/findings.md"],
+      "isNewFile": true,
+      "priority": "high",
+      "category": "writeup",
+      "manual": true,
+      "blocking": true,
+      "passes": false
+    }
+  ],
+  "functionalRequirements": [
+    "FR-1: The system must cache by SHA-256 of (document + prompt + model + params); re-running a scored config must make zero API calls.",
+    "FR-2: The system must run async with a concurrency cap and retry-with-backoff on 408/409/429/5xx.",
+    "FR-3: The dataset must be 50 cases: 10 clean, 12 ambiguous, 15 adversarial, 10 empty, 3 long.",
+    "FR-4: Every metric must be reported per bucket; no aggregate may be published without its breakout.",
+    "FR-5: The judge must never grade the competitor set, only summary and evidence quality.",
+    "FR-6: Evidence verbatim-ness must be graded deterministically, with exact and near-verbatim (>= 0.95) as distinct outcomes.",
+    "FR-7: The system must log the raw request and response for every API call.",
+    "FR-8: Configs must pin model ID and price table; results must record resolved model versions.",
+    "FR-9: The regression test must run offline from committed cache and be gated on the measured noise floor.",
+    "FR-10: Document ingestion must strip pagination artifacts before any grading.",
+    "FR-11: Out-of-scope-segment competitors must be recorded in notes and excluded from both expected and must_not_include (R-1)."
+  ],
+  "nonGoals": [
+    "The full agent loop, other agents, RAG retrieval quality, or any UI",
+    "Comparison against non-Anthropic models",
+    "A plugin system, abstraction layer, or support for a second task",
+    "Growing the dataset beyond 50 cases",
+    "Automating any of the three manual gates"
+  ],
+  "technicalConsiderations": {
+    "relevantFiles": [
+      "src/schema.py",
+      "src/runner.py",
+      "src/graders/set_grader.py",
+      "src/graders/schema_grader.py",
+      "scripts/fetch_edgar.py",
+      "scripts/variance.py",
+      "scripts/spike.py",
+      "data/aliases.json",
+      "writeup/spike-findings.md"
+    ],
+    "filesToCreate": [
+      "src/config.py",
+      "src/cli.py",
+      "src/metrics.py",
+      "src/report.py",
+      "src/noise.py",
+      "src/prelabel.py",
+      "src/graders/judge_grader.py",
+      "configs/baseline.yaml",
+      "configs/structured.yaml",
+      "configs/cheaper.yaml",
+      "configs/regressed.yaml",
+      "prompts/structured.md",
+      "prompts/regressed.md",
+      "prompts/judge.md",
+      "README.md"
+    ],
+    "patternsToFollow": [
+      "Harden what the spike built; do not rebuild it",
+      "Deterministic properties go in deterministic graders; the judge grades prose only",
+      "Every grader records how it reached its answer, not just the answer",
+      "Spike-quality labels are provisional and must be re-adjudicated, never assumed correct"
+    ],
+    "reusableComponents": [
+      "RunConfig and the content-hash cache in src/runner.py",
+      "normalize_name / canonicalize / load_aliases in set_grader",
+      "evidence_is_verbatim and evidence_similarity",
+      "grade_schema parse-method instrumentation"
+    ],
+    "constraints": [
+      "temperature / top_p / top_k are removed on current models and return 400. Judge variance comes from 3 plain calls, not sampling params.",
+      "budget_tokens is removed; use output_config.effort.",
+      "No seed parameter exists. Non-determinism is measured, not eliminated.",
+      "Structured outputs make schema validity near-free; that asymmetry is a finding, not a bug to hide.",
+      "Measured spike baselines: $0.055/case, 98% verbatim, 0 hallucinations across 49 extractions, noise floor 0.40 at n=5."
+    ]
+  },
+  "implementationOrder": [
+    {
+      "phase": 1,
+      "stories": ["US-002"],
+      "description": "Build the pre-labeling tool first so the dataset gate is not blocked on manual reading alone."
+    },
+    {
+      "phase": 2,
+      "stories": ["US-001"],
+      "description": "MANUAL GATE. Owner sources and labels 50 cases. The loop halts here."
+    },
+    {
+      "phase": 3,
+      "stories": ["US-003", "US-004", "US-005", "US-006", "US-007"],
+      "description": "Harness core: configs, grader tests, judge, metrics."
+    },
+    {
+      "phase": 4,
+      "stories": ["US-008", "US-011", "US-009"],
+      "description": "Noise floor, CLI, reporting."
+    },
+    {
+      "phase": 5,
+      "stories": ["US-013"],
+      "description": "MANUAL GATE. Owner hand-scores 15 cases for judge validation. The loop halts here."
+    },
+    {
+      "phase": 6,
+      "stories": ["US-010", "US-012", "US-014"],
+      "description": "Regression proof, committed cache, README, and the held-out test-split run."
+    },
+    {
+      "phase": 7,
+      "stories": ["US-015"],
+      "description": "MANUAL GATE. Owner writes findings.md. The loop halts here."
+    }
+  ],
+  "successMetrics": [
+    "Schema validity 100%",
+    "Precision >= 0.90",
+    "Recall >= 0.85",
+    "must_not_include false positives <= 2%",
+    "Judge faithfulness median >= 4.0",
+    "Judge-human agreement >= 80%",
+    "Noise floor measured and published on the real dev split",
+    "US-010 passes: a deliberately regressed prompt is caught by a margin exceeding the noise floor"
+  ],
+  "openQuestions": [
+    "Where do clean cases come from now that 10-Ks are ruled out: analyst summaries, trade press, or vendor comparison pages? Affects US-001 sourcing time.",
+    "Does structured actually collapse the empty/adversarial variance? Testable in US-014; if it does not, the variance is model-level and the writeup's conclusion changes.",
+    "Is 3 replicates enough for a stable noise floor at n=15 dev, or does it need 5?",
+    "Should the long bucket (3 cases) survive at all, or fold into the others? Least differentiating, most expensive to label."
+  ]
+}
