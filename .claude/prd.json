@@ -33,7 +33,11 @@
         "Split committed: 15 dev / 35 test",
         "HALT: an automated loop must not label cases"
       ],
-      "files": ["data/cases/", "data/docs/", "data/splits.json"],
+      "files": [
+        "data/cases/",
+        "data/docs/",
+        "data/splits.json"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "dataset",
@@ -52,7 +56,11 @@
         "Pre-labeling provenance recorded on each case so it can be disclosed",
         "Unit test on a fixture case"
       ],
-      "files": ["src/cli.py", "src/prelabel.py", "tests/test_prelabel.py"],
+      "files": [
+        "src/cli.py",
+        "src/prelabel.py",
+        "tests/test_prelabel.py"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "dataset",
@@ -72,7 +80,16 @@
         "regressed equals the structured prompt with exclusion criteria deleted",
         "Round-trip test asserts loaded values match the YAML"
       ],
-      "files": ["src/config.py", "configs/baseline.yaml", "configs/structured.yaml", "configs/cheaper.yaml", "configs/regressed.yaml", "prompts/structured.md", "prompts/regressed.md", "tests/test_config.py"],
+      "files": [
+        "src/config.py",
+        "configs/baseline.yaml",
+        "configs/structured.yaml",
+        "configs/cheaper.yaml",
+        "configs/regressed.yaml",
+        "prompts/structured.md",
+        "prompts/regressed.md",
+        "tests/test_config.py"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "harness",
@@ -92,7 +109,10 @@
         "Regression test for the mid-phrase-quote case found in the spike",
         "Regression test for pagination-artifact normalization"
       ],
-      "files": ["tests/test_set_grader.py", "src/graders/set_grader.py"],
+      "files": [
+        "tests/test_set_grader.py",
+        "src/graders/set_grader.py"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "harness",
@@ -110,7 +130,10 @@
         "Confidence enum violations rejected",
         "Test asserts parse method is recorded, not just validity"
       ],
-      "files": ["tests/test_schema_grader.py", "src/graders/schema_grader.py"],
+      "files": [
+        "tests/test_schema_grader.py",
+        "src/graders/schema_grader.py"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "harness",
@@ -131,7 +154,11 @@
         "Test asserts cache_read_input_tokens > 0 on calls 2 and 3",
         "Median-of-3 unit test on synthetic scores"
       ],
-      "files": ["src/graders/judge_grader.py", "prompts/judge.md", "tests/test_judge_grader.py"],
+      "files": [
+        "src/graders/judge_grader.py",
+        "prompts/judge.md",
+        "tests/test_judge_grader.py"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "harness",
@@ -150,7 +177,10 @@
         "Cost and p50/p95 latency per config",
         "Known-input test asserts CI bounds are stable"
       ],
-      "files": ["src/metrics.py", "tests/test_metrics.py"],
+      "files": [
+        "src/metrics.py",
+        "tests/test_metrics.py"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "analysis",
@@ -168,7 +198,11 @@
         "Writes results/noise_floor.json consumed by US-010",
         "Generalizes scripts/variance.py, which currently hardcodes baseline"
       ],
-      "files": ["src/cli.py", "src/noise.py", "results/noise_floor.json"],
+      "files": [
+        "src/cli.py",
+        "src/noise.py",
+        "results/noise_floor.json"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "analysis",
@@ -187,7 +221,10 @@
         "Exactly two charts, matplotlib only",
         "Any coverage the run drops (top-N, sampling, retries) is logged, not silent"
       ],
-      "files": ["src/report.py", "tests/test_report.py"],
+      "files": [
+        "src/report.py",
+        "tests/test_report.py"
+      ],
       "isNewFile": true,
       "priority": "medium",
       "category": "analysis",
@@ -205,7 +242,10 @@
         "Runs fully offline from the committed dev-split cache, no API key required",
         "Fails loudly if the cache is missing rather than silently calling the API"
       ],
-      "files": ["tests/test_regression.py", "results/cache/"],
+      "files": [
+        "tests/test_regression.py",
+        "results/cache/"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "harness",
@@ -223,7 +263,10 @@
         "--no-cache and --split {dev,test} flags",
         "End-to-end test on cached fixtures"
       ],
-      "files": ["src/cli.py", "tests/test_cli.py"],
+      "files": [
+        "src/cli.py",
+        "tests/test_cli.py"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "harness",
@@ -241,7 +284,10 @@
         "Documents that results are JSONL and the run-to-run diff is the regression signal",
         "States the measured noise floor and what it means for interpreting deltas"
       ],
-      "files": ["README.md", "results/cache/"],
+      "files": [
+        "README.md",
+        "results/cache/"
+      ],
       "isNewFile": true,
       "priority": "medium",
       "category": "docs",
@@ -259,7 +305,10 @@
         "If agreement is under 80%, the rubric is revised, not the model",
         "HALT: an automated loop must not hand-score"
       ],
-      "files": ["data/hand_scores.json", "writeup/judge-validation.md"],
+      "files": [
+        "data/hand_scores.json",
+        "writeup/judge-validation.md"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "validation",
@@ -278,7 +327,10 @@
         "Test split touched exactly twice total across the project",
         "Explicitly tests the spike prediction: does structured collapse the variance concentrated in empty/adversarial?"
       ],
-      "files": ["results/", "writeup/results.md"],
+      "files": [
+        "results/",
+        "writeup/results.md"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "analysis",
@@ -298,7 +350,9 @@
         "1,200-2,000 words, practitioner tone",
         "HALT: an automated loop must not write this"
       ],
-      "files": ["writeup/findings.md"],
+      "files": [
+        "writeup/findings.md"
+      ],
       "isNewFile": true,
       "priority": "high",
       "category": "writeup",
@@ -379,37 +433,65 @@
   "implementationOrder": [
     {
       "phase": 1,
-      "stories": ["US-002"],
-      "description": "Build the pre-labeling tool first so the dataset gate is not blocked on manual reading alone."
+      "stories": [
+        "US-002"
+      ],
+      "description": "Pre-labeling CLI first -- it unblocks the owner's dataset work, which then runs in PARALLEL with phases 2-3."
     },
     {
       "phase": 2,
-      "stories": ["US-001"],
-      "description": "MANUAL GATE. Owner sources and labels 50 cases. The loop halts here."
+      "stories": [
+        "US-003",
+        "US-004",
+        "US-005",
+        "US-006",
+        "US-007"
+      ],
+      "description": "Harness core: configs, grader tests, judge, metrics. Depends only on the 5 spike cases as fixtures, NOT on the 50-case dataset -- so it proceeds while the owner labels."
     },
     {
       "phase": 3,
-      "stories": ["US-003", "US-004", "US-005", "US-006", "US-007"],
-      "description": "Harness core: configs, grader tests, judge, metrics."
+      "stories": [
+        "US-011",
+        "US-009"
+      ],
+      "description": "CLI and reporting. Still fixture-only."
     },
     {
       "phase": 4,
-      "stories": ["US-008", "US-011", "US-009"],
-      "description": "Noise floor, CLI, reporting."
+      "stories": [
+        "US-001"
+      ],
+      "description": "MANUAL GATE. Owner sources and labels 50 cases. May start any time from phase 1 onward and run alongside phases 2-3; everything after this point requires it."
     },
     {
       "phase": 5,
-      "stories": ["US-013"],
-      "description": "MANUAL GATE. Owner hand-scores 15 cases for judge validation. The loop halts here."
+      "stories": [
+        "US-008"
+      ],
+      "description": "Measure the noise floor on the real 15-case dev split. Requires US-001."
     },
     {
       "phase": 6,
-      "stories": ["US-010", "US-012", "US-014"],
-      "description": "Regression proof, committed cache, README, and the held-out test-split run."
+      "stories": [
+        "US-013"
+      ],
+      "description": "MANUAL GATE. Owner hand-scores 15 cases for judge validation. The loop halts here."
     },
     {
       "phase": 7,
-      "stories": ["US-015"],
+      "stories": [
+        "US-010",
+        "US-012",
+        "US-014"
+      ],
+      "description": "Regression proof gated on the measured floor, committed cache and README, then the held-out test-split run."
+    },
+    {
+      "phase": 8,
+      "stories": [
+        "US-015"
+      ],
       "description": "MANUAL GATE. Owner writes findings.md. The loop halts here."
     }
   ],
@@ -428,5 +510,6 @@
     "Does structured actually collapse the empty/adversarial variance? Testable in US-014; if it does not, the variance is model-level and the writeup's conclusion changes.",
     "Is 3 replicates enough for a stable noise floor at n=15 dev, or does it need 5?",
     "Should the long bucket (3 cases) survive at all, or fold into the others? Least differentiating, most expensive to label."
-  ]
+  ],
+  "parallelismNote": "US-001 (dataset labeling) is the critical path and is owner-only. Phases 2-3 depend only on the 5 spike cases as fixtures, so an automated loop should build the harness core WHILE the owner labels. Do not let the loop idle at the phase-4 gate with phases 2-3 unbuilt."
 }
