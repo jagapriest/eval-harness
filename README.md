@@ -16,11 +16,12 @@ The harness is built and tested. The dataset is not.
 
 | | |
 |---|---|
-| Harness | ✅ 192 tests passing, offline |
+| Harness | ✅ 208 tests passing, offline |
 | Configs | ✅ `baseline`, `structured`, `cheaper`, `regressed` |
 | Graders | ✅ schema, set, judge |
-| Dataset | ⏳ 5 spike cases, provisional labels. **50 needed.** |
+| Dataset | ⏳ 48 cases staged from EDGAR, **0 adjudicated** — run `./label` |
 | Judge validation | ⏳ blocked on dataset |
+| Noise floor (real dev split) | ⏳ blocked on dataset |
 | Findings writeup | ⏳ blocked on results |
 
 Progress: [`.claude/prd.json`](.claude/prd.json) · Spike results:
@@ -109,7 +110,9 @@ configs/          four YAML configs, each pinning model, effort, prompt, and pri
 prompts/          baseline / structured / regressed extraction, plus the judge rubric
 data/
   docs/           source documents (real SEC filings)
-  cases/          labeled cases
+  cases/          48 staged cases (screening proposals + your adjudicated labels)
+  spike_cases/    5 archived provisional cases, superseded
+  pool/           screening metadata
   aliases.json    name normalization map
   drift/          multi-year competitor diffs
 src/

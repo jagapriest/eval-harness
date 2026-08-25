@@ -52,17 +52,20 @@ GOOD = json.dumps({
         ["report", "--config", "a", "--config", "b"],
         ["noise", "--config", "baseline", "--replicates", "5"],
         ["prelabel", "--case", "clean_002"],
+        ["prelabel", "--case", "clean_002", "--phase", "forbidden"],
+        ["status"],
+        ["status", "--todo"],
     ],
 )
 def test_every_documented_invocation_parses(argv):
     assert build_parser().parse_args(argv).command == argv[0]
 
 
-def test_all_five_subcommands_are_registered():
+def test_all_subcommands_are_registered():
     parser = build_parser()
     actions = [a for a in parser._actions if hasattr(a, "choices") and a.choices]
     registered = set(actions[0].choices)
-    assert registered == {"run", "grade", "report", "noise", "prelabel"}
+    assert registered == {"run", "grade", "report", "noise", "prelabel", "status"}
 
 
 def test_report_config_flag_is_repeatable():
@@ -243,3 +246,39 @@ def test_build_report_is_reachable_from_restored_outcomes(tmp_path):
     report = build_report("baseline", outcomes_from_jsonl(path))
     assert report.config_id == "baseline"
     assert report.aggregate.n == 1
+
+
+# --------------------------- status ---------------------------
+
+def test_case_progress_reports_phases_and_disputes(tmp_path):
+    from src.cli import case_progress
+
+    (tmp_path / "data" / "cases").mkdir(parents=True)
+    (tmp_path / "data" / "cases" / "a.json").write_text(json.dumps({
+        "case_id": "a", "bucket": "clean",
+        "screening": {"company": "Acme", "proposed": ["X", "Y"], "disputed": ["Z (partner)"]},
+        "expected": {"competitors": ["X"], "must_not_include": [], "prelabel": {}},
+    }))
+    (tmp_path / "data" / "cases" / "b.json").write_text(json.dumps({
+        "case_id": "b", "bucket": "empty",
+        "screening": {"company": "Beta", "proposed": [], "disputed": []},
+        "expected": {"competitors": [], "must_not_include": []},
+    }))
+
+    rows = {r["case_id"]: r for r in case_progress(root=tmp_path)}
+    assert rows["a"]["done_competitors"] is True
+    assert rows["a"]["done_forbidden"] is False
+    assert rows["a"]["disputed"] == 1
+    # Zero proposals means the competitor phase is genuinely done -- correctly-empty
+    # is a real answer, and 22 of 48 cases are in that state by design.
+    assert rows["b"]["done_competitors"] is True
+
+
+def test_case_progress_on_the_real_dataset():
+    from src.cli import case_progress
+
+    rows = case_progress()
+    assert len(rows) == 48
+    assert {r["bucket"] for r in rows} == {
+        "clean", "ambiguous", "adversarial", "empty", "long"
+    }
