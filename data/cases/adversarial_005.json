@@ -45,6 +45,19 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "Newsweek",
+        "Best Practice Institute",
+        "Securities and Exchange Commission",
+        "SEC"
+      ],
+      "deferred": [],
+      "seconds": 6.57,
+      "stopped_early": false
+    }
   }
 }

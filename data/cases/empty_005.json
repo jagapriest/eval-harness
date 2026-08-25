@@ -159,6 +159,17 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "Nuance",
+        "Microsoft Partner Network"
+      ],
+      "deferred": [],
+      "seconds": 3.75,
+      "stopped_early": false
+    }
   }
 }

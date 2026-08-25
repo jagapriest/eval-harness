@@ -173,8 +173,61 @@
     "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_005` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
   },
   "expected": {
-    "competitors": [],
+    "competitors": [
+      "Cisco Systems, Inc.",
+      "International Business Machines Corporation",
+      "Microsoft Corporation"
+    ],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel": {
+      "assisted": true,
+      "config_id": "screening",
+      "model": "n/a",
+      "accepted": [
+        "Cisco Systems, Inc.",
+        "International Business Machines Corporation",
+        "Microsoft Corporation"
+      ],
+      "rejected": [
+        "Adobe Systems Incorporated",
+        "Alphabet Inc.",
+        "Intel Corporation",
+        "Salesforce, Inc.",
+        "SAP SE",
+        "Hewlett-Packard Enterprise",
+        "Workday, Inc.",
+        "Allscripts Healthcare Solutions, Inc.",
+        "Arcadia Solutions",
+        "athenahealth, Inc.",
+        "Epic Systems Corporation",
+        "InterSystems Corporation"
+      ],
+      "deferred": [
+        "Amazon.com, Inc."
+      ],
+      "seconds": 23.96,
+      "note": "Model-proposed candidates adjudicated by a human. Disclose this in the writeup; see US-001 for the cold-labeled subset that measures anchoring."
+    },
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "Cerner Corporation",
+        "Design Tech High School",
+        "Schneider Electric SE",
+        "General Electric",
+        "Anglo American plc",
+        "Paramount Skydance Corporation",
+        "The Walt Disney Company",
+        "Diem Association",
+        "HSBC Holdings, plc",
+        "Primavera Systems",
+        "SEC"
+      ],
+      "deferred": [],
+      "seconds": 18.57,
+      "stopped_early": false
+    }
   }
 }

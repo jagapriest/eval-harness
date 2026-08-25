@@ -54,8 +54,40 @@
     "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case ambiguous_006` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
   },
   "expected": {
-    "competitors": [],
+    "competitors": [
+      "Microsoft",
+      "Oracle",
+      "SAP",
+      "Salesforce",
+      "Workday"
+    ],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel": {
+      "assisted": true,
+      "config_id": "screening",
+      "model": "n/a",
+      "accepted": [
+        "Microsoft",
+        "Oracle",
+        "SAP",
+        "Salesforce",
+        "Workday"
+      ],
+      "rejected": [],
+      "deferred": [],
+      "seconds": 3.46,
+      "note": "Model-proposed candidates adjudicated by a human. Disclose this in the writeup; see US-001 for the cold-labeled subset that measures anchoring."
+    },
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "SEC"
+      ],
+      "deferred": [],
+      "seconds": 2.08,
+      "stopped_early": false
+    }
   }
 }

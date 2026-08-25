@@ -91,8 +91,47 @@
     "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_012` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
   },
   "expected": {
-    "competitors": [],
+    "competitors": [
+      "IBM",
+      "Microsoft Corporation",
+      "Cisco Systems, Inc.",
+      "Dynatrace Software Inc.",
+      "Amazon Web Services",
+      "Google Cloud Platform"
+    ],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel": {
+      "assisted": true,
+      "config_id": "screening",
+      "model": "n/a",
+      "accepted": [
+        "IBM",
+        "Microsoft Corporation",
+        "Cisco Systems, Inc.",
+        "Dynatrace Software Inc.",
+        "Amazon Web Services",
+        "Google Cloud Platform"
+      ],
+      "rejected": [
+        "SolarWinds Corporation",
+        "New Relic, Inc.",
+        "Elastic N.V."
+      ],
+      "deferred": [],
+      "seconds": 13.15,
+      "note": "Model-proposed candidates adjudicated by a human. Disclose this in the writeup; see US-001 for the cold-labeled subset that measures anchoring."
+    },
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "SEC",
+        "Delaware"
+      ],
+      "deferred": [],
+      "seconds": 2.22,
+      "stopped_early": false
+    }
   }
 }

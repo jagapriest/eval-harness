@@ -69,6 +69,23 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "Securities and Exchange Commission",
+        "International Business Machines Corporation",
+        "IBM",
+        "Corvo Merger Sub, Inc.",
+        "LinkedIn",
+        "Twitter",
+        "X",
+        "Facebook"
+      ],
+      "deferred": [],
+      "seconds": 7.89,
+      "stopped_early": false
+    }
   }
 }

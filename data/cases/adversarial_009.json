@@ -54,7 +54,26 @@
   },
   "expected": {
     "competitors": [],
-    "must_not_include": [],
-    "notes": ""
+    "must_not_include": [
+      "Amazon Web Services",
+      "Google Cloud Platform",
+      "Microsoft Azure"
+    ],
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [
+        "Amazon Web Services",
+        "AWS",
+        "Google Cloud Platform",
+        "GCP",
+        "Microsoft Azure",
+        "Azure"
+      ],
+      "rejected": [],
+      "deferred": [],
+      "seconds": 7.44,
+      "stopped_early": false
+    }
   }
 }

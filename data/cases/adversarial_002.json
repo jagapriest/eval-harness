@@ -84,6 +84,26 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "Securities and Exchange Commission",
+        "IronNet, Inc.",
+        "Goldman Sachs Group, Inc.",
+        "Wilmer Cutler Pickering Hale and Dorr LLP",
+        "MIT Schwarzman College of Computing",
+        "AI Fund, L.P.",
+        "PepsiCo, Inc.",
+        "Bridgewater Associates, LP",
+        "Marshall University",
+        "Martha's Table",
+        "Corning Incorporated"
+      ],
+      "deferred": [],
+      "seconds": 9.74,
+      "stopped_early": false
+    }
   }
 }

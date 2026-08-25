@@ -45,6 +45,19 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "FedRAMP",
+        "DOD",
+        "StateRamp",
+        "SEC"
+      ],
+      "deferred": [],
+      "seconds": 6.03,
+      "stopped_early": false
+    }
   }
 }

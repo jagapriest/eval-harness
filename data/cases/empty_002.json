@@ -75,6 +75,17 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "NFL",
+        "SEC"
+      ],
+      "deferred": [],
+      "seconds": 3.41,
+      "stopped_early": false
+    }
   }
 }

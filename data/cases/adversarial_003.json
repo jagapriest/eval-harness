@@ -49,6 +49,19 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "U.S. Department of War",
+        "U.S. Department of Defense",
+        "U.S. Government",
+        "U.S. Securities and Exchange Commission"
+      ],
+      "deferred": [],
+      "seconds": 5.36,
+      "stopped_early": false
+    }
   }
 }

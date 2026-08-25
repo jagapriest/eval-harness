@@ -99,7 +99,35 @@
   },
   "expected": {
     "competitors": [],
-    "must_not_include": [],
-    "notes": ""
+    "must_not_include": [
+      "Microsoft",
+      "Google"
+    ],
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [
+        "Microsoft",
+        "Google"
+      ],
+      "rejected": [
+        "Securities and Exchange Commission",
+        "OpenAI",
+        "Anthropic",
+        "NVIDIA",
+        "Gartner",
+        "TrustRadius",
+        "G2",
+        "Forrester",
+        "IDC",
+        "Fast Company",
+        "Fortune",
+        "Newsweek",
+        "UC Today"
+      ],
+      "deferred": [],
+      "seconds": 17.7,
+      "stopped_early": false
+    }
   }
 }

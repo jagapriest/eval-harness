@@ -34,6 +34,16 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "Cyberspace Administration of China"
+      ],
+      "deferred": [],
+      "seconds": 2.34,
+      "stopped_early": false
+    }
   }
 }

@@ -205,6 +205,39 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "International Organization for Standardization",
+        "U.S. Customs and Border Protection",
+        "Responsible Business Alliance",
+        "McKinsey and Company",
+        "Cigna Corporation",
+        "Princeton University",
+        "Stanford University",
+        "Gestamp",
+        "Georgetown University",
+        "IESE Business School University of Navarra",
+        "Harvard Business School",
+        "Oxford University",
+        "ESIC Business & Marketing School",
+        "Dialog Semiconductor",
+        "Schlumberger",
+        "American University of Beirut",
+        "Columbia Business School",
+        "MKS, Inc.",
+        "Goa University",
+        "Indiana University Kelley School of Business",
+        "University of California at Los Angeles",
+        "Santa Clara University",
+        "SEC",
+        "Flexera Software LLC"
+      ],
+      "deferred": [],
+      "seconds": 17.69,
+      "stopped_early": false
+    }
   }
 }

@@ -30,6 +30,16 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "Securities and Exchange Commission"
+      ],
+      "deferred": [],
+      "seconds": 1.52,
+      "stopped_early": false
+    }
   }
 }

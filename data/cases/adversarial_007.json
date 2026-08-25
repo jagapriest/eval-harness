@@ -108,7 +108,36 @@
   },
   "expected": {
     "competitors": [],
-    "must_not_include": [],
-    "notes": ""
+    "must_not_include": [
+      "AWS",
+      "Cisco"
+    ],
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [
+        "AWS",
+        "Cisco"
+      ],
+      "rejected": [
+        "Google Marketplace",
+        "Microsoft Marketplace",
+        "CrowdStrike Foundation",
+        "McAfee, Inc.",
+        "Foundstone, Inc.",
+        "Hewlett Packard Enterprise",
+        "OpenDNS, Inc.",
+        "Net Optics, Inc.",
+        "Ixia",
+        "McAfee Corp.",
+        "Forbes Technology Counsel",
+        "Seton Hall University",
+        "McGill University",
+        "Edith Cowan University"
+      ],
+      "deferred": [],
+      "seconds": 25.37,
+      "stopped_early": false
+    }
   }
 }

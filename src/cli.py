@@ -293,11 +293,13 @@ def case_progress(root: Path | None = None) -> list[dict]:
         screening = case.get("screening", {})
         n_comp = len(expected.get("competitors", []))
         n_forb = len(expected.get("must_not_include", []))
-        did_comp = "prelabel" in expected
-        did_forb = "prelabel_forbidden" in expected
         proposed = len(screening.get("proposed", []))
-        # A case with no proposals is done on the competitor phase once it has been
-        # looked at; correctly-empty is a real answer, not missing work.
+        proposed_forbidden = len(screening.get("proposed_must_not_include", []))
+        # Zero candidates means there was nothing to adjudicate, so no provenance key
+        # gets written -- which is indistinguishable from "never opened" unless we say
+        # so explicitly. Correctly-empty is a real answer, not missing work.
+        did_comp = "prelabel" in expected or proposed == 0
+        did_forb = "prelabel_forbidden" in expected or proposed_forbidden == 0
         rows.append({
             "case_id": case["case_id"],
             "bucket": case["bucket"],
@@ -305,9 +307,9 @@ def case_progress(root: Path | None = None) -> list[dict]:
             "competitors": n_comp,
             "must_not_include": n_forb,
             "proposed": proposed,
-            "proposed_forbidden": len(screening.get("proposed_must_not_include", [])),
+            "proposed_forbidden": proposed_forbidden,
             "disputed": len(screening.get("disputed", [])),
-            "done_competitors": did_comp or proposed == 0,
+            "done_competitors": did_comp,
             "done_forbidden": did_forb,
         })
     return rows
@@ -344,6 +346,23 @@ def cmd_status(args: argparse.Namespace) -> int:
     else:
         print("\n  dataset fully adjudicated.\n")
     return 0
+
+
+# --------------------------- audit ---------------------------
+
+def cmd_audit(args: argparse.Namespace) -> int:
+    from .audit import audit, fix, render
+
+    if args.fix:
+        changes = fix()
+        print(f"\n  applied {len(changes)} mechanical fix(es):")
+        for change in changes:
+            print(f"    {change}")
+        print("  judgment calls are never auto-resolved; see WARN below.")
+
+    report = audit()
+    print(render(report))
+    return 0 if report.ok else 1
 
 
 # --------------------------- parser ---------------------------
@@ -384,6 +403,11 @@ def build_parser() -> argparse.ArgumentParser:
     status = sub.add_parser("status", help="show labeling progress across all cases")
     status.add_argument("--todo", action="store_true", help="only unfinished cases")
     status.set_defaults(func=cmd_status)
+
+    aud = sub.add_parser("audit", help="validate the golden set before scoring")
+    aud.add_argument("--fix", action="store_true",
+                     help="apply mechanical fixes only (alias dedupe)")
+    aud.set_defaults(func=cmd_audit)
 
     pre = sub.add_parser("prelabel", help="propose candidates for human adjudication")
     pre.add_argument("--case", required=True, help="case id, e.g. clean_002")

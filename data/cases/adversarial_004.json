@@ -159,7 +159,48 @@
   },
   "expected": {
     "competitors": [],
-    "must_not_include": [],
-    "notes": ""
+    "must_not_include": [
+      "VMware",
+      "Symantec",
+      "Broadcom Corporation"
+    ],
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [
+        "VMware",
+        "Symantec",
+        "Broadcom Corporation"
+      ],
+      "rejected": [
+        "Taiwan Semiconductor Manufacturing Company Limited",
+        "TSMC",
+        "Advanced Semiconductor Engineering, Inc.",
+        "Foxconn Technology Group",
+        "Amkor Technology, Inc.",
+        "Siliconware Precision Industries Co., Ltd.",
+        "Integrated Circuit Systems, Inc.",
+        "Integrated Device Technology, Inc.",
+        "Commodore International, Ltd.",
+        "PepsiCo, Inc.",
+        "General Motors Corporation",
+        "Pacven Investment, Ltd.",
+        "Hume Industries Ltd.",
+        "LSI Corporation",
+        "PricewaterhouseCoopers LLP",
+        "SanDisk Corporation",
+        "Western Digital Corporation",
+        "Wilson Sonsini Goodrich & Rosati PC",
+        "Yuasa & Hara",
+        "Howrey & Simon LLP",
+        "Nortel Networks Corporation",
+        "Securities and Exchange Commission",
+        "International Organization for Standardization",
+        "AON"
+      ],
+      "deferred": [],
+      "seconds": 50.67,
+      "stopped_early": false
+    }
   }
 }

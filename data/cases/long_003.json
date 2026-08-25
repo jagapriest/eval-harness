@@ -231,7 +231,67 @@
   },
   "expected": {
     "competitors": [],
-    "must_not_include": [],
-    "notes": ""
+    "must_not_include": [
+      "EMC Corporation",
+      "Snowflake Inc.",
+      "IonQ, Inc.",
+      "CapGemini Ernst & Young",
+      "Xerox Corporation",
+      "Responsible Business Alliance",
+      "Organisation for Economic Co-operation and Development",
+      "United Nations",
+      "SEC",
+      "Democratic Republic of the Congo"
+    ],
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [
+        "EMC Corporation",
+        "Snowflake Inc.",
+        "IonQ, Inc.",
+        "CapGemini Ernst & Young",
+        "Xerox Corporation",
+        "Responsible Business Alliance",
+        "Organisation for Economic Co-operation and Development",
+        "United Nations",
+        "SEC",
+        "Democratic Republic of the Congo"
+      ],
+      "rejected": [
+        "Satmetrix Systems, Inc.",
+        "Bain & Company, Inc.",
+        "U.S. Federal Communications Commission",
+        "U.S. Federal Trade Commission",
+        "U.S. Department of Justice",
+        "European Union",
+        "U.S. Department of Commerce",
+        "U.S. Department of the Treasury",
+        "U.S. Customs and Border Protection",
+        "U.S. Consumer Product Safety Commission",
+        "U.S. Department of Transportation",
+        "U.S. Department of Health and Human Services",
+        "MSD Capital, L.P.",
+        "DFO Management, LLC",
+        "Michael & Susan Dell Foundation",
+        "World Economic Forum",
+        "International Business Council",
+        "Technology CEO Council",
+        "Business Roundtable",
+        "Tsinghua University",
+        "Indian School of Business",
+        "BDT & MSD Advisory Board",
+        "United Nations Foundation",
+        "SecureWorks Corp.",
+        "VMware, Inc.",
+        "Motorola, Inc",
+        "Caterpillar Inc.",
+        "IBM Credit Corporation",
+        "Rogers & Wells"
+      ],
+      "deferred": [],
+      "seconds": 39.87,
+      "stopped_early": false
+    }
   }
 }

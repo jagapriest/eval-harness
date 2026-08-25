@@ -114,8 +114,49 @@
     "note": "Machine-proposed candidates from the `structured` config. NOT labels. Run `python -m src.cli prelabel --case clean_011` to adjudicate. Apply owner ruling R-1: named entities only, primary market only."
   },
   "expected": {
-    "competitors": [],
+    "competitors": [
+      "Broadcom Corporation"
+    ],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel": {
+      "assisted": true,
+      "config_id": "screening",
+      "model": "n/a",
+      "accepted": [
+        "Broadcom Corporation"
+      ],
+      "rejected": [
+        "Intel Corporation",
+        "Nvidia Corporation",
+        "Altera",
+        "Lattice Semiconductor Corporation",
+        "Microsemi Corporation",
+        "Marvell Technology Group, Ltd.",
+        "Analog Devices",
+        "Texas Instruments Incorporated",
+        "NXP Semiconductors N.V.",
+        "Qualcomm Incorporated"
+      ],
+      "deferred": [],
+      "seconds": 15.85,
+      "note": "Model-proposed candidates adjudicated by a human. Disclose this in the writeup; see US-001 for the cold-labeled subset that measures anchoring."
+    },
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "Taiwan Semiconductor Manufacturing Company Limited",
+        "GLOBALFOUNDRIES Inc.",
+        "United Microelectronics Corporation",
+        "Samsung Electronics Co., Ltd.",
+        "Tongfu Microelectronics Co., Ltd.",
+        "Siliconware Precision Industries Ltd.",
+        "King Yuan Electronics Company"
+      ],
+      "deferred": [],
+      "seconds": 7.16,
+      "stopped_early": false
+    }
   }
 }

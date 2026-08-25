@@ -74,7 +74,29 @@
   },
   "expected": {
     "competitors": [],
-    "must_not_include": [],
-    "notes": ""
+    "must_not_include": [
+      "Cisco Systems"
+    ],
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [
+        "Cisco Systems"
+      ],
+      "rejected": [
+        "International Organization for Standardization",
+        "U.S. Customs and Border Protection",
+        "Responsible Business Alliance",
+        "Akamai Technologies",
+        "McKinsey and Company",
+        "Oracle Corporation",
+        "Cigna Corporation",
+        "Princeton University",
+        "Stanford University"
+      ],
+      "deferred": [],
+      "seconds": 15.04,
+      "stopped_early": false
+    }
   }
 }

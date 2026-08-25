@@ -35,6 +35,17 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "NASDAQ Global Select Market",
+        "TechInsights"
+      ],
+      "deferred": [],
+      "seconds": 2.71,
+      "stopped_early": false
+    }
   }
 }

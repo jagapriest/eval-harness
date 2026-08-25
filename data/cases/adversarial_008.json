@@ -110,6 +110,32 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "ISO",
+        "Satmetrix Systems, Inc.",
+        "Bain & Company, Inc.",
+        "Fred Reichheld",
+        "U.S. Federal Communications Commission",
+        "U.S. Federal Trade Commission",
+        "U.S. Department of Justice",
+        "European Union",
+        "U.S. Department of Commerce",
+        "U.S. Department of the Treasury",
+        "U.S. Customs and Border Protection",
+        "U.S. Consumer Product Safety Commission",
+        "U.S. Department of Transportation",
+        "U.S. Department of Health and Human Services",
+        "Responsible Business Alliance",
+        "United Nations",
+        "Organisation for Economic Co-operation and Development"
+      ],
+      "deferred": [],
+      "seconds": 15.75,
+      "stopped_early": false
+    }
   }
 }

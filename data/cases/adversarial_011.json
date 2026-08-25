@@ -40,6 +40,18 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [
+        "European General Data Protection Regulation (GDPR)",
+        "EU AI Act",
+        "Securities and Exchange Commission (SEC)"
+      ],
+      "deferred": [],
+      "seconds": 4.31,
+      "stopped_early": false
+    }
   }
 }
