@@ -281,6 +281,71 @@ def cmd_prelabel(args: argparse.Namespace) -> int:
     return 0
 
 
+# --------------------------- status ---------------------------
+
+def case_progress(root: Path | None = None) -> list[dict]:
+    """Per-case labeling progress. Pure, so it can be tested and reused."""
+    root = root or ROOT
+    rows = []
+    for path in sorted((root / "data" / "cases").glob("*.json")):
+        case = json.loads(path.read_text())
+        expected = case.get("expected", {})
+        screening = case.get("screening", {})
+        n_comp = len(expected.get("competitors", []))
+        n_forb = len(expected.get("must_not_include", []))
+        did_comp = "prelabel" in expected
+        did_forb = "prelabel_forbidden" in expected
+        proposed = len(screening.get("proposed", []))
+        # A case with no proposals is done on the competitor phase once it has been
+        # looked at; correctly-empty is a real answer, not missing work.
+        rows.append({
+            "case_id": case["case_id"],
+            "bucket": case["bucket"],
+            "company": screening.get("company", ""),
+            "competitors": n_comp,
+            "must_not_include": n_forb,
+            "proposed": proposed,
+            "proposed_forbidden": len(screening.get("proposed_must_not_include", [])),
+            "disputed": len(screening.get("disputed", [])),
+            "done_competitors": did_comp or proposed == 0,
+            "done_forbidden": did_forb,
+        })
+    return rows
+
+
+def cmd_status(args: argparse.Namespace) -> int:
+    rows = case_progress()
+    if not rows:
+        raise SystemExit("no cases in data/cases/")
+
+    todo = [r for r in rows if not (r["done_competitors"] and r["done_forbidden"])]
+    print(f"\n{'case':18s} {'bucket':12s} {'company':26s} {'comp':>5s} {'!inc':>5s} "
+          f"{'disp':>5s}  status")
+    print("-" * 88)
+    for r in rows:
+        if args.todo and r["done_competitors"] and r["done_forbidden"]:
+            continue
+        marks = ("C" if r["done_competitors"] else "-") + \
+                ("F" if r["done_forbidden"] else "-")
+        flag = "  <- disputed" if r["disputed"] else ""
+        print(f"{r['case_id']:18s} {r['bucket']:12s} {r['company'][:26]:26s} "
+              f"{r['competitors']:5d} {r['must_not_include']:5d} {r['disputed']:5d}"
+              f"  [{marks}]{flag}")
+
+    done = len(rows) - len(todo)
+    disputed = sum(r["disputed"] for r in rows)
+    print(f"\n  {done}/{len(rows)} cases complete  "
+          f"(C = competitors adjudicated, F = must_not_include adjudicated)")
+    if disputed:
+        print(f"  {disputed} disputed items across "
+              f"{sum(1 for r in rows if r['disputed'])} cases -- decide these first")
+    if todo:
+        print(f"\n  next: ./label {todo[0]['case_id']}\n")
+    else:
+        print("\n  dataset fully adjudicated.\n")
+    return 0
+
+
 # --------------------------- parser ---------------------------
 
 def build_parser() -> argparse.ArgumentParser:
@@ -315,6 +380,10 @@ def build_parser() -> argparse.ArgumentParser:
     noise.add_argument("--concurrency", type=int, default=5)
     add_split(noise)
     noise.set_defaults(func=cmd_noise)
+
+    status = sub.add_parser("status", help="show labeling progress across all cases")
+    status.add_argument("--todo", action="store_true", help="only unfinished cases")
+    status.set_defaults(func=cmd_status)
 
     pre = sub.add_parser("prelabel", help="propose candidates for human adjudication")
     pre.add_argument("--case", required=True, help="case id, e.g. clean_002")

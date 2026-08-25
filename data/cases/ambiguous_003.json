@@ -134,6 +134,24 @@
   "expected": {
     "competitors": [],
     "must_not_include": [],
-    "notes": ""
+    "notes": "",
+    "prelabel": {
+      "assisted": true,
+      "config_id": "screening",
+      "model": "n/a",
+      "accepted": [],
+      "rejected": [],
+      "deferred": [],
+      "seconds": 0.0,
+      "note": "Model-proposed candidates adjudicated by a human. Disclose this in the writeup; see US-001 for the cold-labeled subset that measures anchoring."
+    },
+    "prelabel_forbidden": {
+      "assisted": true,
+      "accepted": [],
+      "rejected": [],
+      "deferred": [],
+      "seconds": 0.0,
+      "stopped_early": true
+    }
   }
 }

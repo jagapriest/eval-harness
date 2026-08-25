@@ -79,6 +79,11 @@ Check the grader before blaming the model.
 ## Commands
 
 ```bash
+./label                    # labeling progress; what to do next
+./label ambiguous_003      # adjudicate a case (works from any directory)
+./label clean_004 --phase forbidden
+
+python -m src.cli status   [--todo]
 python -m src.cli run      --config baseline [--split dev] [--no-cache]
 python -m src.cli grade    --config baseline          # offline, from results file
 python -m src.cli report   --config baseline --config structured
