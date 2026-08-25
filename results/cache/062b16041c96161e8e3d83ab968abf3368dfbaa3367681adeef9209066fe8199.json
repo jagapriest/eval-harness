@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Dell EMC\",\n      \"evidence\": \"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"NetApp\",\n      \"evidence\": \"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Hitachi Vantara\",\n      \"evidence\": \"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"HP Enterprise\",\n      \"evidence\": \"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"IBM\",\n      \"evidence\": \"Our main competitors include legacy vendors, such as Dell EMC, NetApp, Hitachi Vantara, HP Enterprise, and IBM\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Large-scale cloud providers (unnamed)\",\n      \"evidence\": \"Some large-scale cloud providers, known for developing storage systems internally, offer alternatives to our data storage solutions for a variety of customer workloads.\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"name\": \"Hyperconverged product vendors (unnamed)\",\n      \"evidence\": \"we compete against cloud providers and vendors of hyperconverged products\",\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"summary\": \"The company describes an intensely competitive data storage market dominated by legacy incumbents \u2014 Dell EMC, NetApp, Hitachi Vantara, HP Enterprise and IBM \u2014 which are explicitly named as its main competitors and possess greater financial, technical and distribution resources. It also faces unnamed large-scale cloud providers that build storage internally, vendors of hyperconverged products, and emerging startups or specialized vendors. Notably, several firms cited as technology partners (VMware, Nutanix, Microsoft, AWS, Google, Commvault, Rubrik, Veeam, Cisco, NVIDIA) are alliance relationships rather than competitors, though IBM appears in both roles.\"\n}",
+  "input_tokens": 6134,
+  "output_tokens": 1048,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 11.173,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

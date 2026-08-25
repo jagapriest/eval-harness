@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Self-managed open source Apache Kafka\",\n      \"evidence\": \"faster time-to-market and substantially lower costs compared to using self-managed open source technologies or competing offerings\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"name\": \"Apache Flink (self-managed open source)\",\n      \"evidence\": \"enterprise-ready features that complete and extend open source Apache Kafka and Apache Flink by simplifying the infrastructure\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"IBM\",\n      \"evidence\": \"we entered into an Agreement and Plan of Merger (the \\\"Merger Agreement\\\") with International Business Machines Corporation (\\\"IBM\\\")\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"summary\": \"The document names no direct commercial rivals; it frames competition generically as \\\"self-managed open source technologies or competing offerings,\\\" implying that free open source Apache Kafka and Apache Flink deployments are the primary alternatives to Confluent's managed platform. Other named entities (Apache Iceberg, Delta Lake, LinkedIn, cloud providers, data warehouses/lakes) appear as complementary ecosystem technologies or partners rather than competitors. IBM is mentioned only as the proposed acquirer, not as a competitor, though it is a data-infrastructure vendor.\"\n}",
+  "input_tokens": 6091,
+  "output_tokens": 596,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 9.089,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

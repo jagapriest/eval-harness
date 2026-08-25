@@ -24,12 +24,21 @@ from .runner import RunConfig, run_all
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# The regression gate compares against this config's floor. `regressed` is measured
+# against `structured`, so `structured` is the reference once it exists.
+REFERENCE_CONFIG = "baseline"
+
+
+class NoiseMeasurementError(RuntimeError):
+    """Raised when requests failed, so no floor can honestly be reported."""
+
 
 @dataclass
 class NoiseResult:
     config_id: str
     split: str | None
     replicates: int
+    errors: list[str] = field(default_factory=list)
     macro_f1: list[float] = field(default_factory=list)
     per_case: dict[str, list[float]] = field(default_factory=dict)
     per_case_extractions: dict[str, list[int]] = field(default_factory=dict)
@@ -93,6 +102,20 @@ def measure(
                     concurrency=concurrency, use_cache=False)
         )
         by_id = {r.case_id: r for r in responses}
+
+        # An errored response has empty text. Grading it produces zero extractions,
+        # which scores 0.0 on clean cases and 1.0 on empty ones -- a stable, entirely
+        # fictional macro-F1. A billing outage once reported a PERFECT 0.000 noise
+        # floor this way. Failures must abort, never average.
+        failed = [r for r in responses if r.error]
+        if failed:
+            result.errors = [f"{r.case_id}: {r.error}" for r in failed[:5]]
+            raise NoiseMeasurementError(
+                f"{len(failed)}/{len(responses)} calls failed; refusing to report a "
+                f"noise floor from failed requests.\n  "
+                + "\n  ".join(result.errors)
+            )
+
         f1s = []
         for case in cases:
             response = by_id[case["case_id"]]
@@ -109,10 +132,21 @@ def measure(
 
 
 def write(result: NoiseResult, path: Path | None = None, root: Path | None = None) -> Path:
+    """Write per-config, and mirror to noise_floor.json only for the reference config.
+
+    Writing every config to one filename means the last measurement silently replaces
+    the previous one -- and the regression gate then reads whichever config happened to
+    run last. The floor that gates a comparison must be the floor of the config the
+    comparison starts from.
+    """
     root = root or ROOT
-    path = path or root / "results" / "noise_floor.json"
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(result.to_dict(), indent=2) + "\n")
+    results = root / "results"
+    results.mkdir(parents=True, exist_ok=True)
+    path = path or results / f"noise_floor_{result.config_id}.json"
+    payload = json.dumps(result.to_dict(), indent=2) + "\n"
+    path.write_text(payload)
+    if result.config_id == REFERENCE_CONFIG:
+        (results / "noise_floor.json").write_text(payload)
     return path
 
 

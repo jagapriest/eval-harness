@@ -83,6 +83,13 @@ def cmd_run(args: argparse.Namespace) -> int:
     failed = [r for r in responses if r.error]
     for r in failed:
         print(f"  !! {r.case_id}: {r.error}")
+    if failed and len(failed) > len(responses) * 0.1:
+        # Errored responses grade as zero extractions, which is a real score on empty
+        # cases and a zero on clean ones. Past a handful, the aggregate is fiction.
+        raise SystemExit(
+            f"\n  {len(failed)}/{len(responses)} calls failed -- refusing to write a "
+            f"results file built from failures.\n  Fix the errors above and re-run."
+        )
 
     aliases = load_aliases(ROOT / "data" / "aliases.json")
     outcomes = [
@@ -365,6 +372,21 @@ def cmd_audit(args: argparse.Namespace) -> int:
     return 0 if report.ok else 1
 
 
+# --------------------------- split ---------------------------
+
+def cmd_split(args: argparse.Namespace) -> int:
+    from . import split as split_mod
+
+    result = split_mod.build_split(dev_fraction=args.dev_fraction)
+    print(split_mod.summarize(result))
+    if args.write:
+        path = split_mod.write(result)
+        print(f"  written: {_rel(path)}\n")
+    else:
+        print("  (re-run with --write to save data/splits.json)\n")
+    return 0
+
+
 # --------------------------- parser ---------------------------
 
 def build_parser() -> argparse.ArgumentParser:
@@ -403,6 +425,11 @@ def build_parser() -> argparse.ArgumentParser:
     status = sub.add_parser("status", help="show labeling progress across all cases")
     status.add_argument("--todo", action="store_true", help="only unfinished cases")
     status.set_defaults(func=cmd_status)
+
+    spl = sub.add_parser("split", help="build the stratified dev/test split")
+    spl.add_argument("--dev-fraction", type=float, default=0.3)
+    spl.add_argument("--write", action="store_true")
+    spl.set_defaults(func=cmd_split)
 
     aud = sub.add_parser("audit", help="validate the golden set before scoring")
     aud.add_argument("--fix", action="store_true",

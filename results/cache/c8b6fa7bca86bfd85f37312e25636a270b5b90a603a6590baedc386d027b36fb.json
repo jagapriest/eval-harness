@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document (Twilio's Form 10-K) describes its competitive landscape only in generic categories\\u2014CPaaS providers, regional network service providers, CRM/customer experience vendors, standalone customer data platform vendors, and other software companies competing with parts of its product line\\u2014without naming any specific rival companies. Twilio states that competition is intensifying and that no single competitor competes across all of its product offerings. Because no individual competitor is identified by name, no named competitors can be extracted.\"\n}",
+  "input_tokens": 6043,
+  "output_tokens": 237,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 4.645,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

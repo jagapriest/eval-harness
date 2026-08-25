@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import json
+
 import pytest
 
 from src.metrics import (
@@ -197,3 +199,36 @@ def test_improvement_is_never_a_regression():
 def test_multiple_is_configurable():
     assert exceeds_noise_floor(0.9, 0.5, noise_floor=0.15, multiple=1.0) is True
     assert exceeds_noise_floor(0.9, 0.5, noise_floor=0.15, multiple=3.0) is False
+
+
+# --------------------------- failed requests must not score ---------------------------
+
+def test_noise_refuses_to_report_a_floor_from_failed_requests(tmp_path, monkeypatch):
+    """A billing outage once produced a PERFECT 0.000 noise floor.
+
+    Every call returned 400, every response body was empty, and empty extractions score
+    1.0 on empty cases and 0.0 on clean ones -- a stable, entirely fictional macro-F1.
+    Determinism from total failure is the most dangerous number an eval can print.
+    """
+    import src.noise as noise_mod
+    from src.runner import CallResult, RunConfig
+
+    (tmp_path / "data" / "cases").mkdir(parents=True)
+    (tmp_path / "data" / "docs").mkdir(parents=True)
+    (tmp_path / "data" / "docs" / "d.txt").write_text("Competitors include Acme Inc.")
+    (tmp_path / "data" / "aliases.json").write_text("{}")
+    (tmp_path / "data" / "cases" / "c1.json").write_text(json.dumps({
+        "case_id": "c1", "bucket": "clean", "source_path": "data/docs/d.txt",
+        "expected": {"competitors": ["Acme"], "must_not_include": []},
+    }))
+
+    async def fake_run_all(cases, cfg, **kwargs):
+        return [CallResult(case_id=cid, config_id=cfg.id, raw_text="",
+                           error="400: credit balance is too low")
+                for cid, _ in cases]
+
+    monkeypatch.setattr(noise_mod, "run_all", fake_run_all)
+
+    cfg = RunConfig(id="x", model="claude-opus-5", prompt_template="{{DOCUMENT}}")
+    with pytest.raises(noise_mod.NoiseMeasurementError, match="failed"):
+        noise_mod.measure(cfg, replicates=1, root=tmp_path)

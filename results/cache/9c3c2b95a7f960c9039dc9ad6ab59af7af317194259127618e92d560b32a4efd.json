@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document (an Alphabet Form 10-K excerpt) describes competition only in generic categories rather than by name, citing rivals such as general purpose and vertical search engines, online advertising platforms and networks, offline advertising media, digital content and app platforms, enterprise cloud providers, AI model developers, consumer hardware makers, digital video services, social networks, and workspace communication providers. No specific competitor companies are identified anywhere in the text; the only named third parties (e.g., X and LinkedIn) appear as investor-communication channels, and NFL Sunday Ticket appears as a Google product offering, not as competitors. Consequently, the competitive landscape is portrayed as broad, rapidly changing, and AI-driven, but entirely unnamed.\"\n}",
+  "input_tokens": 5948,
+  "output_tokens": 494,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 8.083,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

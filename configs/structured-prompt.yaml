@@ -1,0 +1,18 @@
+# Disentangles the structured result. `structured` changes TWO things at once relative
+# to baseline: the prompt gains explicit exclusion criteria and few-shot examples, AND
+# output_config.format is switched on. The dev run showed +0.19 F1 and a collapse from
+# 0.071 to 0.000 noise -- but it cannot say which change did it.
+#
+# This config isolates the prompt: structured wording, prompt-instructed JSON only.
+# structured-prompt vs baseline  = the prompt's contribution
+# structured vs structured-prompt = structured outputs' contribution
+id: structured-prompt
+model: claude-opus-5
+prompt_file: prompts/structured.md
+effort: medium
+structured_output: false
+thinking: false
+max_tokens: 8000
+pricing:
+  input_per_mtok: 5.00
+  output_per_mtok: 25.00

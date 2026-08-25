@@ -1,0 +1,79 @@
+{
+  "dev": [
+    "adversarial_005",
+    "adversarial_006",
+    "adversarial_008",
+    "adversarial_012",
+    "ambiguous_001",
+    "ambiguous_005",
+    "clean_005",
+    "clean_008",
+    "clean_011",
+    "clean_012",
+    "empty_002",
+    "empty_007",
+    "empty_009",
+    "long_001"
+  ],
+  "test": [
+    "adversarial_001",
+    "adversarial_002",
+    "adversarial_003",
+    "adversarial_004",
+    "adversarial_007",
+    "adversarial_009",
+    "adversarial_010",
+    "adversarial_011",
+    "adversarial_013",
+    "ambiguous_002",
+    "ambiguous_003",
+    "ambiguous_004",
+    "ambiguous_006",
+    "ambiguous_007",
+    "ambiguous_008",
+    "clean_001",
+    "clean_002",
+    "clean_003",
+    "clean_004",
+    "clean_006",
+    "clean_009",
+    "clean_010",
+    "clean_013",
+    "empty_001",
+    "empty_003",
+    "empty_004",
+    "empty_005",
+    "empty_006",
+    "empty_008",
+    "long_002",
+    "long_003",
+    "long_004"
+  ],
+  "excluded": {
+    "clean_007": "competitors not adjudicated",
+    "clean_014": "competitors not adjudicated"
+  },
+  "by_bucket": {
+    "adversarial": {
+      "dev": 4,
+      "test": 9
+    },
+    "ambiguous": {
+      "dev": 2,
+      "test": 6
+    },
+    "clean": {
+      "dev": 4,
+      "test": 8
+    },
+    "empty": {
+      "dev": 3,
+      "test": 6
+    },
+    "long": {
+      "dev": 1,
+      "test": 3
+    }
+  },
+  "note": "Stratified by bucket, deterministic by case_id hash. The test split is held out: touch it twice across the project, once mid-build and once at the end. Never tune against it."
+}

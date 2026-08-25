@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\"competitors\":[],\"summary\":\"The Salesforce filing's competition section describes only generic categories of rivals \u2014 vendors of packaged business software, cloud application service providers, AI-native startups and emerging companies, free/bundled software providers, niche industry-specific vendors, productivity and unified communications providers, platform development companies, and would-be customers building internal applications. No specific competitor company is named anywhere in the document. Other named entities (Trailhead, Agentforce, Hyperforce, Dreamforce, Salesforce+, Career Connect) are the company's own products, programs or events rather than competitors.\"}",
+  "raw_text": "{\"competitors\":[],\"summary\":\"The Salesforce filing's competition section describes only unnamed categories of rivals \u2014 vendors of packaged business software, on-premises enterprise application vendors, cloud application service providers, AI-native startups, free/bundled software companies, niche vertical vendors, productivity and unified communications providers, platform development companies, and prospective customers building in-house applications. No specific competitor company is named. Other named entities in the document (Trailhead, Agentforce, Hyperforce, Salesforce+, Dreamforce) are the company's own products, programs, or events.\"}",
   "input_tokens": 7263,
-  "output_tokens": 200,
+  "output_tokens": 193,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 3.776,
+  "latency_s": 4.581,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

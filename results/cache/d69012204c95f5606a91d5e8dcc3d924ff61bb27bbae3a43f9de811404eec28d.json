@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\"competitors\":[],\"summary\":\"The document is Zoom's 10-K business section, which discusses competitive markets and competitors' advantages only in generic, unnamed terms (\\\"many of our actual and potential competitors\\\"). Named companies such as Microsoft, Google, OpenAI, Anthropic, and NVIDIA appear as integration partners or AI model providers, while Gartner, Forrester, IDC, G2, and TrustRadius are analyst/review firms. No specific company is presented as a competitor.\"}",
+  "raw_text": "{\"competitors\":[],\"summary\":\"This Zoom 10-K excerpt discusses competitive markets in general terms \u2014 noting that \\\"actual and potential competitors\\\" benefit from advantages such as greater name recognition and resources \u2014 but names no specific competing company. Microsoft and Google appear only as integration/software partners in the Zoom App Marketplace, and OpenAI, Anthropic, and NVIDIA are cited as AI model providers. Analyst firms (Gartner, Forrester, IDC, G2, TrustRadius) are referenced as sources of recognition, not competitors.\"}",
   "input_tokens": 7484,
-  "output_tokens": 171,
+  "output_tokens": 194,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 4.707,
+  "latency_s": 4.095,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

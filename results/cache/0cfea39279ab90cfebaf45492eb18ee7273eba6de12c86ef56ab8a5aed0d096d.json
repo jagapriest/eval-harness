@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document discusses competition only in generic terms and does not name any specific competitor companies. It describes rivalry from \\\"both branded and generic competitors,\\\" specialized single-product-line companies, and \\\"non-traditional IT companies, including large Infrastructure-as-a-Service providers, that often buy their infrastructure directly from original design manufacturers.\\\" The only firms named (Satmetrix Systems, Bain & Company) appear solely as Net Promoter Score trademark holders, not as competitors.\"\n}",
+  "input_tokens": 6098,
+  "output_tokens": 324,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 5.742,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

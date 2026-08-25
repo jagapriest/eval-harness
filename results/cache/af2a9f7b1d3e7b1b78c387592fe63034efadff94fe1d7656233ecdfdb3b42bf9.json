@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\"competitors\":[],\"summary\":\"Twilio's 10-K competition section describes only categories of rivals \u2014 CPaaS companies, regional network service providers, CRM/customer experience vendors, standalone customer data platform vendors, and other software companies overlapping parts of its product line \u2014 without naming any specific company. Other named entities in the document (Twilio's own products such as Segment and Lookup API, and Twilio.org) are internal, not competitors. Therefore no qualifying competitors can be extracted.\"}",
+  "raw_text": "{\"competitors\":[],\"summary\":\"Twilio's 10-K describes its competition only in categorical terms \u2014 CPaaS providers, regional network service providers, CRM and customer experience vendors, standalone customer data platform vendors, and other software companies overlapping parts of its product line. No specific competitor company is named anywhere in the document; the only company names mentioned are Twilio's own entities and products (e.g., Twilio Segment, Twilio.org). Therefore no qualifying competitors can be extracted.\"}",
   "input_tokens": 7406,
-  "output_tokens": 164,
+  "output_tokens": 167,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 3.317,
+  "latency_s": 5.106,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

@@ -70,10 +70,10 @@
   "expected": {
     "competitors": [
       "IBM",
-      "GCP (Google Cloud Platform)"
+      "GCP"
     ],
     "must_not_include": [],
-    "notes": "",
+    "notes": "Label normalized from 'GCP (Google Cloud Platform)' to 'GCP': the filing writes 'AWS, GCP and Microsoft Azure' and never spells out Google Cloud Platform. PRD S3 requires the name as written in the document.",
     "prelabel": {
       "assisted": true,
       "config_id": "screening",

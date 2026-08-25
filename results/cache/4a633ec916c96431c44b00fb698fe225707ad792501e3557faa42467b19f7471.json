@@ -1,0 +1,12 @@
+{
+  "raw_text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Microsoft\",\n      \"evidence\": \"integrations with key software vendors, such as Microsoft and Google\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"Google\",\n      \"evidence\": \"integrations with key software vendors, such as Microsoft and Google\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"OpenAI\",\n      \"evidence\": \"dynamically select from multiple AI models, including those from OpenAI, Anthropic, and NVIDIA\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"Anthropic\",\n      \"evidence\": \"dynamically select from multiple AI models, including those from OpenAI, Anthropic, and NVIDIA\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"NVIDIA\",\n      \"evidence\": \"dynamically select from multiple AI models, including those from OpenAI, Anthropic, and NVIDIA\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"summary\": \"The document (a Zoom Annual Report excerpt) discusses competition only in generic terms, warning that \\\"we operate in competitive markets\\\" and that many actual and potential competitors have greater name recognition, resources, and distribution agreements, but it never names a specific rival. The only companies identified by name are Microsoft and Google, cited as integration partners in the Zoom App Marketplace, and OpenAI, Anthropic, and NVIDIA, cited as LLM providers within Zoom's federated AI approach \u2014 all framed as partners rather than competitors, though several are widely recognized rivals in collaboration and AI. Confidence in all entries is low because the document supplies no explicit competitive framing for any named firm.\"\n}",
+  "input_tokens": 6121,
+  "output_tokens": 750,
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "latency_s": 9.701,
+  "stop_reason": "end_turn",
+  "model_version": "claude-opus-5",
+  "error": null,
+  "attempts": 1
+}

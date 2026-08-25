@@ -56,6 +56,8 @@ GOOD = json.dumps({
         ["status"],
         ["status", "--todo"],
         ["audit"],
+        ["split"],
+        ["split", "--write", "--dev-fraction", "0.25"],
     ],
 )
 def test_every_documented_invocation_parses(argv):
@@ -67,7 +69,7 @@ def test_all_subcommands_are_registered():
     actions = [a for a in parser._actions if hasattr(a, "choices") and a.choices]
     registered = set(actions[0].choices)
     assert registered == {"run", "grade", "report", "noise", "prelabel", "status",
-                          "audit"}
+                          "audit", "split"}
 
 
 def test_report_config_flag_is_repeatable():
