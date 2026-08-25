@@ -13,17 +13,17 @@
     }
   },
   "response": {
-    "id": "msg_011CePhs1w6aWyQWimixWTe8",
+    "id": "msg_011CePmxu8hFFayJHDkN84XQ",
     "container": null,
     "content": [
       {
-        "signature": "CAIS2QQKjgEIERgCKkCzMauUCT4hHMolz3UIbz08RM/fvWutkb5I3eZPD839Zgj3kvroFGEX3uHroHC4RkCFh9ID2AThRcgex9xxP06rMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAfTpttQGEgyYhl1OqIFpmbvJps4aDOJcMzBHMSL18p4AISIwy8AAjxDmkn0+1UDEcSmtour4vcCd3aDCXV3mCQrFbiCwWSjl768dDPnMX3eCkGCdKvcCSXyBTlsFk+laaDe+chAtIxGQifvR+thLMFzd9nultp4YXI72WHvPzBlWPcYC0zqSIAP2odCNBjtcBMTOq09QqgQ22buVx1aVsVVlxcOD7R0311zXjQkfiwOCmS8DRtYBcap3vopnAre9EPPK35Uz1BPa2oO22b1vZgdcDiMOYBxh4b44UDLHe6eG+l/bGyc9tZnV0LoSo5RfxSMNtlmZ5mVtR8j6wxL+PDw/9INYJ2a/ScxSXJiBrBmkkFVx0nMXFGmAhfN/ArCDL3yOcTBQQKv1VTqJo+RSu6/9VM2HH02nhVwBpSjntFMCU57rK5bXkphR5dlkMYc1AT0LcgzbVd4nbnpNqJErslfY/BY1DG1oZU8oLXdFaj7ub4v1CvKWBkyOv421XFkCHMDffBKx7Wk28+6NgueJYFhzu9CASKHa0595uXf35aXpoHGgOYLxTdMQKO1OfnFT/qhzRHuJkZTmYquD195f6h5HM/rDpwbO3RHXg9UUGAE=",
+        "signature": "CAISogYKjgEIERgCKkCDbDvMKDHZhVm7nhzqZ8l+skL9VsomDpY/KbMMFCioxdznxFGMLu6iVdM80I5Fjeui4HyOoa+YrXMD2B0V658+Mg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAZCDt9QGEgzMAchg5WguSmNTFckaDJ1Zd0PgW5oHBWtYKSIwy7gGGxcQMUoqUpGpbU7+FW3S9++OJOlDdGc9y0YR4W+fz/zrx31qmV3rSW8JLwP9KsAEz8523fxEObQDCCcjBoxIU5ILM3J14m8E8ZHMAYkPJ/9Y0Iu2GkIoV6xEozAzGmyP0sjwx/aViYDuYUZvbIDx6MEA3DBcRCqQpJzKgA/agaCgqqDWaFrNqOAsKfMOvDE/24sIPiBqQ45InJX9cSEORoPeEJlFl85zHkhpckS8YxJMDsmJKpakWxCLuUC9REjfRxjPKSK3sbsVBMv5j6xbJCZHgOmsVile9bGRxuTuYcB7zuVaOIvJlHlh5683szPtYv26chOlCD/xh0QjYq/VLgQvga68/BE1Ss1YN1ewNdoeL8fxddvUsr9fPCcR+Q7ciDMvIH3+FOn9j7L/JRA3vn5Cnn9WdNe83wlal1ULAkI1lvFHSghzDYjZyjw0JvwVOUWkB0Luq89gAOl6U1O10QnAQ+xtUCqjXY0YAZcgRiFAzNNEh/xJbsUF84cB1B/otItMD/EJOjVeMt4nZW1r0BXFMViK7S1AxWipZIcHZ6vYdG9DqT6pAomWDcPGeEXu4zPWQY6Gf6MIpMbS/gxw5Q72TFQ1HL/BrWOBMnl7vKnMfqEWTz/LnvgNrebB7q2Sm9IO1QXwjM/5/Afvbb1ybG6gChqgrvwCAruEWaRMLUfuihIy4xTqL3ITL+izKbAP3DcWJtfLgVa+XsX6yFH8I6BcfLdEgYho8vBFd8q+d1riSDNry5zA51T0N8agR6wYJvH3Tnry/O42QtFihcJsHz/Fai3HUCKR7PqUa3+iO/TAXaLQdQOwlu+nVeBEB5HMGAE=",
         "thinking": "",
         "type": "thinking"
       },
       {
         "citations": null,
-        "text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Self-managed open source Apache Kafka\",\n      \"evidence\": \"faster time-to-market and substantially lower costs compared to using self-managed open source technologies or competing offerings\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"name\": \"Apache Flink (self-managed open source)\",\n      \"evidence\": \"enterprise-ready features that complete and extend open source Apache Kafka and Apache Flink by simplifying the infrastructure\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"IBM\",\n      \"evidence\": \"we entered into an Agreement and Plan of Merger (the \\\"Merger Agreement\\\") with International Business Machines Corporation (\\\"IBM\\\")\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"summary\": \"The document names no direct commercial rivals; it frames competition generically as \\\"self-managed open source technologies or competing offerings,\\\" implying that free open source Apache Kafka and Apache Flink deployments are the primary alternatives to Confluent's managed platform. Other named entities (Apache Iceberg, Delta Lake, LinkedIn, cloud providers, data warehouses/lakes) appear as complementary ecosystem technologies or partners rather than competitors. IBM is mentioned only as the proposed acquirer, not as a competitor, though it is a data-infrastructure vendor.\"\n}",
+        "text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Self-managed open source Apache Kafka\",\n      \"evidence\": \"faster time-to-market and substantially lower costs compared to using self-managed open source technologies or competing offerings\",\n      \"confidence\": \"medium\"\n    },\n    {\n      \"name\": \"Apache Flink (self-managed open source)\",\n      \"evidence\": \"enterprise-ready features that complete and extend open source Apache Kafka and Apache Flink by simplifying the infrastructure\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"IBM\",\n      \"evidence\": \"Proposed Transaction with IBM ... Agreement and Plan of Merger ... with International Business Machines Corporation (\\\"IBM\\\")\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"summary\": \"The document is largely a strategic overview of Confluent's Data Streaming Platform and names no specific rival vendors; competition is referenced only generically as \\\"self-managed open source technologies or competing offerings,\\\" implying that do-it-yourself Apache Kafka and Flink deployments are the primary alternative. Related open source projects (Kafka, Flink, Iceberg, Delta Lake) are framed as foundations of Confluent's platform rather than competitors. IBM appears solely as the proposed acquirer under a merger agreement, not as a stated competitor.\"\n}",
         "type": "text"
       }
     ],
@@ -42,9 +42,9 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 6091,
-      "output_tokens": 596,
+      "output_tokens": 650,
       "output_tokens_details": {
-        "thinking_tokens": 127
+        "thinking_tokens": 193
       },
       "server_tool_use": null,
       "service_tier": "standard"

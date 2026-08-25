@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document's Competition section describes the market as highly competitive, rapidly evolving and fragmented, but it identifies only categories of rivals rather than any named companies. These categories include packaged and on-premises enterprise software vendors, cloud application service providers, AI-native startups built on generative AI and large language models, free or bundled software providers, niche vendors in analytics, integration, marketing, e-commerce and AI, productivity/email and unified communications providers, and cloud development platform companies as well as customers building in-house applications. Because no specific competitor is named, no entities can be extracted with supporting verbatim evidence.\"\n}",
+  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document describes Salesforce's competitive environment only in generic category terms and does not name any specific competitor company. It characterizes the market as highly competitive, rapidly evolving and fragmented with low barriers to entry, citing categories such as packaged business software vendors, on-premises enterprise application vendors, cloud application service providers, AI-native startups built on generative AI and large language models, free or bundled software providers, niche vertical and point-solution vendors (business intelligence, data preparation, integration, marketing, e-commerce, AI services), productivity/email and unified communications providers, and platform development environment companies. It also notes that would-be customers building internal applications and new entrants may become additional competitive threats.\"\n}",
   "input_tokens": 5900,
-  "output_tokens": 320,
+  "output_tokens": 352,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 6.15,
+  "latency_s": 6.983,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

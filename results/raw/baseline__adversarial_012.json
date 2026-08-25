@@ -13,17 +13,17 @@
     }
   },
   "response": {
-    "id": "msg_011CePhs1tNFNkdfyhtvfNaQ",
+    "id": "msg_011CePmxu9SSQEsMtdTaxL1Q",
     "container": null,
     "content": [
       {
-        "signature": "CAISuwUKjgEIERgCKkAF1qjrBEQkT0cqxnGiLYYKXEy/NT1yYHigfpxEgQGmMfr9KgSMfopKZwQhjkw3l+XtHOMRHcoM160hx2G0fjXiMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAfXpttQGEgwCQO1/FrHghvek0YUaDPxr/uOdL9oojGqS3iIwsiMLgYFB4Xj7PMTHLTmz8eDM1E1F9CAacyz7FAxPFOmqgRn9U4OR9e2uMCaOr/VsKtkDXJQc0zqTQ/WNqFIRYwMcNlCa1L/Tjs8sHAAkdcg/XcXJpX1/z1WeElwVUcPrWfuMIezIoMWEw4b1KHa6QvCPjhPgLk07320lE8p0lIZjxTypEdgDIAZwCEGiuRG0XQpl3RBppEGaJVzdEFkWo9r0wuY73WB3tU4QnG+BzsjM32UeEU0Lp5wAl1zgmEMRjAFYrU7LoB3Ty5DeoCGIBtEFmnitfyAQBtBaTUzwfVHl9DHsTNxPRVCXpw8/QO/9ONEa4RumZ4cWvNr4wio2qhjvbpkBbAgVFiWP/dZyP41YJZ81owa80MruJe8aTsEgQzL0mN2CuE28bKZlTiyq6YJJ6/FVbZRHtNMW+FynTidNBFh1pAiREd9v0KmweIdAGTjQ6/qxk0ONs97QTMa4H/zIZ57iOp47wt7S5koHCs7wYhrkk3SoknfQyqWg6yTOxA6DqH5/RqAQWqB0q0oganB0X/qSeZa67YxZrr3QMX1M8GUWv3TRlBKyGjaXlc/p3FlrBbT+l7gpI8YaLndDuSlg2CDegcDbh9hiO+A5C36uC8a/aXJ2smgKZOpoDOWB/t1qM6PGIo9/Bcdr9uYat/jpvbjS4Bx2preA6iv2W1S1JhXBQhKgJbyNGZsYAQ==",
+        "signature": "CAISiwYKjgEIERgCKkDLgrflaEvWjdGSwO57yV6DUEdIgPCsaPs4tUQvUwLFJLi3jYkijwOeFUsLLxHJWwewidOzKmqu34Z9zSIeJvbDMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAZKDt9QGEgwdThbLTfrll/2nO2EaDGLXpYNYhfV21J9YrCIwoRiymqFazJLS0Rrf989dZnZd0eeU9d43Bz73pLvKmte69vedYyVhI1LN/sGlOJXrKqkEBHL/IqDx2Q5TekTXKY6iOcI/JVzGYvNKGmgs3FTUiTPUIi5NIlUOgvRFmq+KPAdfQTkTDTt2Ehc5trb4p9m97oy3Dvde7cUJaF5sq88pd4xmcG6TFl4C3fbQGFKbqkGcsESAonR4uJ+TVgqMG9YxjkiEQLtShnXTr/RxNS6AdTv73u/g5fydNsQqNpxenDhhMgZtZEZDd6yO5HJZkbSSmNTv/Aj2UDIJBMB50cqdJAjhVBzLqAQ8Uvi0iMT6pwjWo0CZNI1Vpt1hCUvilRWnLUvd/gNKK12/5BneZYI5R8YdoaB5Jpml3K1nJc4CDT/zNhwoIZ9HLcSdmcj/rmCWCg3fFa69lZhPlwA1cdfTYLuSRLbhEG3N1xP0uETfh5c6Yf2xw+df2gzdKKZGKi4iaGvO9lo2JwuCb1DEVsiUYtko1+V1M8IyOTwTdfxtGs5ddyLGxpQLjE6IvWA2Ai64wgJ4q9AEfNBlVlHa7vWbsdSyW+FuSFx+IXe6JWn3pWFsUbaUwRQyTz4nCX3AzCwi3BTRrZslY/r/63d3ewBwsEaderzz6IWO8xqXYAJnyMpi0ehQino+I0fzS1HTLF5tAz8xTvo9nye839JM0cGv5JSYQI5FWy1K9Vw8Gax1QhFjq2VogdOAPDAFup24tERuQB5/j3N17oOrW6ECa6bAXGXtPR+WY0vCWGtxk6qkQDTCGAxvsIx4De0Ac+XYuV18rhGKEA2y1O8sLRgB",
         "thinking": "",
         "type": "thinking"
       },
       {
         "citations": null,
-        "text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Microsoft\",\n      \"evidence\": \"integrations with key software vendors, such as Microsoft and Google\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"Google\",\n      \"evidence\": \"integrations with key software vendors, such as Microsoft and Google\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"OpenAI\",\n      \"evidence\": \"dynamically select from multiple AI models, including those from OpenAI, Anthropic, and NVIDIA\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"Anthropic\",\n      \"evidence\": \"dynamically select from multiple AI models, including those from OpenAI, Anthropic, and NVIDIA\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"NVIDIA\",\n      \"evidence\": \"dynamically select from multiple AI models, including those from OpenAI, Anthropic, and NVIDIA\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"summary\": \"The document (a Zoom Annual Report excerpt) discusses competition only in generic terms, warning that \\\"we operate in competitive markets\\\" and that many actual and potential competitors have greater name recognition, resources, and distribution agreements, but it never names a specific rival. The only companies identified by name are Microsoft and Google, cited as integration partners in the Zoom App Marketplace, and OpenAI, Anthropic, and NVIDIA, cited as LLM providers within Zoom's federated AI approach \u2014 all framed as partners rather than competitors, though several are widely recognized rivals in collaboration and AI. Confidence in all entries is low because the document supplies no explicit competitive framing for any named firm.\"\n}",
+        "text": "{\n  \"competitors\": [\n    {\n      \"name\": \"Microsoft\",\n      \"evidence\": \"integrations with key software vendors, such as Microsoft and Google\",\n      \"confidence\": \"low\"\n    },\n    {\n      \"name\": \"Google\",\n      \"evidence\": \"integrations with key software vendors, such as Microsoft and Google\",\n      \"confidence\": \"low\"\n    }\n  ],\n  \"summary\": \"The document is a Zoom Form 10-K excerpt that repeatedly acknowledges operating in competitive markets with actual and potential competitors that enjoy greater name recognition, resources, and distribution, but it does not name any rival by name. Microsoft and Google are the only industry players cited, and they appear as App Marketplace integration partners rather than as identified competitors, so their inclusion is inferential. Other named third parties (OpenAI, Anthropic, NVIDIA as LLM suppliers; Gartner, Forrester, IDC, G2, TrustRadius as analysts/review sites) are partners or evaluators, not competitors.\"\n}",
         "type": "text"
       }
     ],
@@ -42,9 +42,9 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 6121,
-      "output_tokens": 750,
+      "output_tokens": 536,
       "output_tokens_details": {
-        "thinking_tokens": 168
+        "thinking_tokens": 191
       },
       "server_tool_use": null,
       "service_tier": "standard"

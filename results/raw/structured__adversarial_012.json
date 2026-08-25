@@ -57,12 +57,12 @@
     }
   },
   "response": {
-    "id": "msg_011CePhdLDYdduoVzEY5uWCa",
+    "id": "msg_011CePjrPcXtzFEvFWgVbvzh",
     "container": null,
     "content": [
       {
         "citations": null,
-        "text": "{\"competitors\":[],\"summary\":\"This Zoom 10-K excerpt discusses competitive markets in general terms \u2014 noting that \\\"actual and potential competitors\\\" benefit from advantages such as greater name recognition and resources \u2014 but names no specific competing company. Microsoft and Google appear only as integration/software partners in the Zoom App Marketplace, and OpenAI, Anthropic, and NVIDIA are cited as AI model providers. Analyst firms (Gartner, Forrester, IDC, G2, TrustRadius) are referenced as sources of recognition, not competitors.\"}",
+        "text": "{\"competitors\":[],\"summary\":\"This Zoom 10-K excerpt discusses competitive markets and references competitors only generically (\\\"many of our actual and potential competitors,\\\" \\\"other industry players,\\\" \\\"most Contact Center as a Service solutions\\\"), without naming any specific rival firm. Named companies such as Microsoft and Google appear as integration partners, OpenAI, Anthropic and NVIDIA as AI model providers, and Gartner, Forrester, IDC, G2 and TrustRadius as analyst/review firms. No qualifying named competitor is presented.\"}",
         "type": "text"
       }
     ],

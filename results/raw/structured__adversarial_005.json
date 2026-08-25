@@ -57,12 +57,12 @@
     }
   },
   "response": {
-    "id": "msg_011CePhdLDYJgheCrFSJLhzP",
+    "id": "msg_011CePjrPRsC7oVvoSycM9i7",
     "container": null,
     "content": [
       {
         "citations": null,
-        "text": "{\"competitors\":[],\"summary\":\"Cloudflare's 10-K describes competition in the network services market across three categories \u2014 on-premises network hardware vendors, cloud-based point solution vendors (application/network security, CDN, DNS, email security, SD-WAN), and traditional public cloud vendors \u2014 but names no specific competing company. The only company named is Cloudflare itself.\"}",
+        "text": "{\"competitors\":[],\"summary\":\"Cloudflare's 10-K describes competition in three categories \u2014 on-premises network hardware vendors, cloud-based point solution vendors (application/network security, CDN, DNS, email security, SD-WAN), and traditional public cloud vendors \u2014 but names no specific competing company. Only Cloudflare itself and non-competitive references (Newsweek, Best Practice Institute, social platforms) are named.\"}",
         "type": "text"
       }
     ],
@@ -81,7 +81,7 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 7140,
-      "output_tokens": 123,
+      "output_tokens": 145,
       "output_tokens_details": {
         "thinking_tokens": 0
       },

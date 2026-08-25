@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\"competitors\": [], \"summary\": \"Twilio's competition section describes only unnamed categories of rivals \u2014 CPaaS companies, regional network service providers, CRM and customer experience vendors, standalone customer data platform vendors, and other software companies overlapping portions of its product line. No specific competing company is named anywhere in the document, so no entries qualify.\"}",
+  "raw_text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"Twilio's competition section describes only categories of rivals \u2014 CPaaS companies, regional network service providers, CRM and customer experience vendors, standalone customer data platform vendors, and other software companies overlapping parts of its product line \u2014 without naming any specific firm. Other named entities in the document (Twilio's own products such as Segment and Lookup API, Twilio.org, and the SEC) are not competitors. Therefore no qualifying competitor can be extracted.\"\n}\n```",
   "input_tokens": 7045,
-  "output_tokens": 117,
+  "output_tokens": 187,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 3.277,
+  "latency_s": 3.652,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

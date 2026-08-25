@@ -32,6 +32,7 @@ class SplitResult:
     test: list[str] = field(default_factory=list)
     excluded: dict[str, str] = field(default_factory=dict)
     by_bucket: dict[str, dict[str, int]] = field(default_factory=dict)
+    provenance: dict[str, int] = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         return {
@@ -39,6 +40,7 @@ class SplitResult:
             "test": sorted(self.test),
             "excluded": self.excluded,
             "by_bucket": self.by_bucket,
+            "label_provenance": self.provenance,
             "note": (
                 "Stratified by bucket, deterministic by case_id hash. The test split is "
                 "held out: touch it twice across the project, once mid-build and once at "
@@ -56,9 +58,16 @@ def is_adjudicated(case: dict) -> tuple[bool, str]:
     expected = case.get("expected", {})
     screening = case.get("screening", {})
 
-    if screening.get("proposed") and "prelabel" not in expected:
+    # A normalized case has labels derived from a stated rule rather than from a human
+    # pass. That is weaker provenance, not absent provenance -- it is scoreable, and
+    # `provenance()` reports how many cases are in that state so the weakness stays
+    # visible in the split file rather than buried.
+    normalized = "normalized" in expected
+
+    if screening.get("proposed") and "prelabel" not in expected and not normalized:
         return False, "competitors not adjudicated"
-    if screening.get("proposed_must_not_include") and "prelabel_forbidden" not in expected:
+    if (screening.get("proposed_must_not_include")
+            and "prelabel_forbidden" not in expected and not normalized):
         return False, "must_not_include not adjudicated"
 
     # Deliberately no "this bucket ought to have competitors" rule. `long` is defined
@@ -85,6 +94,11 @@ def build_split(root: Path | None = None, dev_fraction: float = DEV_FRACTION) ->
         if not ok:
             result.excluded[case["case_id"]] = reason
             continue
+        expected = case.get("expected", {})
+        kind = ("human+normalized" if "prelabel" in expected and "normalized" in expected
+                else "normalized-only" if "normalized" in expected
+                else "human")
+        result.provenance[kind] = result.provenance.get(kind, 0) + 1
         by_bucket.setdefault(case["bucket"], []).append(case["case_id"])
 
     for bucket, ids in sorted(by_bucket.items()):
@@ -117,6 +131,10 @@ def summarize(result: SplitResult) -> str:
         f"{'TOTAL':14s} {len(result.dev):5d} {len(result.test):5d} "
         f"{len(result.dev) + len(result.test):6d}",
     ]
+    if result.provenance:
+        lines += ["", "  label provenance:"]
+        for kind, count in sorted(result.provenance.items()):
+            lines.append(f"    {kind:20s} {count}")
     if result.excluded:
         lines += ["", f"  excluded ({len(result.excluded)}) -- not yet adjudicated:"]
         for case_id, reason in sorted(result.excluded.items()):

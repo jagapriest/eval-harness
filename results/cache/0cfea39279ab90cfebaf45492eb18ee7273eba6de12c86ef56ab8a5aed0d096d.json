@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document discusses competition only in generic terms and does not name any specific competitor companies. It describes rivalry from \\\"both branded and generic competitors,\\\" specialized single-product-line companies, and \\\"non-traditional IT companies, including large Infrastructure-as-a-Service providers, that often buy their infrastructure directly from original design manufacturers.\\\" The only firms named (Satmetrix Systems, Bain & Company) appear solely as Net Promoter Score trademark holders, not as competitors.\"\n}",
+  "raw_text": "{\"competitors\":[],\"summary\":\"The document discusses competition only in general terms, without naming any specific rival companies. Dell Technologies describes facing product and price competition from both branded and generic competitors, companies specializing in one or more of its product or service lines, non-traditional IT companies including large Infrastructure-as-a-Service providers that buy infrastructure directly from original design manufacturers, and anticipated new market entrants. Other companies mentioned (Satmetrix Systems, Bain & Company) appear solely as trademark owners of the Net Promoter Score metric, not as competitors.\"}",
   "input_tokens": 6098,
-  "output_tokens": 324,
+  "output_tokens": 195,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 5.742,
+  "latency_s": 4.588,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

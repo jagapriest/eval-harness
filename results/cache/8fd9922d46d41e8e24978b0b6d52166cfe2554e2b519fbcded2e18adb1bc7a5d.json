@@ -1,10 +1,10 @@
 {
-  "raw_text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"The document (Cloudflare's Form 10-K) describes competition in three categories \u2014 on-premises network hardware vendors, cloud-based point solution vendors (application/network security, CDN, DNS, email security, SD-WAN), and traditional public cloud vendors \u2014 but does not name any specific competing company. The only companies named are Cloudflare itself and non-competitive references such as Newsweek and the Best Practice Institute as workplace-recognition organizations.\"\n}\n```",
+  "raw_text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"Cloudflare's competition section describes three categories of rivals \u2014 on-premises network hardware vendors, cloud-based point solution vendors (application/network security, CDN, DNS, email security, SD-WAN), and traditional public cloud providers \u2014 but names no specific competing company. The only company names appearing are Cloudflare itself and non-competitive mentions such as Newsweek and the Best Practice Institute as workplace-award issuers. Accordingly, no qualifying named competitors can be extracted.\"\n}\n```",
   "input_tokens": 6779,
-  "output_tokens": 195,
+  "output_tokens": 199,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 3.961,
+  "latency_s": 3.888,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

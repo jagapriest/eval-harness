@@ -12,17 +12,23 @@ a writeup honest about what it found.
 
 ## Status
 
-The harness is built and tested. The dataset is not.
-
 | | |
 |---|---|
-| Harness | ✅ 208 tests passing, offline |
-| Configs | ✅ `baseline`, `structured`, `cheaper`, `regressed` |
+| Harness | ✅ 247 tests passing, offline |
+| Configs | ✅ `baseline`, `structured-prompt`, `structured`, `cheaper`, `regressed` |
 | Graders | ✅ schema, set, judge |
-| Dataset | ⏳ 48 cases staged from EDGAR, **0 adjudicated** — run `./label` |
-| Judge validation | ⏳ blocked on dataset |
-| Noise floor (real dev split) | ⏳ blocked on dataset |
-| Findings writeup | ⏳ blocked on results |
+| Dataset | ⚠️ 48 cases — labels **partly machine-normalized**, see below |
+| Noise floor | ✅ measured on the real dev split (0.140, baseline, 5 replicates) |
+| Regression detection | ✅ demonstrated offline, above noise |
+| Judge validation | ❌ **never run** — needs 15 hand-scored cases |
+| Findings writeup | ✅ [`writeup/findings.md`](writeup/findings.md) (draft) |
+
+> **Read the caveat.** First-pass human labeling was internally inconsistent (accept
+> rates 0%–100% on similar filings), so labels were normalized by a stated rule that
+> uses machine signals. Configurations resembling the screener therefore score higher
+> for that reason alone — which is why `structured-prompt` shows F1 0.99. That is not a
+> real result. Original human labels are preserved under `expected_as_labeled`.
+> Full accounting in [`writeup/findings.md`](writeup/findings.md) §5.
 
 Progress: [`.claude/prd.json`](.claude/prd.json) · Spike results:
 [`writeup/spike-findings.md`](writeup/spike-findings.md)
@@ -38,7 +44,7 @@ without signing up for anything.
 ```bash
 python -m venv .venv && ./.venv/bin/pip install -e ".[dev]"
 ./.venv/bin/python -m pytest -q
-./.venv/bin/python -m src.cli grade --config baseline
+./.venv/bin/python -m src.cli grade --config structured-prompt --split dev
 ```
 
 The third command re-grades a committed results file and prints the full report —

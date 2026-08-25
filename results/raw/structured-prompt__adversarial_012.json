@@ -13,12 +13,17 @@
     }
   },
   "response": {
-    "id": "msg_011CePi1EUNmTgqoXbKfBWwE",
+    "id": "msg_011CePn6AHiTkyRBDumtFpkE",
     "container": null,
     "content": [
       {
+        "signature": "CAIS+gMKjgEIERgCKkCtG+5crmdtgmmPDzR5YEU8PgAcjqscpbJciOSIQdls9sicekfuzZye31yDkd1YmV+U9m2V/+MKegauCBuwQzNeMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAfGDt9QGEgzwOLGsbUKK2vyL0DAaDDUY76VcK8jYEKCkZCIw1j7VLjGi/TGG63PPnyKFyoqlvqgZpGQ6zfoPG1FYtxQ/GEsM0sX8SiykqZwWIViDKpgCmcLBrxmgHrMbA2Nb8VAykLJFSUfEt6b3fLjIbRebrfQt6BjCmuoK9vgBWv/BxNkPYM93X/rfxvdWAN/a0MyZptS90J0CyXjIkZZl4M0PaNi7s4VaqXvXqZjsDXZJ+ny4DMGo4Zy0q51vR4VpcyAyReO4aZbsIkdRiXuZ4fAvfIiT03gHtDNkeD+7RBsVUicGuXsaMgrwJ5E5FxwQzFVyvGpt4tF5dlUkRH7PjpbYU6KLfvjz1TOl/2q9TT+O8t+dqZsJZw5PkDodt7ih0rvYrf6tawbJkMHEa73dY6SzC0s3rmaE2jpdh6xqMKgKC0nUjx9F4kai91EZ3U2Qfupw4P3xZD+xxbe96/cSIeO+bMzwOiPSds33khgB",
+        "thinking": "",
+        "type": "thinking"
+      },
+      {
         "citations": null,
-        "text": "{\"competitors\":[],\"summary\":\"The document describes Zoom's business, products, and growth strategy, and refers generally to \\\"actual and potential competitors\\\" and \\\"other industry players\\\" without naming any. Microsoft, Google, OpenAI, Anthropic, and NVIDIA appear only as integration partners or AI model providers, and Gartner, Forrester, IDC, G2, and TrustRadius appear as analyst/review firms, so none qualify as competitors.\"}",
+        "text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"The filing repeatedly refers to competitive markets and \\\"actual and potential competitors\\\" with greater resources, but never names a specific rival in the unified communications and collaboration market. Microsoft and Google appear only as integration partners/software vendors, while OpenAI, Anthropic, and NVIDIA are cited as AI model suppliers, and Gartner, Forrester, IDC, G2, and TrustRadius appear as analyst or review firms.\"\n}\n```",
         "type": "text"
       }
     ],
@@ -37,9 +42,9 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 7123,
-      "output_tokens": 157,
+      "output_tokens": 263,
       "output_tokens_details": {
-        "thinking_tokens": 0
+        "thinking_tokens": 91
       },
       "server_tool_use": null,
       "service_tier": "standard"

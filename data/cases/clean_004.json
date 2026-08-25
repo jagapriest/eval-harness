@@ -157,9 +157,23 @@
     "competitors": [
       "Cisco Systems, Inc.",
       "Arista Networks, Inc.",
+      "Ciena Corporation",
       "Extreme Networks",
+      "Hewlett Packard Enterprise Co.",
       "Huawei Technologies Co., Ltd.",
-      "Palo Alto Networks, Inc."
+      "Fortinet, Inc.",
+      "Ruckus Networks (CommScope)",
+      "Cambium Networks",
+      "Nokia Corporation",
+      "NVIDIA Corporation",
+      "Ubiquiti, Inc.",
+      "Nile",
+      "Meter",
+      "Palo Alto Networks, Inc.",
+      "Check Point Software Technologies, Ltd.",
+      "Zscaler, Inc.",
+      "Netskope, Inc.",
+      "Forcepoint LLC"
     ],
     "must_not_include": [],
     "notes": "",
@@ -209,6 +223,21 @@
       "deferred": [],
       "seconds": 8.48,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Cisco Systems, Inc.",
+      "Arista Networks, Inc.",
+      "Extreme Networks",
+      "Huawei Technologies Co., Ltd.",
+      "Palo Alto Networks, Inc."
+    ],
+    "must_not_include": []
   }
 }

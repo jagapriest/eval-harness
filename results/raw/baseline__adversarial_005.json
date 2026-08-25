@@ -13,17 +13,17 @@
     }
   },
   "response": {
-    "id": "msg_011CePhs1tNJ3tD8gsMZrL22",
+    "id": "msg_011CePmxu6DeEaE74gPgM3Ay",
     "container": null,
     "content": [
       {
-        "signature": "CAISmwYKjgEIERgCKkBkLxPJFAn02PbxxAGh7hYck61Xf2mnwMb62g2lduqrTnmoMaAsvYkVHrJYSDfQEme19Vkvvv+IfQOmB/xdxoGkMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAfvpttQGEgzrAgrJW3p3eYeg5HYaDIzfmj8+Dd581boulSIwwS+QeumvqZ7yIn0514gE7jHD6HIBSHRllco1Cn0f7zkafaBkGlJJLMCSqSBtKJY5KrkEhtmLVFUCtgWrZyEXpit76PfUKOozPxhjkO1vYEsziQkqLZO+oS9f5z48UjNybcDuN85cw/jnSjYBb0Tz0bxQPvovKel67fQHq38GxG/84sA5QPh3MQukU1X208nz0hpEH5tlPMTo4guoRfQDIGy2nypg/6r/x4J3s2MuVd47diKXZi2yS6x5Ztry890Yx/rY19G+w6mIWvC5R7iezTbQpVWEKzRzd2lU7QDqJJMsZAZhDjSsNnTbRgubJJUwozKnaGwvVw2Pl93R2z2RiOD7OmC8oDB17bWtzaS4vdH7q4+/4U1JtaRgbWOx3h7D5rUBjeX+Vvo4A7jg3d+lZnopk5C4tVsv34slMfSM6RD6I+Qp3ncL/x5TfsejsxP/t7002KS0D62oH3HRYjbENeMMbHxsCMwwJ0DeUjx/P1FF8e3v7IhA1XqzbI6mTawainNlxI+HUHm8fluhLSEib+sAhWpcGd4TGMNdkykcjeJsTf17LGzkRlBlPurXH1gcbnJSYV2alUTMg8pQgIWLMvoMiQSY7HVDJqc2gyYjL434sS0WFKGXjpobGoQignQUZlAN6hRdImsaXY9GKFcd0ShBH6CPp2wcmR5McSmfJHRew7TWC/SZWKGHKjMca/9eIsvlOrDR9YpcHD1nUku+VYHAwFFSOqd6mxYC5812NckHtmMqVEJ+1VDE3P2bnmXVVcqKztRxtX13L526IxdOaC4xAGdUex/rwp9c6uu8sHYgODApoFrG+PIhOGoYAQ==",
+        "signature": "CAISjAQKjgEIERgCKkCBymsw+ta+DOfoz7zpBZaKlC74nXZEbp7AS1vGV1Ek6qQwNbfJxe2xhHQwfKMkyM4LvRNpitlGRh2izwczM27/Mg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAY+Dt9QGEgz3H2ycuLDaFj1b5ZkaDFj4R0JPIrra16gKAiIwsllCpf5/GHkGWbUCJd2JA93F/gmgBgK+D8nnx1tDM2UN+DGUeqGASDKI2xJujmndKqoCCdqu1A+qtHaE6V40WfLW9/fbBMJQU77I9o11AhqzgDJzQmT+VHG5OrN/LjKpO5LETw9Tt7jbOOly00BgTnPGaXpGYOqgWrulYw4Tp9QJX/9FO/jb7w9AomCFw0/8GCBi6umcqnrh9Oc3IFWCY9miIfK4UxNbJToDpGTfHreUcZ+SovvJiLCqw1qALms69Oh+bC8Hb2SeOoxRKWUKflStf45VuV/UjsEZ67dKqRhkWYCaR6utGn8wm7pJ1vUTBQO+z2swE7sLrvGyrzE3HGndwqlHTzTzrsOPdRyzNGEeUddcjdc0gQkYwuBmD8lHO8nOPE5+u5trCIySFS1+57l6K7Vv7RBJBusfMrZv5yG9GmO3mN3pl7zUlsAMhFHM1rrmBdDMexDhzD1BCBgB",
         "thinking": "",
         "type": "thinking"
       },
       {
         "citations": null,
-        "text": "{\n  \"competitors\": [],\n  \"summary\": \"The document describes Cloudflare's competitive landscape only in generic category terms and does not name any specific competitor companies. It cites three competitor groups: on-premises network hardware vendors, cloud-based point solution vendors (application/network security, CDN, DNS, email security, and SD-WAN), and traditional public cloud vendors, which it increasingly competes with for storage and compute workloads via Cloudflare Workers. Because no individual firms are identified, no named competitors can be extracted.\"\n}",
+        "text": "{\n  \"competitors\": [\n    {\n      \"name\": \"On-premises network hardware vendors\",\n      \"evidence\": \"On-premises network hardware vendors . We compete with companies in this category to provide security, performance, and reliability services.\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Point solution vendors (cloud-based single use case providers)\",\n      \"evidence\": \"Point solution vendors , which provide cloud-based products and services to address a single use case or challenge\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Application and network security vendors\",\n      \"evidence\": \"in various categories including application and network security vendors\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Content delivery network (CDN) vendors\",\n      \"evidence\": \"content delivery network (CDN) vendors\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Domain name system (DNS) services vendors\",\n      \"evidence\": \"domain name system (DNS) services vendors\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Email security vendors\",\n      \"evidence\": \"email security vendors\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"SD-WAN vendors\",\n      \"evidence\": \"and SD-WAN vendors\",\n      \"confidence\": \"high\"\n    },\n    {\n      \"name\": \"Traditional public cloud vendors\",\n      \"evidence\": \"A subset of services provided by traditional public cloud vendors\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"summary\": \"The document (a Cloudflare 10-K excerpt) describes competition in three categories rather than naming individual rival companies: on-premises network hardware vendors, cloud-based point solution vendors (spanning application/network security, CDN, DNS, email security, and SD-WAN), and traditional public cloud vendors. Cloudflare positions itself favorably via an integrated, multitenant global platform versus point solutions and capital-intensive hardware, and argues customers fear lock-in with single public cloud providers. It also notes growing competition with public cloud vendors for storage and compute workloads via its serverless Workers product.\"\n}",
         "type": "text"
       }
     ],
@@ -42,9 +42,9 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 5777,
-      "output_tokens": 340,
+      "output_tokens": 790,
       "output_tokens_details": {
-        "thinking_tokens": 161
+        "thinking_tokens": 83
       },
       "server_tool_use": null,
       "service_tier": "standard"

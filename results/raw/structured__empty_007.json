@@ -57,12 +57,12 @@
     }
   },
   "response": {
-    "id": "msg_011CePhedKDiKy7zyXG5N3x9",
+    "id": "msg_011CePjsezGvZqvtueRtTDP2",
     "container": null,
     "content": [
       {
         "citations": null,
-        "text": "{\"competitors\":[],\"summary\":\"The Salesforce filing's competition section describes only unnamed categories of rivals \u2014 vendors of packaged business software, on-premises enterprise application vendors, cloud application service providers, AI-native startups, free/bundled software companies, niche vertical vendors, productivity and unified communications providers, platform development companies, and prospective customers building in-house applications. No specific competitor company is named. Other named entities in the document (Trailhead, Agentforce, Hyperforce, Salesforce+, Dreamforce) are the company's own products, programs, or events.\"}",
+        "text": "{\"competitors\":[],\"summary\":\"Salesforce's 10-K competition section describes only unnamed categories of rivals \u2014 vendors of packaged business software, cloud application service providers, AI-native startups, free/bundled software providers, niche industry vendors, productivity and unified communications providers, platform development companies, and prospective customers building applications in-house. No specific competitor company is named. Other named entities (Trailhead, Agentforce, Dreamforce, Salesforce+) are the company's own products, programs, or events.\"}",
         "type": "text"
       }
     ],
@@ -81,7 +81,7 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 7263,
-      "output_tokens": 193,
+      "output_tokens": 170,
       "output_tokens_details": {
         "thinking_tokens": 0
       },

@@ -13,17 +13,17 @@
     }
   },
   "response": {
-    "id": "msg_011CePi1EVsEG38ambZEaxpm",
+    "id": "msg_011CePn6AGidmw922o9G5wQi",
     "container": null,
     "content": [
       {
-        "signature": "CAISswIKjgEIERgCKkD9Tc2yJ7kvW6Kb+KtpM8dNsyGTlOLlif0NDuTCWgTVQvBG4gLzMG5c3WB7nu5HRIDKWW29jJ1lJ76N9ppY7qz6Mg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAeLqttQGEgyXTB+Iaey2RlTkodYaDM3U+QnfgtxOtxX1FiIwN9MBCnOEHshdZxWceh1vrx2ynInJOMKaWP2HTQcNRej5D0lAWXOui3Lav0Q0w/BkKlI+U5HFanaNaYkUIyJUBtENnKdXmkYjIHVOfStRUxFwx81XZIZ61njoJkKyFXjyLKjG6CtuVoKg35YDADFhkysHZ+4pIEDcqbq4AJNhfzLJBntsGAE=",
+        "signature": "CAISlwIKjgEIERgCKkBABDpoeuJbl+4Be4n3wOra6QvXYU5MFp/JjcUIi0fXjZiw3U2aQ8XaTngMkiQnoGubvs2VaHKYAWXPk40eF2slMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAfGDt9QGEgy8siCI9ytHEosnd2UaDKK9aQ5hXmGNtQGu0yIwjWcwg85cqR37ejs2fTr5tv339kSnnMHWF79WMcOMvjC4Mu4MyQ7U5iMH6MomVi13KjbXstIULmuvIsJlDM8YfzAbCim/V35L6kb+kdqZVg3CTCxwbkqdUIGqmtw5fDFHuotXXFwHud0YAQ==",
         "thinking": "",
         "type": "thinking"
       },
       {
         "citations": null,
-        "text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"The document (Cloudflare's Form 10-K) describes competition in three categories \u2014 on-premises network hardware vendors, cloud-based point solution vendors (application/network security, CDN, DNS, email security, SD-WAN), and traditional public cloud vendors \u2014 but does not name any specific competing company. The only companies named are Cloudflare itself and non-competitive references such as Newsweek and the Best Practice Institute as workplace-recognition organizations.\"\n}\n```",
+        "text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"Cloudflare's competition section describes three categories of rivals \u2014 on-premises network hardware vendors, cloud-based point solution vendors (application/network security, CDN, DNS, email security, SD-WAN), and traditional public cloud providers \u2014 but names no specific competing company. The only company names appearing are Cloudflare itself and non-competitive mentions such as Newsweek and the Best Practice Institute as workplace-award issuers. Accordingly, no qualifying named competitors can be extracted.\"\n}\n```",
         "type": "text"
       }
     ],
@@ -42,9 +42,9 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 6779,
-      "output_tokens": 195,
+      "output_tokens": 199,
       "output_tokens_details": {
-        "thinking_tokens": 23
+        "thinking_tokens": 13
       },
       "server_tool_use": null,
       "service_tier": "standard"

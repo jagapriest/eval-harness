@@ -13,12 +13,17 @@
     }
   },
   "response": {
-    "id": "msg_011CePi2opcD42avdxMi9aNG",
+    "id": "msg_011CePn4UqcvHvSFSaQG7Cz7",
     "container": null,
     "content": [
       {
+        "signature": "CAISpwIKjgEIERgCKkBr1k1VKe7iKYs1OjRlzBDJtTNnqEoozqkemplPEXckWjxbYb0Ra79/Xck7PB8O335joNJVvFygi5lwVvuqNddTMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAdqDt9QGEgxZVcxtuhkBquPTLbkaDJ0O24lPQLsxE+bVLyIw1OB+kGzuwwEK055WAzifSt7LjIsfQT896NYa03O7BgowgLvYLh3qwtoJG5BwEHi/KkY+Hbc4FKm+5hy/0vVvud407vjBBh4k2gSNnc92nueWW1MzSBMB5EiwZwtAZDlFvMGRziyuR85rGAgPTjmJ01KWeNRffMpvGAE=",
+        "thinking": "",
+        "type": "thinking"
+      },
+      {
         "citations": null,
-        "text": "{\"competitors\": [], \"summary\": \"Twilio's competition section describes only unnamed categories of rivals \u2014 CPaaS companies, regional network service providers, CRM and customer experience vendors, standalone customer data platform vendors, and other software companies overlapping portions of its product line. No specific competing company is named anywhere in the document, so no entries qualify.\"}",
+        "text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"Twilio's competition section describes only categories of rivals \u2014 CPaaS companies, regional network service providers, CRM and customer experience vendors, standalone customer data platform vendors, and other software companies overlapping parts of its product line \u2014 without naming any specific firm. Other named entities in the document (Twilio's own products such as Segment and Lookup API, Twilio.org, and the SEC) are not competitors. Therefore no qualifying competitor can be extracted.\"\n}\n```",
         "type": "text"
       }
     ],
@@ -37,9 +42,9 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 7045,
-      "output_tokens": 117,
+      "output_tokens": 187,
       "output_tokens_details": {
-        "thinking_tokens": 0
+        "thinking_tokens": 14
       },
       "server_tool_use": null,
       "service_tier": "standard"

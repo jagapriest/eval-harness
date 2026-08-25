@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\"competitors\": [], \"summary\": \"The competition section describes only broad categories of rivals \\u2014 packaged business software vendors, on-premises enterprise application vendors, cloud application service providers, AI-native startups, free/bundled software companies, niche and industry-specific vendors, productivity and communications providers, platform development companies, and would-be customers building internally. No specific competitor company is named anywhere in the document; named entities such as partners, ISVs and system integrators appear only in ecosystem or channel roles.\"}",
+  "raw_text": "{\"competitors\": [], \"summary\": \"The competition section describes only unnamed categories of rivals \u2014 vendors of packaged business software, on-premises enterprise application vendors, cloud application service providers, AI-native startups, free/bundled software providers, niche industry-specific vendors, productivity and communications providers, and platform development companies \u2014 plus potential in-house development by would-be customers. No specific competing company is named anywhere in the document. Named entities such as Salesforce's own products (Agentforce, Trailhead, Data 360) and partner/system-integrator networks are not competitors.\"}",
   "input_tokens": 6902,
-  "output_tokens": 168,
+  "output_tokens": 188,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 4.327,
+  "latency_s": 3.837,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

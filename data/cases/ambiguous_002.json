@@ -191,9 +191,16 @@
   },
   "expected": {
     "competitors": [
+      "Alphabet (Google)",
+      "Amazon",
+      "BMC",
       "Broadcom",
       "Splunk, a CISCO Company",
+      "Accenture",
+      "Capgemini",
       "Dell Technologies",
+      "Hewlett-Packard Enterprise (HPE)",
+      "Intel",
       "NetApp",
       "Pure Storage"
     ],
@@ -244,6 +251,23 @@
       "deferred": [],
       "seconds": 11.27,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Broadcom",
+      "Splunk, a CISCO Company",
+      "Dell Technologies",
+      "NetApp",
+      "Pure Storage"
+    ],
+    "must_not_include": [
+      "Palo Alto Networks"
+    ]
   }
 }

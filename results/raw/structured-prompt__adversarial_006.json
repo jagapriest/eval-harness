@@ -13,17 +13,17 @@
     }
   },
   "response": {
-    "id": "msg_011CePi1ENBCbL6cfZez4xBM",
+    "id": "msg_011CePn6AJThBovB45y5F1f3",
     "container": null,
     "content": [
       {
-        "signature": "CAIS9AIKjgEIERgCKkAnHKMfKR+eKiS2GgDZu0Gg61MY80xEmLVdnVmwxpCxY/dzxv3wDwhiW9RaeMVLWe9sMvU827Ib2VDPKOUxcr4VMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAeLqttQGEgwLTG4ijkJNUWOVd0UaDN0biyYKufMdSNUuliIwtchMEi1sSKx3kjx7wrGyPY5sexNRAEdVvSWQRzMl/LkDtQEi+CpA0W0KAconYLsNKpIBPRsRBDI4Nnkx2PKciEgk0lj8dlYPtpKPUFrfMd1bDiieKpsDfbw6VOKfjm8wQiigBOJm82CnYe9jwhWTtVeMIre0MSkZGN40zxlg3MosYMOAfHuHIRWDHCLmbdrMhVRsgZK6bGJOfeQ0I9ARIuY9cIHjS0mNWJEIRJT63p3VpBljlXqf3kTjQUiqYvuJ430OKxEYAQ==",
+        "signature": "CAISgwQKjgEIERgCKkBBGNN8NyA+dvIjMOBxNY5t3RYsgOl4NPL6Zo+fUhPitCUUNgCFrl+6+cDjY0H8NYGPJpXYP3zOKetXEGu56nHFMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ1NWY5YmU0NC04YmZiLTQ3OTktYWM3My03NWM5YjBhY2VhZTKoAfGDt9QGEgwIwxEf+BKvw6PpPUgaDGYJ37b79fnLndV0vCIw1ff1N/VI2rt3RA6oMdKqN2FaQ8+dyq30xDgN65MKAorC34g0ZFt95w0WId4xT4pOKqECFhIU92F2VGkm2TLGTrz+2+DyHaIksVa2l1PPN5heJ9rxywFJu5cZyxO9siFd9HBKb1oKmhL1sN7EMi+Iuv9OJ4OQaysRianP0toQtJ9fyJE0ymCWivc+a/v7GygjHBT/Ig/6GFQA0LGPboEvMhIfFQLzCWFJCAU9g0KHFPMCVqT9574UIy0f1djp4QWW9TV4mfG6y2jIEuFmsHBhOUY3HLHILxaIVIcp01b20zn0Cn9dMZ2s3p8q+qOrVlBo6pfKr3zuU9lSuIBu44aU8+pQxz1gU1B4lQkRTxg3YLlrp52Kas7+9uFoe9Gc4oOT+T+R2qHpfeEwHEvgqSzYROk0Lc0SLmdtI7zJKEHHUUxE+bVrAKxNsvFnA9pDh3Y4af2SABgB",
         "thinking": "",
         "type": "thinking"
       },
       {
         "citations": null,
-        "text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"This portion of Confluent's Form 10-K describes its Data Streaming Platform, open source foundations, and product offerings, but does not name any specific competing company. Open source projects such as Apache Kafka, Flink, Iceberg, and Delta Lake are referenced as underlying technologies rather than commercial rivals, and IBM appears solely as the acquirer under a proposed merger agreement. References to 'competing offerings' and 'self-managed open source technologies' are unnamed categories and therefore not extractable.\"\n}\n```",
+        "text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"The excerpt describes Confluent's Data Streaming Platform, its open source foundations (Apache Kafka, Flink, Iceberg, Delta Lake), and the proposed merger with IBM, but it names no company as a competitor. Competitive references are generic \u2014 'competing offerings' and self-managed open source alternatives \u2014 and IBM appears solely as the acquiring party under the Merger Agreement, not as a rival.\"\n}\n```",
         "type": "text"
       }
     ],
@@ -42,9 +42,9 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 7093,
-      "output_tokens": 237,
+      "output_tokens": 256,
       "output_tokens_details": {
-        "thinking_tokens": 43
+        "thinking_tokens": 93
       },
       "server_tool_use": null,
       "service_tier": "standard"

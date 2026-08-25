@@ -6,7 +6,7 @@
     "adversarial_012",
     "ambiguous_001",
     "ambiguous_005",
-    "clean_005",
+    "clean_007",
     "clean_008",
     "clean_011",
     "clean_012",
@@ -35,10 +35,12 @@
     "clean_002",
     "clean_003",
     "clean_004",
+    "clean_005",
     "clean_006",
     "clean_009",
     "clean_010",
     "clean_013",
+    "clean_014",
     "empty_001",
     "empty_003",
     "empty_004",
@@ -49,10 +51,7 @@
     "long_003",
     "long_004"
   ],
-  "excluded": {
-    "clean_007": "competitors not adjudicated",
-    "clean_014": "competitors not adjudicated"
-  },
+  "excluded": {},
   "by_bucket": {
     "adversarial": {
       "dev": 4,
@@ -64,7 +63,7 @@
     },
     "clean": {
       "dev": 4,
-      "test": 8
+      "test": 10
     },
     "empty": {
       "dev": 3,
@@ -74,6 +73,10 @@
       "dev": 1,
       "test": 3
     }
+  },
+  "label_provenance": {
+    "normalized-only": 26,
+    "human+normalized": 22
   },
   "note": "Stratified by bucket, deterministic by case_id hash. The test split is held out: touch it twice across the project, once mid-build and once at the end. Never tune against it."
 }

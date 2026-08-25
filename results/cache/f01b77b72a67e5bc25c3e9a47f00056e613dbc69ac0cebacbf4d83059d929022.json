@@ -1,10 +1,10 @@
 {
-  "raw_text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"The filing describes competition entirely in categorical terms \u2014 general purpose and vertical search engines, online advertising platforms, digital content and application platform providers, enterprise cloud service providers, AI model developers, consumer hardware manufacturers, digital video providers, social networks, and workspace communication vendors \u2014 without naming any specific rival company. Other named entities in the document (YouTube, Waymo, X, Google Cloud, Gemini, Pixel) are Alphabet's own products or businesses, not competitors. Accordingly, no qualifying named competitor can be extracted.\"\n}\n```",
+  "raw_text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"The filing's competition section describes only broad categories of rivals \u2014 general purpose and vertical search engines, online advertising platforms and networks, offline advertising media, digital content and application platform providers, enterprise cloud providers, AI model developers, consumer hardware makers, digital video services, social networks, and workspace communication providers. No specific competing company is named anywhere in the document; the only companies referenced are Alphabet's own entities and brands (Google, YouTube, Waymo, X). Accordingly, no qualifying competitor entries can be extracted.\"\n}\n```",
   "input_tokens": 6950,
-  "output_tokens": 234,
+  "output_tokens": 241,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 4.044,
+  "latency_s": 4.321,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

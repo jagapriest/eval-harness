@@ -255,6 +255,7 @@
       "Cisco Systems, Inc.",
       "Lenovo Group Ltd.",
       "Fujitsu Network Communications, Inc.",
+      "Atos Information Technology Incorporated",
       "Broadcom",
       "IBM",
       "NetApp Inc.",
@@ -266,8 +267,17 @@
       "Arista Networks Inc",
       "Nokia Corporation",
       "Huawei Technologies Co. Ltd.",
+      "Ciena Corporation",
+      "NVIDIA Corporation",
       "Extreme Networks, Inc.",
-      "Palo Alto Networks"
+      "Palo Alto Networks",
+      "Fortinet, Inc.",
+      "Zscaler, Inc.",
+      "Netskope, Inc.",
+      "Ruckus Networks",
+      "Ubiquiti",
+      "Nile",
+      "Meter"
     ],
     "must_not_include": [
       "VMware",
@@ -338,6 +348,44 @@
       "deferred": [],
       "seconds": 7.71,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Dell Technologies Inc.",
+      "Super Micro Computer, Inc.",
+      "Cisco Systems, Inc.",
+      "Lenovo Group Ltd.",
+      "Fujitsu Network Communications, Inc.",
+      "Broadcom",
+      "IBM",
+      "NetApp Inc.",
+      "Nutanix",
+      "Pure Storage",
+      "Amazon Web Services",
+      "Google Cloud",
+      "Microsoft Azure",
+      "Arista Networks Inc",
+      "Nokia Corporation",
+      "Huawei Technologies Co. Ltd.",
+      "Extreme Networks, Inc.",
+      "Palo Alto Networks"
+    ],
+    "must_not_include": [
+      "VMware",
+      "Iron Mountain, Inc.",
+      "Elevance Health, Inc.",
+      "UiPath, Inc.",
+      "Fluor Corporation",
+      "Unilever",
+      "Juniper Networks, Inc.",
+      "Morgan, Lewis & Bockius LLP",
+      "Electronic Data Systems"
+    ]
   }
 }

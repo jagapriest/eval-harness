@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\"competitors\":[],\"summary\":\"Alphabet's 10-K describes formidable competition across search, advertising, cloud, AI, devices, digital content, and social networks, but frames all rivals as unnamed categories (e.g., \\\"general purpose search engines,\\\" \\\"providers of enterprise cloud services,\\\" \\\"AI model developers\\\"). No specific competing company is named anywhere in the excerpt. Named entities such as YouTube, Google Cloud, Waymo, and X are Alphabet's own businesses or social platforms it uses for communications.\"}",
+  "raw_text": "{\"competitors\":[],\"summary\":\"This Alphabet 10-K excerpt describes competition only in generic category terms \u2014 general purpose search engines, vertical search engines and e-commerce providers, online advertising platforms, digital content and application platforms, enterprise cloud providers, AI model developers, consumer hardware makers, digital video providers, and social networks. No specific rival company is named anywhere in the competition discussion; the only company names appearing (Google, YouTube, Waymo, X) are Alphabet's own businesses or referenced platforms.\"}",
   "input_tokens": 7311,
-  "output_tokens": 183,
+  "output_tokens": 180,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 4.213,
+  "latency_s": 4.223,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

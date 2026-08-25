@@ -70,7 +70,10 @@
   "expected": {
     "competitors": [
       "IBM",
-      "GCP"
+      "Microsoft",
+      "Oracle",
+      "AWS",
+      "GCP (Google Cloud Platform)"
     ],
     "must_not_include": [],
     "notes": "Label normalized from 'GCP (Google Cloud Platform)' to 'GCP': the filing writes 'AWS, GCP and Microsoft Azure' and never spells out Google Cloud Platform. PRD S3 requires the name as written in the document.",
@@ -102,6 +105,18 @@
       "deferred": [],
       "seconds": 4.64,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "IBM",
+      "GCP"
+    ],
+    "must_not_include": []
   }
 }

@@ -115,11 +115,18 @@
   },
   "expected": {
     "competitors": [
+      "Check Point Software Technologies Ltd.",
       "Cisco Systems, Inc.",
+      "CrowdStrike Holdings, Inc.",
       "F5 Networks, Inc.",
+      "Hewlett-Packard Enterprise",
       "Huawei Technologies Co., Ltd.",
       "Microsoft Corporation",
-      "Palo Alto Networks, Inc."
+      "Netskope Inc.",
+      "Palo Alto Networks, Inc.",
+      "SonicWALL, Inc.",
+      "Sophos Group Plc",
+      "Zscaler, Inc."
     ],
     "must_not_include": [],
     "notes": "",
@@ -161,6 +168,21 @@
       "deferred": [],
       "seconds": 9.51,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Cisco Systems, Inc.",
+      "F5 Networks, Inc.",
+      "Huawei Technologies Co., Ltd.",
+      "Microsoft Corporation",
+      "Palo Alto Networks, Inc."
+    ],
+    "must_not_include": []
   }
 }

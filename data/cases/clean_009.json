@@ -137,7 +137,16 @@
     "competitors": [
       "Cisco",
       "Dell/EMC",
-      "Huawei"
+      "Extreme Networks",
+      "Hewlett Packard Enterprise",
+      "Huawei",
+      "Juniper Networks",
+      "Nvidia",
+      "Darktrace",
+      "ExtraHop",
+      "Gigamon",
+      "Keysight",
+      "Netscout"
     ],
     "must_not_include": [
       "Broadcom",
@@ -185,6 +194,22 @@
       "deferred": [],
       "seconds": 19.28,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Cisco",
+      "Dell/EMC",
+      "Huawei"
+    ],
+    "must_not_include": [
+      "Broadcom",
+      "VMware"
+    ]
   }
 }

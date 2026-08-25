@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\"competitors\": [], \"summary\": \"The document's competition section describes rivalry only in generic terms \u2014 branded and generic competitors, specialists in particular product or service lines, non-traditional IT companies, large Infrastructure-as-a-Service providers, and original design manufacturers \u2014 without naming any specific rival firm. Other companies mentioned (Satmetrix Systems, Bain & Company, the Responsible Business Alliance) appear as trademark owners or standards bodies, not competitors. Therefore no qualifying named competitors can be extracted.\"}",
+  "raw_text": "{\"competitors\":[],\"summary\":\"The document's competition section describes only unnamed categories of rivals \u2014 branded and generic competitors, companies specializing in one or more product or service lines, non-traditional IT companies, large Infrastructure-as-a-Service providers, original design manufacturers, and prospective new entrants. No specific competing company is named. Other named entities (Satmetrix Systems, Bain & Company, the Responsible Business Alliance) appear as trademark holders or standards bodies, not competitors.\"}",
   "input_tokens": 7100,
-  "output_tokens": 180,
+  "output_tokens": 168,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 3.52,
+  "latency_s": 3.759,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

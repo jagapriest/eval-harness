@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\"competitors\":[],\"summary\":\"Cloudflare's 10-K describes competition in the network services market across three categories \u2014 on-premises network hardware vendors, cloud-based point solution vendors (application/network security, CDN, DNS, email security, SD-WAN), and traditional public cloud vendors \u2014 but names no specific competing company. The only company named is Cloudflare itself.\"}",
+  "raw_text": "{\"competitors\":[],\"summary\":\"Cloudflare's 10-K describes competition in three categories \u2014 on-premises network hardware vendors, cloud-based point solution vendors (application/network security, CDN, DNS, email security, SD-WAN), and traditional public cloud vendors \u2014 but names no specific competing company. Only Cloudflare itself and non-competitive references (Newsweek, Best Practice Institute, social platforms) are named.\"}",
   "input_tokens": 7140,
-  "output_tokens": 123,
+  "output_tokens": 145,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 3.494,
+  "latency_s": 3.625,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

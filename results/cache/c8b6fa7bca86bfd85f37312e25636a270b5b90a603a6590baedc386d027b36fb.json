@@ -1,10 +1,10 @@
 {
-  "raw_text": "{\n  \"competitors\": [],\n  \"summary\": \"The document (Twilio's Form 10-K) describes its competitive landscape only in generic categories\\u2014CPaaS providers, regional network service providers, CRM/customer experience vendors, standalone customer data platform vendors, and other software companies competing with parts of its product line\\u2014without naming any specific rival companies. Twilio states that competition is intensifying and that no single competitor competes across all of its product offerings. Because no individual competitor is identified by name, no named competitors can be extracted.\"\n}",
+  "raw_text": "{\n  \"competitors\": [\n    {\"name\": \"Communications platform-as-a-service (CPaaS) companies\", \"evidence\": \"communications platform-as-a-service (\\\"CPaaS\\\") companies that offer communications products and applications\", \"confidence\": \"high\"},\n    {\"name\": \"Regional network service providers\", \"evidence\": \"regional network service providers that offer limited developer functionality on top of their own physical infrastructure\", \"confidence\": \"high\"},\n    {\"name\": \"Customer relationship management and customer experience vendors\", \"evidence\": \"customer relationship management and customer experience vendors\", \"confidence\": \"high\"},\n    {\"name\": \"Standalone customer data platform vendors\", \"evidence\": \"standalone customer data platform vendors\", \"confidence\": \"high\"},\n    {\"name\": \"Other software companies competing with portions of the product line\", \"evidence\": \"other software companies that compete with portions of our product line\", \"confidence\": \"high\"}\n  ],\n  \"summary\": \"The document describes competition only in generic category terms, naming no specific rival companies. Twilio identifies five competitor classes: CPaaS providers, regional network service providers, CRM/customer experience vendors, standalone customer data platform vendors, and other software companies overlapping parts of its portfolio. It states that no competitor currently competes across all its product offerings, while expecting competition to intensify with new products and new market entrants.\"\n}",
   "input_tokens": 6043,
-  "output_tokens": 237,
+  "output_tokens": 444,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 4.645,
+  "latency_s": 6.847,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

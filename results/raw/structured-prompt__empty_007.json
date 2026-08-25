@@ -13,12 +13,12 @@
     }
   },
   "response": {
-    "id": "msg_011CePi2krWhSn9i1FSDCA2W",
+    "id": "msg_011CePn4KvbLDKmv591XgcJz",
     "container": null,
     "content": [
       {
         "citations": null,
-        "text": "{\"competitors\": [], \"summary\": \"The competition section describes only broad categories of rivals \\u2014 packaged business software vendors, on-premises enterprise application vendors, cloud application service providers, AI-native startups, free/bundled software companies, niche and industry-specific vendors, productivity and communications providers, platform development companies, and would-be customers building internally. No specific competitor company is named anywhere in the document; named entities such as partners, ISVs and system integrators appear only in ecosystem or channel roles.\"}",
+        "text": "{\"competitors\": [], \"summary\": \"The competition section describes only unnamed categories of rivals \u2014 vendors of packaged business software, on-premises enterprise application vendors, cloud application service providers, AI-native startups, free/bundled software providers, niche industry-specific vendors, productivity and communications providers, and platform development companies \u2014 plus potential in-house development by would-be customers. No specific competing company is named anywhere in the document. Named entities such as Salesforce's own products (Agentforce, Trailhead, Data 360) and partner/system-integrator networks are not competitors.\"}",
         "type": "text"
       }
     ],
@@ -37,7 +37,7 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 6902,
-      "output_tokens": 168,
+      "output_tokens": 188,
       "output_tokens_details": {
         "thinking_tokens": 0
       },

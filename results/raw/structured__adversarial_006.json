@@ -57,12 +57,12 @@
     }
   },
   "response": {
-    "id": "msg_011CePhdLCJTeJ4yM7ZeaFWK",
+    "id": "msg_011CePjrPHgfK6w7L1vHjRsQ",
     "container": null,
     "content": [
       {
         "citations": null,
-        "text": "{\"competitors\": [], \"summary\": \"This excerpt of Confluent's 10-K describes its Data Streaming Platform, open source foundations (Apache Kafka, Flink, Iceberg), product offerings, and the proposed merger with IBM. It references \\\"competing offerings\\\" and self-managed open source alternatives only generically, without naming any rival company; IBM appears solely as the acquirer. No qualifying named competitors are present.\"}",
+        "text": "{\"competitors\":[],\"summary\":\"This Confluent 10-K excerpt describes the company's Data Streaming Platform, its open source foundations (Apache Kafka, Flink, Iceberg), and the proposed merger with IBM. Competition is referenced only generically \u2014 \\\"self-managed open source technologies or competing offerings\\\" and \\\"other offerings\\\" \u2014 with no rival company named. IBM appears solely as the acquirer, and open source projects are technologies rather than competing commercial entities.\"}",
         "type": "text"
       }
     ],
@@ -81,7 +81,7 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 7454,
-      "output_tokens": 145,
+      "output_tokens": 162,
       "output_tokens_details": {
         "thinking_tokens": 0
       },

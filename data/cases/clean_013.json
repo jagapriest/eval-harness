@@ -101,7 +101,13 @@
   "expected": {
     "competitors": [
       "Cisco Systems, Inc.",
-      "Microsoft"
+      "Microsoft",
+      "Alphabet",
+      "Check Point Software Technologies Ltd.",
+      "Fortinet, Inc.",
+      "CrowdStrike Holdings, Inc.",
+      "Zscaler, Inc.",
+      "Wiz, Inc."
     ],
     "must_not_include": [
       "Amazon"
@@ -143,6 +149,20 @@
       "deferred": [],
       "seconds": 8.08,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Cisco Systems, Inc.",
+      "Microsoft"
+    ],
+    "must_not_include": [
+      "Amazon"
+    ]
   }
 }

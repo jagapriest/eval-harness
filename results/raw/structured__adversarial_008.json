@@ -57,12 +57,12 @@
     }
   },
   "response": {
-    "id": "msg_011CePhdLDJ9SfHwTvdkocND",
+    "id": "msg_011CePjrQGy6MPcmRN1TaBfu",
     "container": null,
     "content": [
       {
         "citations": null,
-        "text": "{\"competitors\":[],\"summary\":\"This Dell Technologies 10-K competition section describes competitive dynamics in generic terms \u2014 branded and generic competitors, specialists in individual product lines, non-traditional IT companies, and large Infrastructure-as-a-Service providers \u2014 without naming any specific rival firm. Other named entities (Satmetrix Systems, Bain & Company, Responsible Business Alliance) appear as trademark holders or standards bodies, not competitors. Therefore no qualifying competitors can be extracted.\"}",
+        "text": "{\"competitors\":[],\"summary\":\"This Dell Technologies 10-K competition section describes rivalry in generic terms \u2014 branded and generic competitors, specialists in one or more product lines, non-traditional IT companies and large Infrastructure-as-a-Service providers buying from original design manufacturers \u2014 without naming any specific competing company. Other named entities (Satmetrix Systems, Bain & Company, Responsible Business Alliance) appear as trademark owners or standards bodies, not competitors. Therefore no qualifying competitors can be extracted.\"}",
         "type": "text"
       }
     ],
@@ -81,7 +81,7 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 7461,
-      "output_tokens": 176,
+      "output_tokens": 182,
       "output_tokens_details": {
         "thinking_tokens": 0
       },

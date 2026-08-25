@@ -13,12 +13,12 @@
     }
   },
   "response": {
-    "id": "msg_011CePi1EJTVEADULK5mhooA",
+    "id": "msg_011CePn6AvQvSJ7zjsCHuhJw",
     "container": null,
     "content": [
       {
         "citations": null,
-        "text": "{\"competitors\": [], \"summary\": \"The document's competition section describes rivalry only in generic terms \u2014 branded and generic competitors, specialists in particular product or service lines, non-traditional IT companies, large Infrastructure-as-a-Service providers, and original design manufacturers \u2014 without naming any specific rival firm. Other companies mentioned (Satmetrix Systems, Bain & Company, the Responsible Business Alliance) appear as trademark owners or standards bodies, not competitors. Therefore no qualifying named competitors can be extracted.\"}",
+        "text": "{\"competitors\":[],\"summary\":\"The document's competition section describes only unnamed categories of rivals \u2014 branded and generic competitors, companies specializing in one or more product or service lines, non-traditional IT companies, large Infrastructure-as-a-Service providers, original design manufacturers, and prospective new entrants. No specific competing company is named. Other named entities (Satmetrix Systems, Bain & Company, the Responsible Business Alliance) appear as trademark holders or standards bodies, not competitors.\"}",
         "type": "text"
       }
     ],
@@ -37,7 +37,7 @@
       "cache_read_input_tokens": 0,
       "inference_geo": "global",
       "input_tokens": 7100,
-      "output_tokens": 180,
+      "output_tokens": 168,
       "output_tokens_details": {
         "thinking_tokens": 0
       },

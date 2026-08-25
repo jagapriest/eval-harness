@@ -174,9 +174,22 @@
   },
   "expected": {
     "competitors": [
+      "Adobe Systems Incorporated",
+      "Alphabet Inc.",
+      "Amazon.com, Inc.",
       "Cisco Systems, Inc.",
+      "Intel Corporation",
       "International Business Machines Corporation",
-      "Microsoft Corporation"
+      "Microsoft Corporation",
+      "Salesforce, Inc.",
+      "SAP SE",
+      "Hewlett-Packard Enterprise",
+      "Workday, Inc.",
+      "Allscripts Healthcare Solutions, Inc.",
+      "Arcadia Solutions",
+      "athenahealth, Inc.",
+      "Epic Systems Corporation",
+      "InterSystems Corporation"
     ],
     "must_not_include": [],
     "notes": "",
@@ -228,6 +241,19 @@
       "deferred": [],
       "seconds": 18.57,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Cisco Systems, Inc.",
+      "International Business Machines Corporation",
+      "Microsoft Corporation"
+    ],
+    "must_not_include": []
   }
 }

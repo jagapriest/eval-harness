@@ -133,7 +133,12 @@
   },
   "expected": {
     "competitors": [
-      "Microsoft Corporation",
+      "Oracle Corporation",
+      "SAP SE",
+      "Anaplan, Inc.",
+      "Automatic Data Processing, Inc. (ADP)",
+      "Coupa Software Inc.",
+      "Dayforce, Inc.",
       "NetSuite",
       "ServiceNow, Inc.",
       "UKG Inc."
@@ -181,6 +186,28 @@
       "deferred": [],
       "seconds": 22.06,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Microsoft Corporation",
+      "NetSuite",
+      "ServiceNow, Inc.",
+      "UKG Inc."
+    ],
+    "must_not_include": [
+      "Amazon Web Services, Inc.",
+      "Google Cloud",
+      "ADP",
+      "Remote Technology, Inc.",
+      "Strada",
+      "Securities and Exchange Commission",
+      "SEC"
+    ]
   }
 }

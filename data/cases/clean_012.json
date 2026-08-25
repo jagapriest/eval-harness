@@ -94,8 +94,11 @@
     "competitors": [
       "IBM",
       "Microsoft Corporation",
+      "SolarWinds Corporation",
       "Cisco Systems, Inc.",
+      "New Relic, Inc.",
       "Dynatrace Software Inc.",
+      "Elastic N.V.",
       "Amazon Web Services",
       "Google Cloud Platform"
     ],
@@ -132,6 +135,22 @@
       "deferred": [],
       "seconds": 2.22,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "IBM",
+      "Microsoft Corporation",
+      "Cisco Systems, Inc.",
+      "Dynatrace Software Inc.",
+      "Amazon Web Services",
+      "Google Cloud Platform"
+    ],
+    "must_not_include": []
   }
 }

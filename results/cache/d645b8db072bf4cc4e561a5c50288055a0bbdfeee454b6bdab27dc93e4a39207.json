@@ -1,10 +1,10 @@
 {
-  "raw_text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"This portion of Confluent's Form 10-K describes its Data Streaming Platform, open source foundations, and product offerings, but does not name any specific competing company. Open source projects such as Apache Kafka, Flink, Iceberg, and Delta Lake are referenced as underlying technologies rather than commercial rivals, and IBM appears solely as the acquirer under a proposed merger agreement. References to 'competing offerings' and 'self-managed open source technologies' are unnamed categories and therefore not extractable.\"\n}\n```",
+  "raw_text": "```json\n{\n  \"competitors\": [],\n  \"summary\": \"The excerpt describes Confluent's Data Streaming Platform, its open source foundations (Apache Kafka, Flink, Iceberg, Delta Lake), and the proposed merger with IBM, but it names no company as a competitor. Competitive references are generic \u2014 'competing offerings' and self-managed open source alternatives \u2014 and IBM appears solely as the acquiring party under the Merger Agreement, not as a rival.\"\n}\n```",
   "input_tokens": 7093,
-  "output_tokens": 237,
+  "output_tokens": 256,
   "cache_read_tokens": 0,
   "cache_write_tokens": 0,
-  "latency_s": 4.611,
+  "latency_s": 4.156,
   "stop_reason": "end_turn",
   "model_version": "claude-opus-5",
   "error": null,

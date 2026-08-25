@@ -143,12 +143,22 @@
       "Amazon Web Services LLC",
       "Arista Networks, Inc.",
       "Broadcom Inc.",
+      "Ciena Corporation",
+      "CrowdStrike Holdings, Inc.",
       "Datadog Inc.",
       "Dell Technologies Inc.",
       "Dynatrace Inc.",
+      "Fortinet, Inc.",
+      "Hewlett-Packard Enterprise Company",
       "Huawei Technologies Co., Ltd.",
       "Microsoft Corporation",
-      "Palo Alto Networks, Inc."
+      "New Relic, Inc.",
+      "Nokia Corporation",
+      "Nvidia Corporation",
+      "Palo Alto Networks, Inc.",
+      "RingCentral, Inc.",
+      "Zoom Video Communications, Inc.",
+      "Zscaler, Inc."
     ],
     "must_not_include": [
       "Splunk"
@@ -198,6 +208,27 @@
       "deferred": [],
       "seconds": 25.45,
       "stopped_early": false
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Amazon Web Services LLC",
+      "Arista Networks, Inc.",
+      "Broadcom Inc.",
+      "Datadog Inc.",
+      "Dell Technologies Inc.",
+      "Dynatrace Inc.",
+      "Huawei Technologies Co., Ltd.",
+      "Microsoft Corporation",
+      "Palo Alto Networks, Inc."
+    ],
+    "must_not_include": [
+      "Splunk"
+    ]
   }
 }

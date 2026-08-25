@@ -180,10 +180,30 @@
   },
   "expected": {
     "competitors": [
+      "Advanced Micro Devices, Inc.",
+      "Alchip Technologies",
+      "Astera Labs, Inc.",
+      "Ayar Labs, Inc.",
       "Broadcom Inc.",
       "Cisco Systems, Inc.",
+      "Credo Technology Group Holding Ltd",
+      "Intel Corporation",
+      "Global Unichip Corporation",
+      "Lightmatter, Inc.",
+      "MACOM Technology Solutions Holdings, Inc.",
+      "MediaTek Inc.",
       "Microchip Technology Inc.",
-      "NXP Semiconductors N.V."
+      "Montage Technology",
+      "Nvidia Corporation",
+      "NXP Semiconductors N.V.",
+      "Phison Electronics Corporation",
+      "Qualcomm Incorporated",
+      "Rambus, Inc.",
+      "Ranovus Inc.",
+      "Realtek Semiconductor Corporation",
+      "Semtech Corporation",
+      "Silicon Motion Technology Corporation",
+      "Socionext Inc."
     ],
     "must_not_include": [],
     "notes": "",
@@ -217,6 +237,20 @@
       "deferred": [],
       "seconds": 22.35,
       "note": "Model-proposed candidates adjudicated by a human. Disclose this in the writeup; see US-001 for the cold-labeled subset that measures anchoring."
+    },
+    "normalized": {
+      "rule": "accept a proposed competitor iff it is findable in the source document AND the entities pass did not assign it a non-competitor role; empty/adversarial buckets keep an empty competitor list by definition",
+      "machine_derived": true,
+      "note": "Applied because first-pass adjudication was internally inconsistent (accept rates 0%-100% on similar filings). Original human labels are preserved under expected_as_labeled and are scored alongside these. Because the rule uses machine signals, this golden set is partly machine-derived; see writeup/findings.md."
     }
+  },
+  "expected_as_labeled": {
+    "competitors": [
+      "Broadcom Inc.",
+      "Cisco Systems, Inc.",
+      "Microchip Technology Inc.",
+      "NXP Semiconductors N.V."
+    ],
+    "must_not_include": []
   }
 }
