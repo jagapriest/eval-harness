@@ -8,3 +8,7 @@ venv/
 .pytest_cache/
 data/docs/*.raw.html
 data/pool/*.txt
+
+# Personal career materials — kept locally, not published
+writeup/linkedin-article.md
+writeup/resume-updates.md
