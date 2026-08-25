@@ -24,6 +24,8 @@ from .graders.set_grader import evidence_is_verbatim, evidence_similarity
 ACCEPT = {"y", "yes"}
 REJECT = {"n", "no"}
 DEFER = {"?", "d", "defer"}
+ACCEPT_REST = {"a", "all"}
+QUIT = {"q", "quit"}
 
 NEAR_VERBATIM = 0.95
 
@@ -51,6 +53,7 @@ class Adjudication:
     rejected: list[str] = field(default_factory=list)
     deferred: list[str] = field(default_factory=list)
     seconds: float = 0.0
+    stopped_early: bool = False
 
     @property
     def decided(self) -> int:
@@ -91,14 +94,31 @@ def adjudicate(
     """
     started = clock()
     result = Adjudication()
-    for cand in candidates:
+    candidates = list(candidates)
+    accept_rest = False
+
+    for index, cand in enumerate(candidates):
+        if accept_rest:
+            result.accepted.append(cand.name)
+            continue
+
         answer = (prompt_fn(cand) or "").strip().lower()
         if answer in ACCEPT:
             result.accepted.append(cand.name)
         elif answer in REJECT:
             result.rejected.append(cand.name)
+        elif answer in ACCEPT_REST:
+            # Long uniform lists (a filing naming 60 customer logos) would otherwise
+            # be 60 keystrokes of the same answer, which invites rubber-stamping.
+            accept_rest = True
+            result.accepted.append(cand.name)
+        elif answer in QUIT:
+            # Save what was decided; the rest stay unlabeled rather than defaulting.
+            result.stopped_early = True
+            break
         else:
             result.deferred.append(cand.name)
+
     result.seconds = round(clock() - started, 2)
     return result
 
@@ -159,10 +179,45 @@ def record_cost(log_path: Path, case_id: str, adj: Adjudication) -> None:
 
 
 def format_candidate(cand: Candidate, index: int, total: int) -> str:
+    lines = [f"\n[{index}/{total}] {cand.name}"]
+    if cand.confidence:
+        lines.append(f"    confidence: {cand.confidence}")
+    if cand.evidence:
+        lines.append(f"    evidence  : {cand.evidence}")
+        lines.append(f"    support   : {cand.evidence_flag}")
+    lines.append("    competitor? [y/n/?/a=accept rest/q=quit] ")
+    return "\n".join(lines)
+
+
+def format_forbidden(name: str, index: int, total: int) -> str:
+    """Prompt for a must_not_include candidate.
+
+    Phrased as the consequence, not the field name. "Add to must_not_include?" invites
+    a mechanical yes; "would extracting this be a precision failure?" is the question
+    the field actually encodes.
+    """
     return (
-        f"\n[{index}/{total}] {cand.name}\n"
-        f"    confidence: {cand.confidence}\n"
-        f"    evidence  : {cand.evidence}\n"
-        f"    support   : {cand.evidence_flag}\n"
-        f"    accept? [y/n/?] "
+        f"\n[{index}/{total}] {name}\n"
+        f"    named in the document, but NOT as a competitor\n"
+        f"    would extracting it be a precision failure? "
+        f"[y/n/?/a=accept rest/q=quit] "
     )
+
+
+def apply_forbidden(case_path: Path, adj: Adjudication) -> dict:
+    """Merge accepted names into must_not_include and record provenance."""
+    case = json.loads(case_path.read_text())
+    forbidden = case["expected"].setdefault("must_not_include", [])
+    for name in adj.accepted:
+        if name not in forbidden:
+            forbidden.append(name)
+    case["expected"]["prelabel_forbidden"] = {
+        "assisted": True,
+        "accepted": adj.accepted,
+        "rejected": adj.rejected,
+        "deferred": adj.deferred,
+        "seconds": adj.seconds,
+        "stopped_early": adj.stopped_early,
+    }
+    case_path.write_text(json.dumps(case, indent=2))
+    return case

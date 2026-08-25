@@ -165,4 +165,53 @@ def test_format_candidate_surfaces_support_flag():
     text = format_candidate(Candidate("A", "some span", "high", verbatim=True), 1, 3)
     assert "[1/3] A" in text
     assert "verbatim" in text
-    assert "[y/n/?]" in text
+    assert "y/n/?" in text
+
+
+def test_format_candidate_omits_evidence_when_absent():
+    """Screener-sourced candidates carry no span; the prompt must not show empty rows."""
+    text = format_candidate(Candidate("A", "", ""), 2, 5)
+    assert "[2/5] A" in text
+    assert "evidence" not in text
+    assert "confidence" not in text
+
+
+def test_accept_rest_applies_to_every_remaining_candidate():
+    """A filing naming 60 customer logos would otherwise invite rubber-stamping."""
+    cands = [Candidate(str(i), "", "") for i in range(5)]
+    answers = iter(["n", "a"])
+    adj = adjudicate(cands, lambda _c: next(answers))
+    assert adj.rejected == ["0"]
+    assert adj.accepted == ["1", "2", "3", "4"]
+    assert adj.stopped_early is False
+
+
+def test_quit_saves_progress_and_leaves_the_rest_unlabeled():
+    cands = [Candidate(str(i), "", "") for i in range(5)]
+    answers = iter(["y", "n", "q"])
+    adj = adjudicate(cands, lambda _c: next(answers))
+    assert adj.accepted == ["0"] and adj.rejected == ["1"]
+    assert adj.deferred == []          # not silently defaulted
+    assert adj.stopped_early is True
+
+
+def test_forbidden_prompt_asks_the_consequence_not_the_field_name():
+    from src.prelabel import format_forbidden
+
+    text = format_forbidden("Deloitte", 3, 9)
+    assert "[3/9] Deloitte" in text
+    assert "precision failure" in text
+    assert "must_not_include" not in text
+
+
+def test_apply_forbidden_unions_and_records_provenance(tmp_path):
+    from src.prelabel import apply_forbidden
+
+    case_path = tmp_path / "c.json"
+    case_path.write_text(json.dumps({
+        "case_id": "c", "bucket": "adversarial", "source_path": "x",
+        "expected": {"competitors": [], "must_not_include": ["Existing"]},
+    }))
+    out = apply_forbidden(case_path, Adjudication(accepted=["Deloitte"], rejected=["ISO"]))
+    assert out["expected"]["must_not_include"] == ["Existing", "Deloitte"]
+    assert out["expected"]["prelabel_forbidden"]["rejected"] == ["ISO"]

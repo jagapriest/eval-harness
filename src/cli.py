@@ -175,60 +175,109 @@ def cmd_noise(args: argparse.Namespace) -> int:
 # --------------------------- prelabel ---------------------------
 
 def cmd_prelabel(args: argparse.Namespace) -> int:
+    """Adjudicate a case: competitors first, then must_not_include.
+
+    Uses the candidates the screener already produced. Only calls the API when a case
+    has no stored proposals -- re-extracting would spend money redoing work, and would
+    do it with a *different* config than the screener used.
+    """
     from .prelabel import (
+        Candidate,
         adjudicate,
         apply_adjudication,
+        apply_forbidden,
         candidates_from_output,
         format_candidate,
+        format_forbidden,
         record_cost,
     )
-    from .runner import RunConfig, run_all
 
-    load_env()
     path, case, document = load_case(args.case)
-
-    cfg = RunConfig(
-        id="prelabel",
-        model=args.model,
-        prompt_template=(ROOT / "prompts" / "baseline.md").read_text(),
-        effort="high",  # proposing candidates is the one place to spend effort
-        structured_output=False,
-    )
-    results = asyncio.run(run_all([(args.case, document)], cfg, concurrency=1))
-    result = results[0]
-    if result.error:
-        raise SystemExit(f"extraction failed: {result.error}")
-
-    candidates = candidates_from_output(result.raw_text, document)
-    if not candidates:
-        print(f"{args.case}: model proposed no candidates. Nothing to adjudicate.")
-        return 0
-
+    screening = case.get("screening", {})
     already = set(case["expected"].get("competitors", []))
-    fresh = [c for c in candidates if c.name not in already]
-    print(f"\n{args.case} ({case['bucket']}): {len(candidates)} proposed, "
-          f"{len(fresh)} not already labeled.")
-    print("Accept only entities NAMED in the document and competing in its PRIMARY "
-          "market (owner ruling R-1).")
 
-    total = len(fresh)
-    counter = {"i": 0}
+    print(f"\n{args.case} ({case['bucket']}) -- {screening.get('company', 'unknown')}")
+    disputed = screening.get("disputed", [])
+    if disputed:
+        print(f"\n  DISPUTED -- the two screening passes disagree on these:")
+        for item in disputed:
+            print(f"    * {item}")
+        print("  Decide these deliberately; they are the most informative in the set.")
 
-    def prompt(cand) -> str:
-        counter["i"] += 1
+    def ask(text: str) -> str:
         try:
-            return input(format_candidate(cand, counter["i"], total))
+            return input(text)
         except EOFError:
-            return "?"
+            return "q"
 
-    adj = adjudicate(fresh, prompt)
-    apply_adjudication(path, adj, cfg.id, result.model_version or cfg.model)
-    record_cost(_results_dir() / "labeling_cost.jsonl", args.case, adj)
+    # ---- phase 1: competitors ----
+    if args.phase in ("competitors", "both"):
+        proposed = screening.get("proposed")
+        if proposed is None:
+            from .runner import RunConfig, run_all
 
-    print(f"\n{args.case}: +{len(adj.accepted)} accepted, {len(adj.rejected)} rejected, "
-          f"{len(adj.deferred)} deferred in {adj.seconds}s")
-    if adj.deferred:
-        print(f"  deferred (resolve by hand): {', '.join(adj.deferred)}")
+            load_env()
+            cfg = RunConfig(
+                id="prelabel", model=args.model,
+                prompt_template=(ROOT / "prompts" / "structured.md").read_text(),
+                effort="high", structured_output=True,
+            )
+            result = asyncio.run(run_all([(args.case, document)], cfg, concurrency=1))[0]
+            if result.error:
+                raise SystemExit(f"extraction failed: {result.error}")
+            candidates = candidates_from_output(result.raw_text, document)
+        else:
+            candidates = [Candidate(name=n, evidence="", confidence="") for n in proposed]
+
+        fresh = [c for c in candidates if c.name not in already]
+        if not fresh:
+            print("\n  competitors: nothing proposed. Expected stays empty "
+                  "(correct for empty/adversarial cases).")
+        else:
+            print(f"\n  COMPETITORS -- {len(fresh)} to review")
+            print("  Accept only entities NAMED in the document, competing in its "
+                  "PRIMARY market (R-1).")
+            counter = {"i": 0}
+
+            def prompt(cand):
+                counter["i"] += 1
+                return ask(format_candidate(cand, counter["i"], len(fresh)))
+
+            adj = adjudicate(fresh, prompt)
+            apply_adjudication(path, adj, "screening", screening.get("model", "n/a"))
+            record_cost(_results_dir() / "labeling_cost.jsonl", args.case, adj)
+            print(f"\n  +{len(adj.accepted)} accepted, {len(adj.rejected)} rejected, "
+                  f"{len(adj.deferred)} deferred"
+                  + ("  [stopped early]" if adj.stopped_early else ""))
+
+    # ---- phase 2: must_not_include ----
+    if args.phase in ("forbidden", "both"):
+        case = json.loads(path.read_text())
+        have = set(case["expected"].get("must_not_include", []))
+        names = [n for n in screening.get("proposed_must_not_include", []) if n not in have]
+        if not names:
+            print("\n  must_not_include: nothing proposed.")
+        else:
+            print(f"\n  MUST_NOT_INCLUDE -- {len(names)} to review")
+            print("  Keep plausible rivals. Reject standards bodies, auditors, and "
+                  "anything nobody would mistake for a competitor.")
+            counter = {"i": 0}
+
+            def prompt_f(cand):
+                counter["i"] += 1
+                return ask(format_forbidden(cand.name, counter["i"], len(names)))
+
+            adj_f = adjudicate(
+                [Candidate(name=n, evidence="", confidence="") for n in names], prompt_f
+            )
+            apply_forbidden(path, adj_f)
+            print(f"\n  +{len(adj_f.accepted)} added to must_not_include, "
+                  f"{len(adj_f.rejected)} rejected"
+                  + ("  [stopped early]" if adj_f.stopped_early else ""))
+
+    final = json.loads(path.read_text())
+    print(f"\n  {args.case}: {len(final['expected']['competitors'])} competitors, "
+          f"{len(final['expected']['must_not_include'])} must_not_include\n")
     return 0
 
 
@@ -270,6 +319,8 @@ def build_parser() -> argparse.ArgumentParser:
     pre = sub.add_parser("prelabel", help="propose candidates for human adjudication")
     pre.add_argument("--case", required=True, help="case id, e.g. clean_002")
     pre.add_argument("--model", default="claude-opus-5")
+    pre.add_argument("--phase", choices=["competitors", "forbidden", "both"],
+                     default="both")
     pre.set_defaults(func=cmd_prelabel)
 
     return parser
